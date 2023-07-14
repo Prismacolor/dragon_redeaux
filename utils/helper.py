@@ -26,3 +26,14 @@ def create_main_dataframe():
         main_df = pd.concat([main_df, df], axis=0)
 
     return main_df
+
+
+def preprocess_data(df):
+    """
+    preprocess data in main dataframe
+    :param df:
+    :return: modified dataframe, encoded labels
+    """
+
+    df.drop(['observed_by', 'year_observed'], axis=1)
+
