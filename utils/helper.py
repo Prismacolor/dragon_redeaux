@@ -17,12 +17,12 @@ def create_main_dataframe():
     """
     main_df = pd.DataFrame(columns=columns)
 
-    directory = r"dragon_redeaux\data\dragon_spreadsheets"
+    directory = r"C:\Users\noell\PycharmProjects\dragon_redeaux\data\dragon_spreadsheets"
     csv_files = [file for file in os.listdir(directory) if file.endswith(".csv")]
 
     for file in csv_files:
         file_str = directory + r'\{}'.format(file)
-        df = pd.read_csv(file_str)
+        df = pd.read_csv(file_str, index_col=False)
         main_df = pd.concat([main_df, df], axis=0)
 
     return main_df
