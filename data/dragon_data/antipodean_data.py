@@ -1,4 +1,5 @@
 import random
+import os
 import pandas
 
 num_of_specimens = random.randint(1500, 2501)
@@ -91,6 +92,14 @@ for i in range(1, num_of_specimens):
 
     specimens.append(dragon)
 
+
+directory = "../dragon_spreadsheets"
+
+if not os.path.exists(directory):
+    os.makedirs(directory)
+    print("Directory created:", directory)
+else:
+    print("Directory already exists:", directory)
 
 specimens_df = pandas.DataFrame(specimens)
 specimens_df.to_csv('../dragon_spreadsheets/antipodean_opaleye.csv', columns=columns)
