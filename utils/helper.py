@@ -37,6 +37,7 @@ def preprocess_data(df):
     :param: df
     :return: modified dataframe, encoded labels
     """
+    # TODO make numerical data
 
     df.drop(['observed_by', 'year_observed'], axis=1)
 
