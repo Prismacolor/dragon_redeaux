@@ -17,7 +17,7 @@ def create_main_dataframe():
     """
     main_df = pd.DataFrame(columns=columns)
 
-    directory = r"C:\Users\noell\PycharmProjects\dragon_redeaux\data\dragon_spreadsheets"
+    directory = r"..\data\dragon_spreadsheets"
     csv_files = [file for file in os.listdir(directory) if file.endswith(".csv")]
 
     for file in csv_files:
@@ -25,15 +25,25 @@ def create_main_dataframe():
         df = pd.read_csv(file_str, index_col=False)
         main_df = pd.concat([main_df, df], axis=0)
 
+    # Save the DataFrame as a CSV file
+    main_df.to_csv('../data/full_data.csv', index=False)
+
     return main_df
 
 
 def preprocess_data(df):
     """
     preprocess data in main dataframe
-    :param df:
+    :param: df
     :return: modified dataframe, encoded labels
     """
 
     df.drop(['observed_by', 'year_observed'], axis=1)
+
+    df.sample(frac=1).reset_index(drop=True)
+
+    labels = df['species']
+    df.drop(['species'], axis=1)
+
+    return df, labels
 

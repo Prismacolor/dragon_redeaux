@@ -1,9 +1,9 @@
 """Script for building Polynomial classification model"""
-import matplotlib as plt
 import numpy as np
 import pandas as pd
+import sklearn as sk
 
-from utils.helper import create_main_dataframe
+from utils.helper import create_main_dataframe, preprocess_data
 
 
 def main():
@@ -16,14 +16,8 @@ def main():
     main_df = create_main_dataframe()
     print(main_df.head())
 
-    # shuffle data
-    main_df.sample(frac=1).reset_index(drop=True)
-
-    # begin preprocessing data
-    y = main_df['species']
-    main_df.drop(['species'])
-
-    # TODO preprocess the data using helper function
+    # get features and labels
+    x, y = preprocess_data(main_df)
 
 
 if __name__ == '__main__':
