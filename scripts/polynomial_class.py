@@ -15,7 +15,7 @@ def main():
     # concatenate data into single dataframe
     main_df = create_main_dataframe()
     print(main_df.head())
-    
+
     # shuffle data
     main_df.sample(frac=1).reset_index(drop=True)
 
