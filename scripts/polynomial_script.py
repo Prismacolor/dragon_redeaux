@@ -32,7 +32,7 @@ def main():
     """
     # concatenate data into single dataframe
     main_df = create_main_dataframe()
-    print(main_df.head(3))
+    print(main_df.head(9))
 
     # get features and labels
     X, y = preprocess_data(main_df, encoded_labels)
@@ -40,16 +40,16 @@ def main():
     # split data
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
-    model2 = PolynomialClassifier(degree=1)
-    model2.fit(X_train, y_train)
+    poly_model = PolynomialClassifier(degree=1)
+    poly_model.fit(X_train, y_train)
 
-    model2_preds = model2.predict(X_test)
+    polymodel_preds = poly_model.predict(X_test)
 
-    model2_preds_converted = numerical_labels_to_categories(model2_preds, reverse_labels)
+    polymodel_preds_converted = numerical_labels_to_categories(polymodel_preds, reverse_labels)
     y_test_converted = numerical_labels_to_categories(y_test, reverse_labels)
 
-    accuracy2 = accuracy_score(y_test_converted, model2_preds_converted)
-    print("Accuracy 2:", accuracy2)
+    accuracy = accuracy_score(y_test_converted, polymodel_preds_converted)
+    print("Accuracy:", accuracy)
 
 
 if __name__ == '__main__':

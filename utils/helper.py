@@ -1,7 +1,8 @@
 """helper functions"""
 import os
 import pandas as pd
-from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import MinMaxScaler, StandardScaler, OneHotEncoder
+
 
 columns = ['gender', 'estimated_age', 'color_of_scales', 'color_of_eyes', 'color_of_wings', 'est_body_length',
            'shape_of_snout', 'shape_of_teeth', 'scales_present', 'scale_texture', 'body_texture', 'snout_length',
@@ -16,7 +17,7 @@ def create_main_dataframe():
     :params: none
     :return: main dataframe
     """
-    main_df = pd.DataFrame(columns=columns)
+    dfs = []
 
     directory = r"..\data\dragon_spreadsheets"
     csv_files = [file for file in os.listdir(directory) if file.endswith(".csv")]
@@ -24,9 +25,10 @@ def create_main_dataframe():
     for file in csv_files:
         file_str = directory + r'\{}'.format(file)
         df = pd.read_csv(file_str, index_col=False)
-        main_df = pd.concat([main_df, df], axis=0)
+        dfs.append(df)
 
     # Save the DataFrame as a CSV file
+    main_df = pd.concat(dfs, axis=0)
     main_df.to_csv('../data/full_data.csv', index=False)
 
     return main_df
@@ -36,10 +38,10 @@ def preprocess_data(df, encoded_labels):
     """
     preprocess data in main dataframe
     :param: df
-    :return: modified dataframe, encoded labels
+    :return: dataframe df, series labels
     """
-    # drop columns that aren't needed, shuffle data
-    df.drop(['observed_by', 'year_observed'], axis=1)
+    # drop columns that aren't needed and shuffle data
+    df = df.drop(['observed_by', 'year_observed'], axis=1)
     df = df.sample(frac=1, random_state=42).reset_index(drop=True)
     df['species'] = df['species'].map(encoded_labels)
 
@@ -47,13 +49,24 @@ def preprocess_data(df, encoded_labels):
     labels = df['species']
     df.drop(['species'], axis=1)
 
-    # scale the data
-    # numerical_columns = ['aggressiveness', 'est_body_length', 'flight_speed', 'number_of_limbs', 'snout_length', 'wingspan']
-    # scaler = StandardScaler()
-    # df = scaler.fit_transform(df)
+    # scale the numerical data and encode categorical data
+    numerical_columns = [
+        'est_body_length', 'wingspan', 'flight_speed', 'number_of_limbs', 'snout_length',
+        'aggressiveness'
+        ]
+    scaler = StandardScaler()
+    df[numerical_columns] = scaler.fit_transform(df[numerical_columns])
 
-    # convert features to numerical features
-    df = pd.get_dummies(df)
+    categorical_features = ['gender', 'estimated_age', 'color_of_scales', 'color_of_eyes', 'color_of_wings',
+     'shape_of_snout', 'shape_of_teeth', 'scales_present', 'scale_texture', 'body_texture',
+     'shape_of_body', 'number_of_limbs', 'facial_spikes', 'frilled', 'length_of_horns',
+     'shape_of_horns', 'shape_of_tail', 'loc_of_sighting', 'is_venomous',
+     'breathing_fire_observed']
+    encoder = OneHotEncoder()
+    encoded_features = encoder.fit_transform(df[categorical_features]).toarray()
+    df_encoded = pd.DataFrame(encoded_features, columns=encoder.get_feature_names_out(categorical_features))
+    df = pd.concat([df, df_encoded], axis=1)
+    df = df.drop(categorical_features, axis=1)
 
     return df, labels
 
