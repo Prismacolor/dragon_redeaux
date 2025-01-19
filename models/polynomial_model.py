@@ -8,7 +8,7 @@ import numpy as np
 
 
 class PolynomialClassifier:
-    def __init__(self, degree, alpha=0.5):
+    def __init__(self, degree, alpha=10):
         self.degree = degree
         self.coefficients = None
         self.alpha = alpha  # for regularization
