@@ -1,6 +1,6 @@
 To do:
 
-starting with chinese fireball, rework the code to add variation
+starting with hungarian horntail, rework the code to add variation
 
 build both of the models and train them
 fine tune the models and save them

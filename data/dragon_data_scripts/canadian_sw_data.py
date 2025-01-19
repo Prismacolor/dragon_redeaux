@@ -70,7 +70,7 @@ for i in range(1, num_of_specimens):
         dragon['flight_speed'] = 60 * random.uniform(0.9, 1.1)
 
     elif dragon['gender'] == 'xis' and dragon['estimated_age'] == 'juvenile':
-        base_length = random.uniform(2, 6)
+        base_length = random.uniform(2, 8)
         dragon['est_body_length'] = base_length * random.uniform(0.9, 1.1)
         dragon['snout_length'] = base_length * random.uniform(0.1, 0.15)
         dragon['wingspan'] = base_length * random.uniform(2.0, 2.2)
@@ -78,7 +78,7 @@ for i in range(1, num_of_specimens):
         dragon['flight_speed'] = 65 * random.uniform(0.9, 1.1)
 
     elif dragon['gender'] == 'xis' and dragon['estimated_age'] == 'adult':
-        base_length = random.uniform(9, 12)
+        base_length = random.uniform(8, 12)
         dragon['est_body_length'] = base_length * random.uniform(0.9, 1.1)
         dragon['snout_length'] = base_length * random.uniform(0.1, 0.15)
         dragon['wingspan'] = base_length * random.uniform(2.5, 3.0)
