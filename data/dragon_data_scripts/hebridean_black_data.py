@@ -81,7 +81,7 @@ for i in range(1, num_of_specimens):
     dragon['scale_texture'] = 'rough'
     dragon['body_texture'] = 'scaled'
     dragon['shape_of_body'] = 'stocky'
-    dragon['number_of_limbs'] = 4
+    dragon['number_of_limbs'] = random.choice([3, 4])  # more aggressive species tend to fight and lose limbs
     dragon['facial_spikes'] = 'no'
     dragon['frilled'] = 'yes'
     dragon['length_of_horns'] = 'long'

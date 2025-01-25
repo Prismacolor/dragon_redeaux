@@ -14,7 +14,7 @@ columns = ['gender', 'estimated_age', 'color_of_scales', 'color_of_eyes', 'color
 gender = ['male', 'female']
 age = ['juvenile', 'adult', 'elder']
 locale = ['New Zealand', 'Australia', 'open ocean']
-colors = ['pearl', 'white', 'silver']
+colors = ['pearl', 'white', 'silver', 'blue']
 initials = ['AB', 'TR', 'NR', 'SR', 'BR', 'NN', 'FF', 'OK', 'NK', 'DR', 'LM', 'KN',
             'U', 'VM', 'SX', 'WX', 'BB', 'CT', 'OH', 'TX']
 
@@ -93,9 +93,9 @@ for i in range(1, num_of_specimens):
         dragon['flight_speed'] = base_speed * random.uniform(0.9, 1.1)
         dragon['breathing_fire_observed'] = 'no'
 
-    dragon['color_of_eyes'] = 'multicolored'
-    dragon['color_of_wings'] = random.choice(['blue', 'purple'])
-    dragon['shape_of_snout'] = 'pointed'
+    dragon['color_of_eyes'] = random.choice(['blue', 'multicolored'])
+    dragon['color_of_wings'] = random.choice(['blue', 'purple', 'grey'])
+    dragon['shape_of_snout'] = random.choice(['snub,', 'pointed'])
     dragon['shape_of_teeth'] = 'pointed'
     dragon['scales_present'] = 'yes'
     dragon['scale_texture'] = 'smooth'
@@ -104,8 +104,8 @@ for i in range(1, num_of_specimens):
     dragon['number_of_limbs'] = 2
     dragon['facial_spikes'] = 'no'
     dragon['frilled'] = 'no'
-    dragon['length_of_horns'] = 'medium'
-    dragon['shape_of_horns'] = 'pointed'
+    dragon['length_of_horns'] = random.choice(['small', 'medium'])
+    dragon['shape_of_horns'] = random.choice(['pointed', 'curved'])
     dragon['shape_of_tail'] = 'pointed'
     dragon['loc_of_sighting'] = random.choice(locale)
     dragon['is_venomous'] = 'no'
