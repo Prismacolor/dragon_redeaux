@@ -40,7 +40,20 @@ def main():
     # split data
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
-    poly_model = PolynomialClassifier(degree=1)
+    import pandas as pd
+    import seaborn as sns
+    import matplotlib.pyplot as plt
+
+    # Compute correlation matrix
+    correlation_matrix = X_train.corr()
+
+    # Plot heatmap
+    plt.figure(figsize=(10, 8))
+    sns.heatmap(correlation_matrix, annot=True, cmap="coolwarm")
+    plt.title("Feature Correlation Matrix")
+    plt.show()
+
+    poly_model = PolynomialClassifier(degree=3)
     poly_model.fit(X_train, y_train)
 
     polymodel_preds = poly_model.predict(X_test)

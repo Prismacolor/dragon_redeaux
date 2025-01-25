@@ -22,59 +22,76 @@ for i in range(1, num_of_specimens):
     dragon = {'gender': random.choice(gender), 'estimated_age': random.choice(age)}
 
     if dragon['gender'] == 'male' and dragon['estimated_age'] == 'juvenile':
-        dragon['est_body_length'] = random.uniform(1, 2)
-        dragon['snout_length'] = random.uniform(.25, .3)
-        dragon['wingspan'] = random.uniform(2, 5)
+        base_length = random.uniform(1, 3)
+        dragon['est_body_length'] = base_length * random.uniform(0.9, 1.1)
+        dragon['snout_length'] = base_length * random.uniform(0.25, 0.3)
+        dragon['wingspan'] = base_length * random.uniform(2.0, 2.5)
         dragon['aggressiveness'] = random.randint(8, 10)
-        dragon['flight_speed'] = random.uniform(65.0, 75.0)
+        dragon['flight_speed'] = 70 * random.uniform(0.9, 1.1)
+
     elif dragon['gender'] == 'male' and dragon['estimated_age'] == 'adult':
-        dragon['est_body_length'] = random.uniform(3, 4)
-        dragon['snout_length'] = random.uniform(.5, .75)
-        dragon['wingspan'] = random.uniform(6, 8)
+        base_length = random.uniform(3, 4)
+        dragon['est_body_length'] = base_length * random.uniform(0.9, 1.1)
+        dragon['snout_length'] = base_length * random.uniform(0.15, 0.2)
+        dragon['wingspan'] = base_length * random.uniform(2.0, 2.5)
         dragon['aggressiveness'] = random.randint(8, 9)
-        dragon['flight_speed'] = random.uniform(60.0, 65.0)
+        dragon['flight_speed'] = 62.5 * random.uniform(0.9, 1.1)
+
     elif dragon['gender'] == 'male' and dragon['estimated_age'] == 'elder':
-        dragon['est_body_length'] = random.uniform(4, 6)
-        dragon['snout_length'] = random.uniform(.75, .85)
-        dragon['wingspan'] = random.uniform(8, 13)
+        base_length = random.uniform(4, 6)
+        dragon['est_body_length'] = base_length * random.uniform(0.9, 1.1)
+        dragon['snout_length'] = base_length * random.uniform(0.15, 0.2)
+        dragon['wingspan'] = base_length * random.uniform(2.0, 2.2)
         dragon['aggressiveness'] = random.randint(8, 9)
-        dragon['flight_speed'] = random.uniform(55.0, 60.0)
+        dragon['flight_speed'] = 57.5 * random.uniform(0.9, 1.1)
+
     elif dragon['gender'] == 'female' and dragon['estimated_age'] == 'juvenile':
-        dragon['est_body_length'] = random.uniform(1, 2)
-        dragon['snout_length'] = random.uniform(.25, .3)
-        dragon['wingspan'] = random.uniform(2, 6)
+        base_length = random.uniform(1, 4)
+        dragon['est_body_length'] = base_length * random.uniform(0.9, 1.1)
+        dragon['snout_length'] = base_length * random.uniform(0.25, 0.3)
+        dragon['wingspan'] = base_length * random.uniform(2.0, 3.0)
         dragon['aggressiveness'] = random.randint(8, 10)
-        dragon['flight_speed'] = random.uniform(65.0, 75.0)
+        dragon['flight_speed'] = 70 * random.uniform(0.9, 1.1)
+
     elif dragon['gender'] == 'female' and dragon['estimated_age'] == 'adult':
-        dragon['est_body_length'] = random.uniform(4, 6)
-        dragon['snout_length'] = random.uniform(.5, .75)
-        dragon['wingspan'] = random.uniform(8, 15)
+        base_length = random.uniform(4, 6)
+        dragon['est_body_length'] = base_length * random.uniform(0.9, 1.1)
+        dragon['snout_length'] = base_length * random.uniform(0.15, 0.2)
+        dragon['wingspan'] = base_length * random.uniform(2.0, 2.5)
         dragon['aggressiveness'] = random.randint(8, 9)
-        dragon['flight_speed'] = random.uniform(60.0, 65.0)
+        dragon['flight_speed'] = 62.5 * random.uniform(0.9, 1.1)
+
     elif dragon['gender'] == 'female' and dragon['estimated_age'] == 'elder':
-        dragon['est_body_length'] = random.uniform(5, 7)
-        dragon['snout_length'] = random.uniform(.75, .95)
-        dragon['wingspan'] = random.uniform(12, 18)
+        base_length = random.uniform(5, 7)
+        dragon['est_body_length'] = base_length * random.uniform(0.9, 1.1)
+        dragon['snout_length'] = base_length * random.uniform(0.15, 0.2)
+        dragon['wingspan'] = base_length * random.uniform(2.0, 2.5)
         dragon['aggressiveness'] = random.randint(8, 9)
-        dragon['flight_speed'] = random.uniform(55.0, 60.0)
+        dragon['flight_speed'] = 57.5 * random.uniform(0.9, 1.1)
+
     elif dragon['gender'] == 'xis' and dragon['estimated_age'] == 'juvenile':
-        dragon['est_body_length'] = random.uniform(1, 2)
-        dragon['snout_length'] = random.uniform(.25, .5)
-        dragon['wingspan'] = random.uniform(2, 6)
+        base_length = random.uniform(1, 4)
+        dragon['est_body_length'] = base_length * random.uniform(0.9, 1.1)
+        dragon['snout_length'] = base_length * random.uniform(0.25, 0.3)
+        dragon['wingspan'] = base_length * random.uniform(2.0, 3.0)
         dragon['aggressiveness'] = random.randint(8, 10)
-        dragon['flight_speed'] = random.uniform(65.0, 75.0)
+        dragon['flight_speed'] = 70 * random.uniform(0.9, 1.1)
+
     elif dragon['gender'] == 'xis' and dragon['estimated_age'] == 'adult':
-        dragon['est_body_length'] = random.uniform(4, 7)
-        dragon['snout_length'] = random.uniform(.5, .75)
-        dragon['wingspan'] = random.uniform(10, 15)
+        base_length = random.uniform(3, 7)
+        dragon['est_body_length'] = base_length * random.uniform(0.9, 1.1)
+        dragon['snout_length'] = base_length * random.uniform(0.15, 0.2)
+        dragon['wingspan'] = base_length * random.uniform(2.0, 2.5)
         dragon['aggressiveness'] = random.randint(7, 9)
-        dragon['flight_speed'] = random.uniform(60.0, 65.0)
+        dragon['flight_speed'] = 62.5 * random.uniform(0.9, 1.1)
+
     elif dragon['gender'] == 'xis' and dragon['estimated_age'] == 'elder':
-        dragon['est_body_length'] = random.uniform(5, 8)
-        dragon['snout_length'] = random.uniform(.75, .95)
-        dragon['wingspan'] = random.uniform(12, 18)
+        base_length = random.uniform(5, 8)
+        dragon['est_body_length'] = base_length * random.uniform(0.9, 1.1)
+        dragon['snout_length'] = base_length * random.uniform(0.15, 0.2)
+        dragon['wingspan'] = base_length * random.uniform(2.0, 2.5)
         dragon['aggressiveness'] = random.randint(7, 9)
-        dragon['flight_speed'] = random.uniform(55.0, 60.0)
+        dragon['flight_speed'] = 57.5 * random.uniform(0.9, 1.1)
 
     dragon['color_of_scales'] = random.choice(colors)
     dragon['color_of_eyes'] = 'red'
