@@ -19,7 +19,7 @@ def create_main_dataframe():
     """
     dfs = []
 
-    directory = r"..\data\dragon_spreadsheets"
+    directory = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "dragon_spreadsheets")
     csv_files = [file for file in os.listdir(directory) if file.endswith(".csv")]
 
     for file in csv_files:
@@ -47,7 +47,7 @@ def preprocess_data(df, encoded_labels):
 
     # secure the labels
     labels = df['species']
-    df.drop(['species'], axis=1)
+    df = df.drop(['species'], axis=1)
 
     # scale the numerical data and encode categorical data
     numerical_columns = [

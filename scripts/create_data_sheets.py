@@ -4,7 +4,7 @@ import subprocess
 from concurrent.futures import ThreadPoolExecutor
 
 # Path to the folder containing the Python scripts
-scripts_folder = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data\\dragon_data_scripts")
+scripts_folder = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "dragon_data_scripts")
 
 
 def get_python_scripts(folder):

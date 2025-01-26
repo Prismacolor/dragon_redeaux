@@ -103,5 +103,5 @@ else:
     print("Directory already exists:", directory)
 
 specimens_df = pandas.DataFrame(specimens)
-specimens_df.to_csv('../dragon_spreadsheets/hungarian_horntail.csv', columns=columns, index=False)
+specimens_df.to_csv('../dragon_spreadsheets/hungarian_horntail.csv', columns=columns, index=False, mode='w')
 
