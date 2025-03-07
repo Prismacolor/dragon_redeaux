@@ -1,9 +1,13 @@
 """Script for building Polynomial classification model"""
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
+import os
+import pickle
 
 from models.polynomial_model import PolynomialClassifier
 from utils.helper import create_main_dataframe, preprocess_data, numerical_labels_to_categories
+
+models_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "models")
 
 encoded_labels = {
         'Amazonian Blue': 0,
@@ -27,7 +31,7 @@ reverse_labels = {v: k for k, v in encoded_labels.items()}
 def main():
     """
     main function for processing data and building/training model
-    :param: none
+    :params: none
     :return: none
     """
     # concatenate data into single dataframe
@@ -36,21 +40,7 @@ def main():
 
     # get features and labels
     X, y = preprocess_data(main_df, encoded_labels)
-
-    # split data
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
-
-    import seaborn as sns
-    import matplotlib.pyplot as plt
-
-    # Compute correlation matrix
-    correlation_matrix = X_train.corr()
-
-    # Plot heatmap
-    plt.figure(figsize=(10, 8))
-    sns.heatmap(correlation_matrix, annot=True, cmap="coolwarm")
-    plt.title("Feature Correlation Matrix")
-    plt.show()
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
 
     poly_model = PolynomialClassifier(degree=3)
     poly_model.fit(X_train, y_train)
@@ -62,6 +52,11 @@ def main():
 
     accuracy = accuracy_score(y_test_converted, polymodel_preds_converted)
     print("Accuracy:", accuracy)
+
+    if accuracy > 0.75:
+        with open('polynomial_model.pkl', 'wb') as file:
+            model_path = os.path.join(models_dir, "dragon_poly_model.pkl")
+            pickle.dump(poly_model, file)
 
 
 if __name__ == '__main__':
