@@ -1,12 +1,12 @@
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
+import joblib
 import os
-import pickle
 
 from utils.helper import create_main_dataframe, preprocess_data, numerical_labels_to_categories
-from models.neuralnetmodel import NeuralNetworkClassifier
+from model_classes.neuralnetmodel import NeuralNetworkClassifier
 
-models_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "models")
+models_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "dragon_models")
 
 encoded_labels = {
     'Amazonian Blue': 0,
@@ -42,7 +42,7 @@ def main():
     X_val, X_test, y_val, y_test = train_test_split(X_temp, y_temp, test_size=0.5, random_state=42)
     print(f"Data split: Train: {X_train.shape[0]}, Validation: {X_val.shape[0]}, Test: {X_test.shape[0]}")
 
-    nn_model = NeuralNetworkClassifier
+    nn_model = NeuralNetworkClassifier()
     nn_model.build_model(input_shape=X_train.shape[1])
 
     nn_model.fit(X_train, y_train, X_val, y_val, epochs=100, batch_size=64)
@@ -59,9 +59,10 @@ def main():
     print(f"converted test set accuracy: {accuracy:.2f}")
 
     if accuracy > 0.75:
-        model_path = os.path.join(models_dir, "neuralnet_model.pkl")
-        with open(model_path, 'wb') as file:
-            pickle.dump(nn_model, file)
+        model_path = os.path.join(models_dir, "neuralnet_model.joblib")
+        # with open(model_path, 'wb') as file:
+        #     pickle.dump(nn_model, file)
+        joblib.dump(nn_model, model_path)
         print(f"Model saved to {model_path}")
     else:
         print("Model accuracy is below threshold.")

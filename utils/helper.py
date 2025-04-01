@@ -42,6 +42,7 @@ def preprocess_data(df, encoded_labels):
     """
     # drop columns that aren't needed and shuffle data
     df = df.drop(['observed_by', 'year_observed'], axis=1)
+    df = df.dropna()
     df = df.sample(frac=1, random_state=42).reset_index(drop=True)
     df['species'] = df['species'].map(encoded_labels)
 

@@ -4,10 +4,10 @@ from sklearn.metrics import accuracy_score
 import os
 import pickle
 
-from models.polynomial_model import PolynomialClassifier
+from model_classes.polynomial_model import PolynomialClassifier
 from utils.helper import create_main_dataframe, preprocess_data, numerical_labels_to_categories
 
-models_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "models")
+models_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "dragon_models")
 
 encoded_labels = {
         'Amazonian Blue': 0,
