@@ -1,8 +1,19 @@
 """helper functions"""
+import logging
 import os
+import joblib
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler, StandardScaler, OneHotEncoder
 
+logging.basicConfig(
+    filename='util.log',  # Name of the log file
+    filemode='a',        # Append to the file ('w' to overwrite each time)
+    level=logging.DEBUG, # Log level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+    format='%(asctime)s - %(levelname)s - %(message)s'  # Log message format
+)
+
+models_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "dragon_models")
+model_path = os.path.join(models_dir, "onehot_encoder.joblib")
 
 columns = ['gender', 'estimated_age', 'color_of_scales', 'color_of_eyes', 'color_of_wings', 'est_body_length',
            'shape_of_snout', 'shape_of_teeth', 'scales_present', 'scale_texture', 'body_texture', 'snout_length',
@@ -40,6 +51,8 @@ def preprocess_data(df, encoded_labels):
     :param: df
     :return: dataframe df, series labels
     """
+    df = df.copy()
+
     # drop columns that aren't needed and shuffle data
     df = df.drop(['observed_by', 'year_observed'], axis=1)
     df = df.dropna()
@@ -60,16 +73,55 @@ def preprocess_data(df, encoded_labels):
 
     categorical_features = ['gender', 'estimated_age', 'color_of_scales', 'color_of_eyes', 'color_of_wings',
      'shape_of_snout', 'shape_of_teeth', 'scales_present', 'scale_texture', 'body_texture',
-     'shape_of_body', 'number_of_limbs', 'facial_spikes', 'frilled', 'length_of_horns',
+     'shape_of_body', 'facial_spikes', 'frilled', 'length_of_horns',
      'shape_of_horns', 'shape_of_tail', 'loc_of_sighting', 'is_venomous',
      'breathing_fire_observed']
     encoder = OneHotEncoder()
     encoded_features = encoder.fit_transform(df[categorical_features]).toarray()
     df_encoded = pd.DataFrame(encoded_features, columns=encoder.get_feature_names_out(categorical_features))
-    df = pd.concat([df, df_encoded], axis=1)
-    df = df.drop(categorical_features, axis=1)
+    df_concat = pd.concat([df, df_encoded], axis=1)
+    df_concat_onehot = df_concat.drop(categorical_features, axis=1)
 
-    return df, labels
+    joblib.dump(encoder, model_path)
+    print(f"Encoder saved to {model_path}")
+
+    return df_concat_onehot, labels
+
+
+def preprocess_prediction_data(df):
+    logging.info('loading encoder')
+    encoder = joblib.load(model_path)
+    logging.info(str(type(encoder)))
+
+    df = df.copy()
+    df = df.drop(['observed_by', 'year_observed'], axis=1)
+
+    # scale the numerical data and encode categorical data
+    numerical_columns = [
+        'est_body_length', 'wingspan', 'flight_speed', 'number_of_limbs', 'snout_length',
+        'aggressiveness'
+    ]
+
+    logging.info('scaling data')
+    scaler = StandardScaler()
+    df[numerical_columns] = scaler.fit_transform(df[numerical_columns])
+
+    categorical_features = ['gender', 'estimated_age', 'color_of_scales', 'color_of_eyes', 'color_of_wings',
+                            'shape_of_snout', 'shape_of_teeth', 'scales_present', 'scale_texture', 'body_texture',
+                            'shape_of_body', 'facial_spikes', 'frilled', 'length_of_horns',
+                            'shape_of_horns', 'shape_of_tail', 'loc_of_sighting', 'is_venomous',
+                            'breathing_fire_observed']
+
+    logging.info('encoding data')
+    encoded_features = encoder.transform(df[categorical_features]).toarray()
+    df_encoded = pd.DataFrame(encoded_features, columns=encoder.get_feature_names_out(categorical_features))
+    logging.info(df_encoded)
+
+    df_concat = pd.concat([df, df_encoded], axis=1)
+    logging.info(df_concat)
+    df_onehot = df_concat.drop(categorical_features, axis=1)
+
+    return df_onehot
 
 
 def numerical_labels_to_categories(y, reverse_labels):

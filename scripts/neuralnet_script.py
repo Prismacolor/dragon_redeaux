@@ -2,6 +2,11 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 import joblib
 import os
+import sys
+
+project_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+print(f"Project directory: {project_dir}")
+sys.path.insert(0, project_dir)
 
 from utils.helper import create_main_dataframe, preprocess_data, numerical_labels_to_categories
 from api_model_classes.neuralnetmodel import NeuralNetworkClassifier

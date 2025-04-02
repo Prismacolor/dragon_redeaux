@@ -1,36 +1,31 @@
 import joblib
+import logging
 import os
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
+import pandas as pd
 import sys
 import uvicorn
 
-from app_models import ModelInputs, PredictionResponse
-
-# load_dotenv()
-
-current_file = os.path.abspath(__file__)
-app_dir = os.path.dirname(current_file)
-project_root = os.path.dirname(app_dir)
-
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(project_root)
 sys.path.append(os.path.join(project_root, 'utils'))
 sys.path.append(os.path.join(project_root, 'api_model_classes'))
 
-# env_path = os.path.join(app_dir, '.env')
-# load_dotenv(dotenv_path=env_path)
+from app_models import ModelInputs, PredictionResponse
+from utils.helper import preprocess_prediction_data
 
-possible_env_paths = [
-    os.path.join(os.path.dirname(__file__), '.env'),  # app directory
-    os.path.join(os.path.dirname(os.path.dirname(__file__)), '.env'),  # project root
-    '.env'  # current working directory
-]
+load_dotenv()
 
-for env_path in possible_env_paths:
-    if os.path.exists(env_path):
-        print(f"Loading .env from: {env_path}")
-        load_dotenv(env_path)
-        break
+# Configure logging
+logging.basicConfig(
+    filename='util.log',  # Name of the log file
+    filemode='a',        # Append to the file ('w' to overwrite each time)
+    level=logging.DEBUG, # Log level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+    format='%(asctime)s - %(levelname)s - %(message)s'  # Log message format
+)
+
+logging.info(project_root)
 
 encoded_labels = {
         'Amazonian Blue': 0,
@@ -59,7 +54,6 @@ def load_model(model_type):
     :return: Loaded machine learning model or None
     """
     model_filename = f"{model_type}_model.joblib"
-    # models_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "dragon_models")
 
     current_file = os.path.abspath(__file__)
     app_dir = os.path.dirname(current_file)
@@ -67,7 +61,6 @@ def load_model(model_type):
     models_dir = os.path.join(project_root, "dragon_models")
 
     try:
-        # model_path = os.path.join(models_dir, model_filename)
         app_model = joblib.load(os.path.join(models_dir, model_filename))
 
         return app_model, 'ok'
@@ -102,37 +95,47 @@ async def predict(input_data: ModelInputs):
         raise HTTPException(status_code=500, detail=f"Model {model_type} not loaded. Re: {status}")
 
     try:
-        input_list = [
-            input_data.gender,
-            input_data.estimated_age,
-            input_data.color_of_scales,
-            input_data.color_of_eyes,
-            input_data.color_of_wings,
-            input_data.est_body_length,
-            input_data.shape_of_snout,
-            input_data.shape_of_teeth,
-            input_data.scales_present,
-            input_data.scale_texture,
-            input_data.body_texture,
-            input_data.snout_length,
-            input_data.shape_of_body,
-            input_data.wingspan,
-            input_data.number_of_limbs,
-            input_data.facial_spikes,
-            input_data.frilled,
-            input_data.length_of_horns,
-            input_data.shape_of_horns,
-            input_data.shape_of_tail,
-            input_data.loc_of_sighting,
-            input_data.aggressiveness,
-            input_data.flight_speed,
-            input_data.is_venomous,
-            input_data.breathing_fire_observed,
-            input_data.observed_by,
-            input_data.year_observed
-        ]
+        input_dict = {
+            'gender': [input_data.gender],
+            'estimated_age': [input_data.estimated_age],
+            'color_of_scales': [input_data.color_of_scales],
+            'color_of_eyes': [input_data.color_of_eyes],
+            'color_of_wings': [input_data.color_of_wings],
+            'est_body_length': [input_data.est_body_length],
+            'shape_of_snout': [input_data.shape_of_snout],
+            'shape_of_teeth': [input_data.shape_of_teeth],
+            'scales_present': [input_data.scales_present],
+            'scale_texture': [input_data.scale_texture],
+            'body_texture': [input_data.body_texture],
+            'snout_length': [input_data.snout_length],
+            'shape_of_body': [input_data.shape_of_body],
+            'wingspan': [input_data.wingspan],
+            'number_of_limbs': [input_data.number_of_limbs],
+            'facial_spikes': [input_data.facial_spikes],
+            'frilled': [input_data.frilled],
+            'length_of_horns': [input_data.length_of_horns],
+            'shape_of_horns': [input_data.shape_of_horns],
+            'shape_of_tail': [input_data.shape_of_tail],
+            'loc_of_sighting': [input_data.loc_of_sighting],
+            'aggressiveness': [input_data.aggressiveness],
+            'flight_speed': [input_data.flight_speed],
+            'is_venomous': [input_data.is_venomous],
+            'breathing_fire_observed': [input_data.breathing_fire_observed],
+            'observed_by': [input_data.observed_by],
+            'year_observed': [input_data.year_observed],
+            # Add a dummy species value - it will be dropped in preprocessing
+            'species': [0]
+        }
 
-        prediction_number = model.predict([input_list])
+        input_df = pd.DataFrame(input_dict)
+
+        # Apply your existing preprocessing function
+        processed_df = preprocess_prediction_data(input_df)
+        print(processed_df)
+
+        processed_input = processed_df.values  # convert to numpy array for keras
+
+        prediction_number = model.predict(processed_input)
         prediction_species = reverse_labels.get(prediction_number[0], "Unknown Species")
 
         return PredictionResponse(
