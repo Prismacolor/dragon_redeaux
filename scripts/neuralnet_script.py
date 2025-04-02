@@ -4,7 +4,7 @@ import joblib
 import os
 
 from utils.helper import create_main_dataframe, preprocess_data, numerical_labels_to_categories
-from model_classes.neuralnetmodel import NeuralNetworkClassifier
+from api_model_classes.neuralnetmodel import NeuralNetworkClassifier
 
 models_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "dragon_models")
 

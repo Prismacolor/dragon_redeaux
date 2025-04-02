@@ -2,12 +2,9 @@ import pytest
 import numpy as np
 import pandas as pd
 import os
-import pickle
 from unittest.mock import patch, MagicMock
 
-from models.polynomial_model import PolynomialClassifier
-from models.neuralnetmodel import NeuralNetworkClassifier
-from utils.helper import preprocess_data, numerical_labels_to_categories, create_main_dataframe
+from utils.helper import preprocess_data, numerical_labels_to_categories
 
 
 # Mock for neural network model
@@ -28,6 +25,41 @@ def sample_data():
         'color_of_eyes': ['red', 'yellow', 'multicolored'],
         'color_of_wings': ['grey', 'blue', 'purple'],
         'est_body_length': [3.5, 5.2, 4.7],
+        'shape_of_snout': ['snub', 'long', 'snub'],
+        'shape_of_teeth': ['pointed', 'serrated', 'pointed'],
+        'scales_present': ['partial', 'yes', 'no'],
+        'scale_texture': ['smooth', 'rough', 'smooth'],
+        'body_texture': ['scaled', 'scaled', 'scaled'],
+        'snout_length': [0.8, 1.2, 0.9],
+        'shape_of_body': ['lithe', 'muscular', 'lithe'],
+        'wingspan': [7.2, 10.5, 8.9],
+        'number_of_limbs': [2, 4, 2],
+        'facial_spikes': ['yes', 'no', 'yes'],
+        'frilled': ['yes', 'yes', 'no'],
+        'length_of_horns': ['long', 'medium', 'short'],
+        'shape_of_horns': ['spiny', 'pointed', 'twisted'],
+        'shape_of_tail': ['fluted', 'pointed', 'fluted'],
+        'loc_of_sighting': ['Brazil', 'Peru', 'open ocean'],
+        'aggressiveness': [4, 6, 3],
+        'flight_speed': [65.5, 58.2, 72.3],
+        'is_venomous': ['no', 'yes', 'no'],
+        'breathing_fire_observed': ['no', 'no', 'yes'],
+        'observed_by': ['AB', 'TR', 'NR'],
+        'year_observed': [2010, 2015, 2020],
+        'species': ['Amazonian Blue', 'Peruvian Vipertooth', 'Norwegian Ridgeback']
+    }
+    return pd.DataFrame(data)
+
+@pytest.fixture
+def sample_data_with_missing():
+    """Create sample data with missing values for testing"""
+    data = {
+        'gender': ['male', None, 'male'],
+        'estimated_age': ['juvenile', 'adult', 'elder'],
+        'color_of_scales': ['blue', 'grey', 'green'],
+        'color_of_eyes': ['red', 'yellow', 'multicolored'],
+        'color_of_wings': ['grey', 'blue', 'purple'],
+        'est_body_length': [3.5, 5.2, None],
         'shape_of_snout': ['snub', 'long', 'snub'],
         'shape_of_teeth': ['pointed', 'serrated', 'pointed'],
         'scales_present': ['partial', 'yes', 'no'],
@@ -133,7 +165,7 @@ def test_polynomial_classifier_prediction(mock_polynomial_model, sample_data, en
     assert all(isinstance(pred, (int, np.integer)) for pred in predictions)
 
 
-@patch('tensorflow.keras.models.Sequential')
+@patch('tensorflow.keras.dragon_models.Sequential')
 def test_neural_network_prediction(mock_sequential, mock_neural_model, sample_data, encoded_labels):
     """Test neural network predictions"""
     X, _ = preprocess_data(sample_data, encoded_labels)
@@ -158,22 +190,18 @@ def test_model_selection_from_env():
         assert model_type == 'neuralnet'
 
 
-# Error handling tests
-def test_missing_data_handling():  # TODO fix this test
-    """Test handling missing data"""
-    # Create sample with missing values
-    data_with_missing = {
-        'gender': ['male', None, 'male'],
-        'estimated_age': ['juvenile', 'adult', None],
-        'color_of_scales': ['blue', 'grey', 'green'],
-        'est_body_length': [3.5, None, 4.7],
-        'wingspan': [7.2, 10.5, 8.9],
-        'species': ['Amazonian Blue', 'Peruvian Vipertooth', 'Norwegian Ridgeback']
-    }
-    df = pd.DataFrame(data_with_missing)
+def test_missing_data_handling(sample_data_with_missing, encoded_labels):
+    """Test that preprocessing drops rows with missing values"""
+    df = pd.DataFrame(sample_data_with_missing)
 
-    # Test graceful failure or handling of missing data
-    with pytest.raises(Exception):
-        # This should raise an exception due to missing data
-        # Replace with actual preprocessing function call
-        preprocess_data(df, {})
+    test_encoded_labels = {
+        'Amazonian Blue': 0,
+        'Peruvian Vipertooth': 1,
+        'Norwegian Ridgeback': 2
+    }
+
+    X, y = preprocess_data(df, test_encoded_labels)
+
+    assert len(X) == 1, "Only one row should remain after dropping rows with NA values"
+    assert len(y) == 1, "Only one label should remain after dropping rows with NA values"
+    assert y[0] == 0, "The remaining label should be Amazonian Blue (0)"

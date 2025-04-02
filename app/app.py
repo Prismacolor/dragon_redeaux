@@ -1,13 +1,36 @@
 import joblib
-import pickle
 import os
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
+import sys
 import uvicorn
 
-from app.app_models import ModelInputs, PredictionResponse
+from app_models import ModelInputs, PredictionResponse
 
-load_dotenv()
+# load_dotenv()
+
+current_file = os.path.abspath(__file__)
+app_dir = os.path.dirname(current_file)
+project_root = os.path.dirname(app_dir)
+
+sys.path.append(project_root)
+sys.path.append(os.path.join(project_root, 'utils'))
+sys.path.append(os.path.join(project_root, 'api_model_classes'))
+
+# env_path = os.path.join(app_dir, '.env')
+# load_dotenv(dotenv_path=env_path)
+
+possible_env_paths = [
+    os.path.join(os.path.dirname(__file__), '.env'),  # app directory
+    os.path.join(os.path.dirname(os.path.dirname(__file__)), '.env'),  # project root
+    '.env'  # current working directory
+]
+
+for env_path in possible_env_paths:
+    if os.path.exists(env_path):
+        print(f"Loading .env from: {env_path}")
+        load_dotenv(env_path)
+        break
 
 encoded_labels = {
         'Amazonian Blue': 0,
