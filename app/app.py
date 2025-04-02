@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
 import uvicorn
 
-from app.app_models import ModelInputs, PredictionResponse
+from app_models import ModelInputs, PredictionResponse
 
 load_dotenv()
 
