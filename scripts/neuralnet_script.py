@@ -1,8 +1,16 @@
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
+import logging
 import joblib
 import os
 import sys
+
+logging.basicConfig(
+    filename='neural.log',
+    filemode='a',
+    level=logging.DEBUG,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
 
 project_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 print(f"Project directory: {project_dir}")

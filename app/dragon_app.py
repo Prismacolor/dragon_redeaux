@@ -56,9 +56,7 @@ def load_model(model_type):
     """
     model_filename = f"{model_type}_model.joblib"
 
-    current_file = os.path.abspath(__file__)
-    app_dir = os.path.dirname(current_file)
-    project_root = os.path.dirname(app_dir)
+    project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     models_dir = os.path.join(project_root, "dragon_models")
 
     try:
@@ -68,14 +66,23 @@ def load_model(model_type):
 
     except FileNotFoundError:
         logging.error(f"Model file {model_filename} not found")
-        return None, 'File Not Found'
+        return None, f'Model file {model_filename} not found'
 
     except Exception as e:
         logging.error(f"Error loading model: {e}")
-        return None, 'Could not load model'
+        return None, f"Error loading model: {e}"
 
 
 app = Flask(__name__)
+
+
+@app.route("/test", methods=["GET", "POST"])
+def test_endpoint():
+    """Simple test endpoint to confirm server is working"""
+    if request.method == "POST":
+        return jsonify({"message": "POST request received", "data": request.json})
+    else:
+        return jsonify({"message": "GET request received"})
 
 
 @app.route("/predict/<model_type>", methods=["POST"])
@@ -91,7 +98,6 @@ def predict(model_type):
         return jsonify({"error": f"Model {model_type} not loaded. Reason: {status}"}), 500
 
     try:
-        # Get JSON data from the request
         input_data = request.json
 
         if not input_data:
@@ -126,21 +132,13 @@ def predict(model_type):
             'breathing_fire_observed': [input_data.get('breathing_fire_observed')],
             'observed_by': [input_data.get('observed_by')],
             'year_observed': [input_data.get('year_observed')],
-            # Add a dummy species value - it will be dropped in preprocessing
-            'species': [0]
         }
 
         input_df = pd.DataFrame(input_dict)
-        logging.info(f"Input dataframe created with shape: {input_df.shape}")
 
-        # Debug statement to see if preprocessing is reached
-        logging.info("About to start preprocessing")
-
-        # Apply preprocessing function
+        logging.info("Starting preprocessing")
         processed_df = preprocess_prediction_data(input_df)
         logging.info(f"Processed dataframe shape: {processed_df.shape}")
-
-        # Check if processed data has the expected number of features
         logging.info(f"Number of features after preprocessing: {processed_df.shape[1]}")
 
         # Convert to numpy array for prediction
@@ -161,40 +159,6 @@ def predict(model_type):
         return jsonify({"error": str(e)}), 500
 
 
-# Add a debug endpoint for testing
-@app.route("/debug", methods=["GET"])
-def debug():
-    """Debug endpoint to check paths and encoder info"""
-    import os
-    import joblib
-
-    try:
-        # Check paths
-        debug_info = {
-            "cwd": os.getcwd(),
-            "project_root": project_root,
-            "sys_path": sys.path
-        }
-
-        # Try to access the encoder
-        models_dir = os.path.join(project_root, "dragon_models")
-        encoder_path = os.path.join(models_dir, "onehot_encoder.joblib")
-
-        debug_info["encoder_path"] = encoder_path
-        debug_info["encoder_exists"] = os.path.exists(encoder_path)
-
-        if debug_info["encoder_exists"]:
-            encoder = joblib.load(encoder_path)
-            categories = [len(cats) for cats in encoder.categories_]
-            debug_info["encoder_categories"] = categories
-            debug_info["total_features"] = sum(categories)
-
-        return jsonify(debug_info)
-
-    except Exception as e:
-        return jsonify({"error": str(e)})
-
-
 if __name__ == "__main__":
     # Run with debug=True to see detailed error messages
-    app.run(host="0.0.0.0", port=8000, debug=True)
+    app.run(host="0.0.0.0", port=8080, debug=True)

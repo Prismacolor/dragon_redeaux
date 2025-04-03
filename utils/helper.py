@@ -83,7 +83,7 @@ def preprocess_data(df, encoded_labels):
     df_concat_onehot = df_concat.drop(categorical_features, axis=1)
 
     joblib.dump(encoder, model_path)
-    print(f"Encoder saved to {model_path}")
+    logging.info(f"Encoder saved to {model_path}")
 
     return df_concat_onehot, labels
 
@@ -91,7 +91,6 @@ def preprocess_data(df, encoded_labels):
 def preprocess_prediction_data(df):
     logging.info('loading encoder')
     encoder = joblib.load(model_path)
-    logging.info(str(type(encoder)))
 
     df = df.copy()
     df = df.drop(['observed_by', 'year_observed'], axis=1)
@@ -115,10 +114,11 @@ def preprocess_prediction_data(df):
     logging.info('encoding data')
     encoded_features = encoder.transform(df[categorical_features]).toarray()
     df_encoded = pd.DataFrame(encoded_features, columns=encoder.get_feature_names_out(categorical_features))
-    logging.info(df_encoded)
+
+    logging.info('prediction columns')
+    logging.info(df_encoded.columns)
 
     df_concat = pd.concat([df, df_encoded], axis=1)
-    logging.info(df_concat)
     df_onehot = df_concat.drop(categorical_features, axis=1)
 
     return df_onehot
