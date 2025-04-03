@@ -138,8 +138,6 @@ def predict(model_type):
 
         logging.info("Starting preprocessing")
         processed_df = preprocess_prediction_data(input_df)
-        logging.info(f"Processed dataframe shape: {processed_df.shape}")
-        logging.info(f"Number of features after preprocessing: {processed_df.shape[1]}")
 
         # Convert to numpy array for prediction
         processed_input = processed_df.values

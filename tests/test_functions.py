@@ -165,7 +165,7 @@ def test_polynomial_classifier_prediction(mock_polynomial_model, sample_data, en
     assert all(isinstance(pred, (int, np.integer)) for pred in predictions)
 
 
-@patch('tensorflow.keras.dragon_models.Sequential')
+@patch('tensorflow.keras.Sequential')
 def test_neural_network_prediction(mock_sequential, mock_neural_model, sample_data, encoded_labels):
     """Test neural network predictions"""
     X, _ = preprocess_data(sample_data, encoded_labels)
@@ -205,3 +205,4 @@ def test_missing_data_handling(sample_data_with_missing, encoded_labels):
     assert len(X) == 1, "Only one row should remain after dropping rows with NA values"
     assert len(y) == 1, "Only one label should remain after dropping rows with NA values"
     assert y[0] == 0, "The remaining label should be Amazonian Blue (0)"
+
