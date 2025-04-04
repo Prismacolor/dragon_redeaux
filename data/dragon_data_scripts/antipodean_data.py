@@ -13,7 +13,7 @@ columns = ['gender', 'estimated_age', 'color_of_scales', 'color_of_eyes', 'color
            'breathing_fire_observed', 'breathing_ice_observed', 'observed_by', 'year_observed', 'species']
 
 colors = ['grey', 'pearl', 'white', 'silver', 'blue']
-locale = ['Australia', 'New Zealand', 'Open Ocean', 'Arctic', 'Papa New Guinea']
+locale = ['Australia', 'New Zealand', 'Open Ocean', 'Arctic', 'Papua New Guinea']
 initials = ['AB', 'TR', 'NR', 'SR', 'BR', 'NN', 'FF', 'OK', 'NK', 'DR', 'LM', 'KN',
             'U', 'VM', 'SX', 'WX', 'BB', 'CT', 'OH', 'TX']
 
