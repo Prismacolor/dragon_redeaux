@@ -1,11 +1,11 @@
 import joblib
-import logging
 import os
 from dotenv import load_dotenv
 from flask import Flask, request, jsonify
 import pandas as pd
 import sys
 from werkzeug.exceptions import InternalServerError
+from logger import logger
 
 # Setup project paths
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -16,16 +16,6 @@ sys.path.append(os.path.join(project_root, 'api_model_classes'))
 from utils.helper import preprocess_prediction_data
 
 load_dotenv()
-
-# Configure logging
-logging.basicConfig(
-    filename='util.log',
-    filemode='a',
-    level=logging.DEBUG,
-    format='%(asctime)s - %(levelname)s - %(message)s'
-)
-
-logging.info(f"Project root: {project_root}")
 
 # Define species labels
 encoded_labels = {
@@ -61,15 +51,15 @@ def load_model(model_type):
 
     try:
         app_model = joblib.load(os.path.join(models_dir, model_filename))
-        logging.info(f"Successfully loaded model: {model_filename}")
+        logger.info(f"Successfully loaded model: {model_filename}")
         return app_model, 'ok'
 
     except FileNotFoundError:
-        logging.error(f"Model file {model_filename} not found")
+        logger.error(f"Model file {model_filename} not found")
         return None, f'Model file {model_filename} not found'
 
     except Exception as e:
-        logging.error(f"Error loading model: {e}")
+        logger.error(f"Error loading model: {e}")
         return None, f"Error loading model: {e}"
 
 
@@ -136,7 +126,7 @@ def predict(model_type):
 
         input_df = pd.DataFrame(input_dict)
 
-        logging.info("Starting preprocessing")
+        logger.info("Starting preprocessing")
         processed_df = preprocess_prediction_data(input_df)
 
         # Convert to numpy array for prediction
@@ -153,7 +143,7 @@ def predict(model_type):
         })
 
     except Exception as e:
-        logging.exception(f"Error during prediction: {str(e)}")
+        logger.exception(f"Error during prediction: {str(e)}")
         return jsonify({"error": str(e)}), 500
 
 

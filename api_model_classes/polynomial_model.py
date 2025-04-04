@@ -5,6 +5,7 @@
 
 """
 import numpy as np
+from logger import logger
 
 
 class PolynomialClassifier:
@@ -14,9 +15,13 @@ class PolynomialClassifier:
         self.alpha = alpha  # for regularization
 
     def fit(self, X, y):
+        logger.info('Training polynomial model')
+
         X_poly = self._polynomial_features(X)
         identity = np.eye(X_poly.shape[1])
         self.coefficients = np.linalg.inv(X_poly.T @ X_poly + self.alpha * identity) @ X_poly.T @ y  # use ridge regression to avoid singular matrix
+
+        logger.info('Training complete.')
 
     def predict(self, X):
         X_poly = self._polynomial_features(X)

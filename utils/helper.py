@@ -1,16 +1,9 @@
 """helper functions"""
-import logging
 import os
 import joblib
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler, StandardScaler, OneHotEncoder
-
-logging.basicConfig(
-    filename='util.log',  # Name of the log file
-    filemode='a',        # Append to the file ('w' to overwrite each time)
-    level=logging.DEBUG, # Log level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
-    format='%(asctime)s - %(levelname)s - %(message)s'  # Log message format
-)
+from logger import logger
 
 models_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "dragon_models")
 model_path = os.path.join(models_dir, "onehot_encoder.joblib")
@@ -51,6 +44,7 @@ def preprocess_data(df, encoded_labels):
     :param: df
     :return: dataframe df, series labels
     """
+    logger.info('Preprocessing training data...')
     df = df.copy()
 
     # drop columns that aren't needed and shuffle data
@@ -82,14 +76,17 @@ def preprocess_data(df, encoded_labels):
     df_concat = pd.concat([df, df_encoded], axis=1)
     df_concat_onehot = df_concat.drop(categorical_features, axis=1)
 
+    logger.info("Training columns:")
+    logger.info(encoded_features)
+
     joblib.dump(encoder, model_path)
-    logging.info(f"Encoder saved to {model_path}")
+    logger.info(f"Encoder saved to {model_path}")
 
     return df_concat_onehot, labels
 
 
 def preprocess_prediction_data(df):
-    logging.info('loading encoder')
+    logger.info('preprocessing prediction data...')
     encoder = joblib.load(model_path)
 
     df = df.copy()
@@ -101,7 +98,6 @@ def preprocess_prediction_data(df):
         'aggressiveness'
     ]
 
-    logging.info('scaling data')
     scaler = StandardScaler()
     df[numerical_columns] = scaler.fit_transform(df[numerical_columns])
 
@@ -111,12 +107,11 @@ def preprocess_prediction_data(df):
                             'shape_of_horns', 'shape_of_tail', 'loc_of_sighting', 'is_venomous',
                             'breathing_fire_observed']
 
-    logging.info('encoding data')
     encoded_features = encoder.transform(df[categorical_features]).toarray()
     df_encoded = pd.DataFrame(encoded_features, columns=encoder.get_feature_names_out(categorical_features))
 
-    logging.info('prediction columns')
-    logging.info(df_encoded.columns)
+    logger.info('prediction columns')
+    logger.info(df_encoded.columns)
 
     df_concat = pd.concat([df, df_encoded], axis=1)
     df_onehot = df_concat.drop(categorical_features, axis=1)

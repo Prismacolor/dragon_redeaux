@@ -3,6 +3,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout, BatchNormalization
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.callbacks import EarlyStopping
+from logger import logger
 import numpy as np
 
 encoded_labels = {
@@ -28,6 +29,7 @@ class NeuralNetworkClassifier:
     def __init__(self):
         self.model = None
         self.num_classes = len(encoded_labels)
+        self.history = None
 
     def build_model(self, input_shape):
         """
@@ -35,6 +37,7 @@ class NeuralNetworkClassifier:
         :params: input_shape
         "returns: model
         """
+        logger.info('Building neural network model...')
         model = Sequential([
             # Input layer
             Dense(128, activation='relu', input_shape=(input_shape,)),
@@ -61,6 +64,8 @@ class NeuralNetworkClassifier:
             metrics=['accuracy']
         )
 
+        logger.info('Build complete')
+
         self.model = model
         return model
 
@@ -79,7 +84,7 @@ class NeuralNetworkClassifier:
         )
 
         # Train the model
-        history = self.model.fit(
+        self.history = self.model.fit(
             X_train, y_train,
             epochs=epochs,
             batch_size=batch_size,

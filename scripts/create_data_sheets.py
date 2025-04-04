@@ -1,7 +1,7 @@
 import os
-import logging
 import subprocess
 from concurrent.futures import ThreadPoolExecutor
+from logger import logger
 
 # Path to the folder containing the Python scripts
 scripts_folder = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "dragon_data_scripts")
@@ -25,7 +25,8 @@ def run_python_script(script):
 
 
 def run_scripts_in_folder(folder):
-    """Run all Python scripts in the specified folder."""
+    """Run all data creation Python scripts in the specified folder."""
+    logger.info('Creating data...')
     scripts = get_python_scripts(folder)
     max_workers = 4
 
@@ -33,9 +34,13 @@ def run_scripts_in_folder(folder):
         print(f"No Python scripts found in {folder}")
         return
 
-    # Execute the script and wait for it to complete
-    with ThreadPoolExecutor(max_workers=max_workers) as executor:  # runs scripts in parallel
-        executor.map(run_python_script, scripts)
+    try:# Execute the script and wait for it to complete
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:  # runs scripts in parallel
+            executor.map(run_python_script, scripts)
+    except Exception as e:
+        print(e)
+
+    logger.info('Data creation complete.')
 
 
 # Run the utility

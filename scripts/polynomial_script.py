@@ -1,8 +1,10 @@
 """Script for building Polynomial classification model"""
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
+import joblib
 import os
-import pickle
+
+from logger import logger
 
 from api_model_classes.polynomial_model import PolynomialClassifier
 from utils.helper import create_main_dataframe, preprocess_data, numerical_labels_to_categories
@@ -36,7 +38,7 @@ def main():
     """
     # concatenate data into single dataframe
     main_df = create_main_dataframe()
-    print(main_df.head(9))
+    logger.info(main_df.head(6))
 
     # get features and labels
     X, y = preprocess_data(main_df, encoded_labels)
@@ -51,12 +53,15 @@ def main():
     y_test_converted = numerical_labels_to_categories(y_test, reverse_labels)
 
     accuracy = accuracy_score(y_test_converted, polymodel_preds_converted)
-    print("Accuracy:", accuracy)
+    logger.info("Accuracy:", accuracy)
 
     if accuracy > 0.75:
         with open('polynomial_model.pkl', 'wb') as file:
             model_path = os.path.join(models_dir, "dragon_poly_model.pkl")
-            pickle.dump(poly_model, file)
+            joblib.dump(poly_model, file)
+        logger.info(f"Model saved to {model_path}")
+    else:
+        logger.warning('Accuracy is below threshold. Model not saved.')
 
 
 if __name__ == '__main__':

@@ -1,19 +1,12 @@
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
-import logging
 import joblib
 import os
 import sys
 
-logging.basicConfig(
-    filename='neural.log',
-    filemode='a',
-    level=logging.DEBUG,
-    format='%(asctime)s - %(levelname)s - %(message)s'
-)
+from logger import logger
 
 project_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-print(f"Project directory: {project_dir}")
 sys.path.insert(0, project_dir)
 
 from utils.helper import create_main_dataframe, preprocess_data, numerical_labels_to_categories
@@ -47,13 +40,13 @@ def main():
     :returns: none
     """
     main_df = create_main_dataframe()
-    print(main_df.head(9))
+    logger.info(main_df.head(6))
 
     X, y = preprocess_data(main_df, encoded_labels)
 
     X_train, X_temp, y_train, y_temp = train_test_split(X, y, test_size=0.3, random_state=42)
     X_val, X_test, y_val, y_test = train_test_split(X_temp, y_temp, test_size=0.5, random_state=42)
-    print(f"Data split: Train: {X_train.shape[0]}, Validation: {X_val.shape[0]}, Test: {X_test.shape[0]}")
+    logger.info(f"Data split: Train: {X_train.shape[0]}, Validation: {X_val.shape[0]}, Test: {X_test.shape[0]}")
 
     nn_model = NeuralNetworkClassifier()
     nn_model.build_model(input_shape=X_train.shape[1])
@@ -61,24 +54,22 @@ def main():
     nn_model.fit(X_train, y_train, X_val, y_val, epochs=100, batch_size=64)
 
     loss, accuracy = nn_model.evaluate(X_test, y_test)
-    print(f"test set loss: {loss:.2f}")
-    print(f"test set accuracy: {accuracy:.2f}")
+    logger.info(f"test set loss: {loss:.2f}")
+    logger.info(f"test set accuracy: {accuracy:.2f}")
 
     nn_preds = nn_model.predict(X_test)
     nn_preds_converted = numerical_labels_to_categories(nn_preds, reverse_labels)
     y_test_converted = numerical_labels_to_categories(y_test, reverse_labels)
 
     accuracy = accuracy_score(y_test_converted, nn_preds_converted)
-    print(f"converted test set accuracy: {accuracy:.2f}")
+    logger.info(f"converted test set accuracy: {accuracy:.2f}")
 
     if accuracy > 0.75:
         model_path = os.path.join(models_dir, "neuralnet_model.joblib")
-        # with open(model_path, 'wb') as file:
-        #     pickle.dump(nn_model, file)
         joblib.dump(nn_model, model_path)
-        print(f"Model saved to {model_path}")
+        logger.info(f"Model saved to {model_path}")
     else:
-        print("Model accuracy is below threshold.")
+        logger.warning('Accuracy is below threshold. Model not saved.')
 
 
 if __name__ == "__main__":
