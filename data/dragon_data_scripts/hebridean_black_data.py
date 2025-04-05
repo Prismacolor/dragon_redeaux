@@ -180,11 +180,14 @@ for i in range(num_of_specimens):
 
     dragon['is_venomous'] = 'no'
 
-    dragon['breathing_fire_observed'] = random.choices(
-        ['yes', 'no'],
-        weights=[70, 30],  # 70% chance of fire breathing observed
-        k=1
-    )[0]
+    if dragon['estimated_age']  == 'juvenile':
+        dragon['breathing_fire_observed'] = 'no'
+    else:
+        dragon['breathing_fire_observed'] = random.choices(
+            ['yes', 'no'],
+            weights=[70, 30],  # 70% chance of fire breathing observed
+            k=1
+        )[0]
 
     dragon['breathing_ice_observed'] = 'no'
 

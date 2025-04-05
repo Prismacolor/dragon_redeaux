@@ -101,9 +101,8 @@ for i in range(num_of_specimens):
         dragon['flight_speed'] = 0
 
     fire_chance = 0.0
-    if age_choice == 'juvenile':
-        fire_chance = 0.05  # 5% chance for juveniles
-    elif age_choice in ['adult', 'elder']:
+
+    if age_choice in ['adult', 'elder']:
         fire_chance = 0.25  # 25% chance for adults/elders
     else:
         fire_chance = 0.15  # 15% chance when age unknown

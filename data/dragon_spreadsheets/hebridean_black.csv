@@ -1,390 +1,306 @@
 gender,estimated_age,color_of_scales,color_of_eyes,color_of_wings,est_body_length,shape_of_snout,shape_of_teeth,scales_present,scale_texture,body_texture,feathers_present,snout_length,shape_of_body,wingspan,number_of_limbs,facial_spikes,frilled,length_of_horns,shape_of_horns,shape_of_tail,loc_of_sighting,aggressiveness,flight_speed,is_venomous,breathing_fire_observed,breathing_ice_observed,observed_by,year_observed,species
-female,adult,white,purple,white,22.708756415627928,square,curved,partial,rough,mixed,no,0.0,stocky,44.80653857914764,4,yes,no,long,curved,club,Scotland,8,37.10422640707082,no,no,no,DR,1995,Hebridean Black
-male,unknown,mottled,green,mottled,14.676096554613345,square,curved,yes,rough,scaled,no,0.0,stocky,35.038473195295786,4,yes,no,long,curved,club,Ireland,9,35.51866859397961,no,yes,no,VM,2001,Hebridean Black
-female,adult,black,purple,black,0.0,snub,curved,yes,rough,scaled,no,2.465612006852615,stocky,43.84028852391161,4,yes,no,long,curved,club,Scotland,8,0.0,no,yes,no,VM,1993,Hebridean Black
-female,elder,grey,blue,mottled,0.0,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Open Ocean,8,0.0,no,yes,no,KN,2013,Hebridean Black
-unknown,elder,grey,blue,black,21.096383482875073,square,curved,yes,rough,scaled,no,2.80716119900066,stocky,0.0,4,yes,no,long,curved,club,Open Ocean,8,34.80171548151217,no,yes,no,AB,2023,Hebridean Black
-male,adult,grey,purple,black,12.677137179642996,snub,curved,yes,rough,scaled,no,1.3775611208028238,stocky,23.609060244751667,3,yes,no,long,curved,club,Ireland,9,34.13928893784034,no,no,no,TR,1996,Hebridean Black
-unknown,elder,mottled,blue,black,0.0,square,curved,yes,rough,scaled,no,3.4068582552714903,stocky,0.0,4,yes,no,long,curved,club,Scotland,9,34.50861140556319,no,yes,no,SX,2020,Hebridean Black
-male,adult,grey,purple,mottled,16.49740080441318,snub,curved,yes,rough,scaled,no,1.7297571069037547,stocky,24.728423941209208,3,yes,no,long,curved,club,Scotland,8,36.241670338733286,no,yes,no,KN,2015,Hebridean Black
-female,unknown,grey,blue,mottled,0.0,square,curved,partial,rough,mixed,no,4.1686841491547195,stocky,0.0,4,yes,no,long,curved,club,Scotland,8,0.0,no,yes,no,VM,1975,Hebridean Black
-male,unknown,white,purple,white,0.0,snub,curved,yes,rough,scaled,no,2.637705179268442,stocky,0.0,4,yes,no,long,curved,club,Wales,10,0.0,no,yes,no,DR,1997,Hebridean Black
-female,unknown,grey,purple,black,31.67153127660612,snub,curved,yes,rough,scaled,no,0.0,stocky,63.434090712212715,4,yes,no,long,curved,club,Britain,7,39.652863407150804,no,yes,no,U,1975,Hebridean Black
-unknown,elder,grey,purple,black,0.0,snub,curved,partial,rough,mixed,no,0.0,stocky,39.5385346922665,4,yes,no,long,curved,club,Ireland,9,36.161191369768446,no,no,no,WX,1988,Hebridean Black
-male,adult,black,green,black,0.0,square,curved,yes,rough,scaled,no,2.0428127251814048,stocky,0.0,2,yes,no,long,curved,club,Britain,7,37.58327986859106,no,yes,no,SR,1988,Hebridean Black
-unknown,juvenile,black,purple,mottled,22.6650517724402,snub,curved,yes,rough,scaled,no,2.257608025167076,stocky,0.0,4,yes,no,long,curved,club,Wales,10,50.869333444358354,no,no,no,OH,2021,Hebridean Black
-unknown,unknown,black,blue,black,0.0,square,curved,partial,rough,mixed,no,3.5321134683743614,stocky,65.61994436367814,4,yes,no,long,curved,club,Ireland,7,36.06188854804323,no,yes,no,NK,1994,Hebridean Black
-unknown,juvenile,grey,purple,black,28.829914622621757,snub,curved,yes,rough,scaled,no,5.1447964939032484,stocky,78.78548054057818,4,yes,no,long,curved,club,Scotland,7,0.0,no,yes,no,U,2009,Hebridean Black
-female,unknown,white,blue,white,15.925738822168515,snub,curved,yes,rough,scaled,no,2.2576727985670906,stocky,32.80180992097046,4,yes,no,long,curved,club,Ireland,7,34.97242763876926,no,no,no,FF,1993,Hebridean Black
-unknown,elder,grey,blue,mottled,29.689028414308503,square,curved,yes,rough,scaled,no,4.098709835724176,stocky,63.779128589355324,2,yes,no,long,curved,club,Scotland,8,0.0,no,yes,no,LM,2003,Hebridean Black
-female,elder,white,blue,white,0.0,snub,curved,yes,rough,scaled,no,6.562708198059577,stocky,101.6525736417886,4,yes,no,long,curved,club,Scotland,8,34.76476172885366,no,yes,no,SR,1991,Hebridean Black
-unknown,juvenile,black,blue,mottled,18.068547182099902,snub,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Britain,10,47.348601831833854,no,yes,no,OH,1994,Hebridean Black
-unknown,elder,grey,blue,mottled,0.0,square,curved,yes,rough,scaled,no,1.618297300680218,stocky,0.0,4,yes,no,long,curved,club,Britain,9,40.28073749725282,no,yes,no,OH,1983,Hebridean Black
-female,juvenile,black,purple,black,0.0,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,3,yes,no,long,curved,club,Scotland,10,48.456178034723855,no,no,no,NN,1996,Hebridean Black
-unknown,elder,black,purple,black,22.209567786029545,snub,curved,yes,rough,scaled,no,0.0,stocky,48.89000900875579,4,yes,no,long,curved,club,Scotland,7,35.89484873921754,no,no,no,NK,1980,Hebridean Black
-female,unknown,grey,blue,black,20.685386092515802,snub,curved,yes,rough,scaled,no,3.0273360779736893,stocky,40.790123408285744,4,yes,no,long,curved,club,Wales,7,40.222882187821185,no,yes,no,OK,1999,Hebridean Black
-female,juvenile,grey,blue,black,0.0,square,curved,yes,rough,scaled,no,3.634821522544875,stocky,44.498941079553916,3,yes,no,long,curved,club,Wales,8,44.727876100319854,no,yes,no,BR,1984,Hebridean Black
-male,unknown,grey,green,mottled,29.3083583140745,snub,curved,yes,rough,scaled,no,3.952572395890619,stocky,0.0,4,yes,no,long,curved,club,Wales,9,37.6415560094579,no,no,no,NN,1995,Hebridean Black
-female,unknown,grey,purple,black,23.61102187597202,square,curved,yes,rough,scaled,no,3.7584706841530666,stocky,0.0,4,yes,no,long,curved,club,Scotland,8,35.57345606487444,no,no,no,CT,1977,Hebridean Black
-unknown,unknown,mottled,blue,mottled,0.0,snub,curved,yes,rough,scaled,no,2.571266805913304,stocky,58.46847861439143,4,yes,no,long,curved,club,Scotland,9,0.0,no,yes,no,VM,1990,Hebridean Black
-male,unknown,black,purple,black,29.086009542753807,square,curved,yes,rough,scaled,no,0.0,stocky,73.6845030635655,4,yes,no,long,curved,club,Britain,8,0.0,no,yes,no,SR,2013,Hebridean Black
-unknown,adult,black,purple,black,16.054362801245798,square,curved,yes,rough,scaled,no,0.0,stocky,36.937869684474634,4,yes,no,long,curved,club,Britain,7,38.17761961316425,no,yes,no,LM,1996,Hebridean Black
-female,elder,black,green,black,30.006833171017657,snub,curved,yes,rough,scaled,no,0.0,stocky,68.75569271929439,4,yes,no,long,curved,club,Scotland,7,40.26594813825362,no,no,no,BR,2005,Hebridean Black
-unknown,adult,mottled,purple,black,28.063924998118406,square,curved,yes,rough,scaled,no,0.0,stocky,56.967588428478834,4,yes,no,long,curved,club,Britain,8,37.50370641292383,no,yes,no,U,1994,Hebridean Black
-male,adult,black,blue,black,20.482160139911755,square,curved,yes,rough,scaled,no,2.6644485055960416,stocky,0.0,3,yes,no,long,curved,club,Scotland,9,0.0,no,yes,no,OK,1980,Hebridean Black
-unknown,elder,black,purple,black,28.439248129246025,snub,curved,yes,rough,scaled,no,0.0,stocky,67.03916396255478,4,yes,no,long,curved,club,Ireland,10,36.75331741733268,no,yes,no,NN,2008,Hebridean Black
-female,unknown,grey,blue,mottled,25.38325616039071,square,curved,yes,rough,scaled,no,3.1411052941912128,stocky,0.0,4,yes,no,long,curved,club,Wales,8,37.799569312215134,no,yes,no,BB,1977,Hebridean Black
-unknown,unknown,grey,blue,mottled,0.0,snub,curved,yes,rough,scaled,no,3.4970927722846947,stocky,59.57161120521477,4,yes,no,long,curved,club,Open Ocean,8,0.0,no,yes,no,OH,1997,Hebridean Black
-female,adult,grey,purple,mottled,27.16177840438628,snub,curved,yes,rough,scaled,no,0.0,stocky,52.173483253000526,4,yes,no,long,curved,club,Wales,8,35.38739765373821,no,yes,no,LM,1977,Hebridean Black
-unknown,unknown,grey,blue,mottled,0.0,square,curved,yes,rough,scaled,no,2.3708214928955624,stocky,49.43975712607897,4,yes,no,long,curved,club,Britain,9,36.16638949034377,no,yes,no,TX,1975,Hebridean Black
-female,unknown,black,purple,mottled,26.398434356674116,square,curved,yes,rough,mixed,no,0.0,stocky,60.808432987952365,4,yes,no,long,curved,club,Ireland,10,0.0,no,yes,no,AB,2021,Hebridean Black
-unknown,unknown,black,purple,black,28.12177365241305,snub,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Britain,7,39.16237020218997,no,yes,no,TX,1979,Hebridean Black
-unknown,unknown,grey,blue,black,26.872333948814042,square,curved,yes,rough,scaled,no,0.0,stocky,66.65347415964888,4,yes,no,long,curved,club,Scotland,8,0.0,no,yes,no,TR,2015,Hebridean Black
-male,elder,black,blue,mottled,0.0,snub,curved,yes,rough,scaled,no,0.0,stocky,51.60897229752997,4,yes,no,long,curved,club,Open Ocean,7,37.297311404448955,no,no,no,KN,1999,Hebridean Black
-unknown,adult,mottled,green,mottled,0.0,snub,curved,yes,rough,scaled,no,2.245729717312341,stocky,38.325264273971214,4,yes,no,long,curved,club,Scotland,7,0.0,no,yes,no,U,2021,Hebridean Black
-female,adult,black,purple,black,24.756883509085416,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Wales,9,37.93486452407687,no,yes,no,OH,2009,Hebridean Black
-male,elder,white,blue,white,21.301607141588107,snub,curved,yes,rough,scaled,no,0.0,stocky,52.81680823153191,4,yes,no,long,curved,club,Scotland,7,37.719299727401776,no,yes,no,CT,1980,Hebridean Black
-female,unknown,grey,blue,mottled,19.034289559983428,square,curved,yes,rough,scaled,no,0.0,stocky,41.196736519281465,4,yes,no,long,curved,club,Britain,9,0.0,no,yes,no,NK,1990,Hebridean Black
-female,adult,mottled,green,mottled,19.465583191690172,square,curved,yes,rough,mixed,no,2.7538725602037206,stocky,0.0,4,yes,no,long,curved,club,Scotland,10,36.7376774500352,no,yes,no,CT,2014,Hebridean Black
-male,juvenile,black,purple,mottled,5.595686803297756,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,3,yes,no,long,curved,club,Britain,9,0.0,no,yes,no,NN,2016,Hebridean Black
-male,unknown,grey,purple,black,27.288932868679833,square,curved,yes,rough,scaled,no,4.1507654661130164,stocky,66.38955414200126,4,yes,no,long,curved,club,Scotland,7,0.0,no,yes,no,SX,2015,Hebridean Black
-unknown,juvenile,black,blue,mottled,19.304786184190814,square,curved,yes,rough,scaled,no,2.2684318051086763,stocky,0.0,4,yes,no,long,curved,club,Wales,7,51.68453111259504,no,no,no,TR,2002,Hebridean Black
-female,elder,grey,blue,mottled,0.0,square,curved,partial,rough,mixed,no,0.0,stocky,68.43762463575061,4,yes,no,long,curved,club,Scotland,8,35.30759540786956,no,no,no,CT,1977,Hebridean Black
-male,elder,black,blue,black,17.38052638897728,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,3,yes,no,long,curved,club,Scotland,8,0.0,no,yes,no,OK,1990,Hebridean Black
-unknown,elder,black,blue,black,0.0,square,curved,yes,rough,mixed,no,4.061415551060582,stocky,67.53291706498693,2,yes,no,long,curved,club,Scotland,8,37.80870250088134,no,yes,no,DR,2014,Hebridean Black
-male,unknown,mottled,blue,mottled,27.02259286349489,snub,curved,yes,rough,scaled,no,2.794900062379227,stocky,52.84620808805261,3,yes,no,long,curved,club,Britain,7,37.465502610963505,no,no,no,TX,2013,Hebridean Black
-unknown,unknown,grey,purple,mottled,17.83859461118239,snub,curved,yes,rough,scaled,no,2.4034522827942038,stocky,0.0,3,yes,no,long,curved,club,Scotland,9,37.98905034998344,no,yes,no,WX,2013,Hebridean Black
-female,juvenile,black,blue,mottled,14.911313042006675,snub,curved,yes,rough,scaled,no,1.4025078040587025,stocky,40.514192496690384,3,yes,no,long,curved,club,Scotland,9,0.0,no,yes,no,DR,1986,Hebridean Black
-female,unknown,black,purple,mottled,0.0,snub,curved,yes,rough,scaled,no,3.4386757709668854,stocky,0.0,3,yes,no,long,curved,club,Britain,9,40.94057642804881,no,no,no,BR,2014,Hebridean Black
-unknown,elder,grey,purple,mottled,0.0,square,curved,yes,rough,scaled,no,0.0,stocky,43.89959784898815,4,yes,no,long,curved,club,Wales,9,40.92206658662252,no,no,no,WX,2006,Hebridean Black
-female,unknown,black,blue,mottled,0.0,snub,curved,yes,rough,scaled,no,2.953203727584451,stocky,55.395933279532926,4,yes,no,long,curved,club,Scotland,8,39.27059345996951,no,yes,no,CT,2003,Hebridean Black
-female,elder,black,blue,mottled,0.0,snub,curved,yes,rough,scaled,no,4.8461001585469115,stocky,73.81786151076614,4,yes,no,long,curved,club,Scotland,7,34.599168200703325,no,yes,no,DR,1994,Hebridean Black
-unknown,elder,black,blue,mottled,21.140833932334075,square,curved,yes,rough,mixed,no,0.0,stocky,46.8096853269516,4,yes,no,long,curved,club,Scotland,10,35.95835250397022,no,yes,no,SX,1984,Hebridean Black
-unknown,adult,grey,green,black,14.730976829164712,snub,curved,yes,rough,scaled,no,0.0,stocky,29.926957774821467,4,yes,no,long,curved,club,Scotland,10,40.947264751733556,no,yes,no,OK,2021,Hebridean Black
-male,unknown,grey,blue,black,19.396301855021406,snub,curved,yes,rough,scaled,no,2.7106378055412557,stocky,43.28105487945236,4,yes,no,long,curved,club,Scotland,9,0.0,no,no,no,U,2000,Hebridean Black
-female,unknown,grey,green,black,0.0,snub,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Scotland,8,38.34723298697655,no,yes,no,FF,1995,Hebridean Black
-male,elder,black,purple,black,0.0,square,curved,yes,rough,scaled,no,1.9398993498892672,stocky,42.098871293792435,2,yes,no,long,curved,club,Scotland,9,36.16318627473078,no,yes,no,LM,2010,Hebridean Black
-unknown,elder,grey,blue,black,31.388883935395796,square,curved,yes,rough,scaled,no,2.9387776193763746,stocky,68.91914122299603,4,yes,no,long,curved,club,Wales,9,34.012886365617256,no,no,no,TX,2020,Hebridean Black
-unknown,elder,grey,blue,black,23.472902402742314,square,curved,yes,rough,scaled,no,3.3840968998846863,stocky,0.0,4,yes,no,long,curved,club,Ireland,8,34.30751524636815,no,yes,no,KN,1975,Hebridean Black
-female,unknown,black,purple,black,27.3958084886355,snub,curved,yes,rough,scaled,no,2.6783451699649534,stocky,62.07495551451243,4,yes,no,long,curved,club,Scotland,10,0.0,no,yes,no,TX,1989,Hebridean Black
-male,elder,grey,purple,black,23.388516254146666,snub,curved,yes,rough,scaled,no,2.9805367557132056,stocky,54.5241853900893,4,yes,no,long,curved,club,Wales,9,34.76040276792278,no,yes,no,VM,2016,Hebridean Black
-unknown,juvenile,black,blue,black,24.731806356724487,snub,curved,yes,rough,scaled,no,2.568356744578301,stocky,0.0,4,yes,no,long,curved,club,Open Ocean,10,50.38917873633478,no,yes,no,OH,2001,Hebridean Black
-female,unknown,grey,purple,black,27.47742321003899,square,curved,yes,rough,scaled,no,0.0,stocky,62.85870814663271,4,yes,no,long,curved,club,Scotland,8,37.62905539639392,no,yes,no,SX,2014,Hebridean Black
-unknown,elder,black,green,black,22.355701276083025,square,curved,yes,rough,scaled,no,2.4890026533898504,stocky,54.08725166722587,4,yes,no,long,curved,club,Britain,9,0.0,no,yes,no,KN,2004,Hebridean Black
-male,unknown,black,purple,black,27.365757004688007,snub,curved,yes,rough,scaled,no,3.1379079235304705,stocky,0.0,4,yes,no,long,curved,club,Ireland,9,0.0,no,yes,no,AB,2023,Hebridean Black
-unknown,unknown,grey,purple,black,17.344534538181502,snub,curved,yes,rough,scaled,no,2.441750798808077,stocky,40.44151586656149,4,yes,no,long,curved,club,Britain,8,0.0,no,yes,no,FF,1984,Hebridean Black
-female,elder,grey,blue,mottled,0.0,square,curved,yes,rough,scaled,no,3.189010457887896,stocky,0.0,4,yes,no,long,curved,club,Scotland,9,40.191936534308965,no,no,no,OK,1995,Hebridean Black
-unknown,unknown,mottled,purple,mottled,21.567608534979023,snub,curved,yes,rough,scaled,no,3.0080141674326235,stocky,0.0,4,yes,no,long,curved,club,Scotland,7,0.0,no,no,no,CT,1988,Hebridean Black
-male,juvenile,mottled,purple,mottled,0.0,square,curved,yes,rough,scaled,no,1.0230796882585451,stocky,17.8156616169036,4,yes,no,long,curved,club,Scotland,9,0.0,no,no,no,AB,1978,Hebridean Black
-male,elder,grey,blue,black,0.0,snub,curved,yes,rough,scaled,no,0.0,stocky,57.86181707111807,4,yes,no,long,curved,club,Scotland,8,34.45894296101523,no,yes,no,VM,1990,Hebridean Black
-female,adult,white,purple,white,0.0,square,curved,yes,rough,scaled,no,0.0,stocky,43.03527725727782,4,yes,no,long,curved,club,Scotland,8,40.41287002599068,no,yes,no,KN,2009,Hebridean Black
-female,juvenile,black,purple,black,0.0,snub,curved,yes,rough,scaled,no,2.4948048960856712,stocky,31.618575306216464,4,yes,no,long,curved,club,Scotland,8,44.0954581768219,no,yes,no,KN,1999,Hebridean Black
-unknown,adult,grey,blue,mottled,0.0,square,curved,yes,rough,scaled,no,2.6779016495751056,stocky,33.217819725005974,4,yes,no,long,curved,club,Open Ocean,8,36.834491815958096,no,yes,no,SR,1980,Hebridean Black
-female,unknown,black,purple,mottled,0.0,snub,curved,yes,rough,scaled,no,2.72181976225762,stocky,0.0,4,yes,no,long,curved,club,Scotland,8,38.55409974131165,no,no,no,OH,2003,Hebridean Black
-male,juvenile,mottled,blue,mottled,5.880191742954075,snub,curved,yes,rough,scaled,no,0.6055612174056844,stocky,10.600766562510403,4,yes,no,long,curved,club,Scotland,9,49.298506768562575,no,no,no,NN,1994,Hebridean Black
-unknown,unknown,black,purple,mottled,15.522857554411303,snub,curved,yes,rough,scaled,no,0.0,stocky,38.11627099685948,4,yes,no,long,curved,club,Ireland,9,37.01199139253882,no,no,no,OK,1983,Hebridean Black
-female,unknown,black,purple,mottled,28.709551752620683,snub,curved,yes,rough,scaled,no,3.5949339007568106,stocky,0.0,4,yes,no,long,curved,club,Wales,8,39.28986600364386,no,yes,no,CT,2011,Hebridean Black
-unknown,elder,white,purple,white,27.478506232543232,square,curved,yes,rough,mixed,no,4.322671287831166,stocky,0.0,4,yes,no,long,curved,club,Scotland,8,34.32338065149328,no,yes,no,CT,2020,Hebridean Black
-male,adult,black,blue,black,11.76939836425122,square,curved,yes,rough,scaled,no,1.675548912303634,stocky,0.0,4,yes,no,long,curved,club,Scotland,9,36.83938561742747,no,no,no,NN,1982,Hebridean Black
-male,elder,grey,purple,black,25.655388792327024,snub,curved,yes,rough,scaled,no,0.0,stocky,49.538793465552,4,yes,no,long,curved,club,Ireland,9,0.0,no,yes,no,NK,2023,Hebridean Black
-female,juvenile,grey,blue,mottled,0.0,square,curved,yes,rough,scaled,no,1.407517033170376,stocky,0.0,4,yes,no,long,curved,club,Britain,9,50.21265533654389,no,no,no,KN,1991,Hebridean Black
-female,unknown,grey,purple,mottled,0.0,square,curved,yes,rough,scaled,no,0.0,stocky,52.315413286613364,4,yes,no,long,curved,club,Wales,9,0.0,no,yes,no,OH,1982,Hebridean Black
-unknown,unknown,black,blue,black,24.5361680274007,square,curved,yes,rough,scaled,no,4.156703081459329,stocky,0.0,4,yes,no,long,curved,club,Scotland,8,37.100610861066826,no,no,no,LM,1985,Hebridean Black
-unknown,juvenile,grey,purple,black,0.0,square,curved,yes,rough,scaled,no,4.39934142316136,stocky,55.95468186678765,4,yes,no,long,curved,club,Scotland,8,44.14087556882444,no,yes,no,TX,1975,Hebridean Black
-male,juvenile,grey,purple,mottled,11.973237765806871,square,curved,yes,rough,scaled,no,1.606062497401197,stocky,0.0,4,yes,no,long,curved,club,Scotland,9,46.134594225295366,no,yes,no,TR,2020,Hebridean Black
-unknown,elder,black,blue,black,0.0,snub,curved,yes,rough,scaled,no,2.339622336529899,stocky,0.0,3,yes,no,long,curved,club,Scotland,8,33.89617539266351,no,no,no,SR,1998,Hebridean Black
-male,elder,black,blue,black,0.0,square,curved,yes,rough,scaled,no,3.502632255643327,stocky,55.08799107392599,2,yes,no,long,curved,club,Scotland,8,38.77209711834775,no,yes,no,LM,1987,Hebridean Black
-female,unknown,black,purple,mottled,0.0,snub,curved,yes,rough,scaled,no,3.5120349536176505,stocky,0.0,3,yes,no,long,curved,club,Open Ocean,10,39.07990804436525,no,yes,no,NK,2009,Hebridean Black
-female,adult,black,blue,mottled,24.71617382896073,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Ireland,10,0.0,no,no,no,CT,1980,Hebridean Black
-female,adult,grey,purple,mottled,0.0,snub,curved,yes,rough,scaled,no,0.0,stocky,48.77953024494274,4,yes,no,long,curved,club,Open Ocean,10,0.0,no,yes,no,DR,2002,Hebridean Black
-female,unknown,grey,blue,black,17.48999169242579,square,curved,yes,rough,scaled,no,0.0,stocky,41.760399422978026,4,yes,no,long,curved,club,Ireland,9,40.255190256941326,no,yes,no,NK,1982,Hebridean Black
-female,elder,mottled,purple,mottled,30.342748975456523,snub,curved,yes,rough,scaled,no,2.9446642883583927,stocky,0.0,4,yes,no,long,curved,club,Open Ocean,8,41.137820145955715,no,yes,no,SR,2012,Hebridean Black
-male,elder,mottled,green,mottled,0.0,snub,curved,yes,rough,scaled,no,2.657270092979031,stocky,51.540863144503184,3,yes,no,long,curved,club,Britain,8,0.0,no,yes,no,CT,1989,Hebridean Black
-male,unknown,grey,purple,black,19.6239575902634,snub,curved,yes,rough,scaled,no,0.0,stocky,0.0,2,yes,no,long,curved,club,Ireland,7,0.0,no,no,no,VM,2010,Hebridean Black
-unknown,unknown,grey,purple,mottled,18.59768913440298,square,curved,yes,rough,scaled,no,2.8018435134523094,stocky,46.36996920446247,4,yes,no,long,curved,club,Scotland,10,37.64059992249067,no,no,no,CT,1999,Hebridean Black
-female,adult,grey,blue,mottled,0.0,square,curved,yes,rough,scaled,no,3.3794730261896326,stocky,43.098213036191126,3,yes,no,long,curved,club,Scotland,9,40.061543852940574,no,yes,no,BR,1978,Hebridean Black
-male,unknown,black,purple,mottled,0.0,square,curved,yes,rough,scaled,no,0.0,stocky,37.2302319155898,3,yes,no,long,curved,club,Britain,8,0.0,no,yes,no,SX,2019,Hebridean Black
-unknown,unknown,grey,blue,black,0.0,snub,curved,yes,rough,scaled,no,2.216865289980622,stocky,37.955788205263616,4,yes,no,long,curved,club,Ireland,10,0.0,no,yes,no,FF,1998,Hebridean Black
-unknown,juvenile,mottled,purple,black,31.06347258137782,square,curved,yes,rough,scaled,no,3.9373416159622208,stocky,77.04190570354812,4,yes,no,long,curved,club,Scotland,7,44.525647260822154,no,no,no,NR,2014,Hebridean Black
-unknown,elder,grey,purple,black,27.659141819915533,square,curved,yes,rough,scaled,no,3.712704403642711,stocky,0.0,4,yes,no,long,curved,club,Wales,8,35.72743832971888,no,yes,no,CT,2003,Hebridean Black
-unknown,elder,black,purple,black,22.229716630129513,snub,curved,yes,rough,scaled,no,3.7942876313949623,stocky,54.85588856285079,4,yes,no,long,curved,club,Britain,7,0.0,no,no,no,AB,1991,Hebridean Black
-unknown,adult,mottled,blue,black,26.173985273689464,square,curved,yes,rough,scaled,no,0.0,stocky,46.559152148693556,4,yes,no,long,curved,club,Britain,10,36.6076698506409,no,yes,no,TX,1985,Hebridean Black
-female,juvenile,black,purple,black,15.06816615993544,snub,curved,yes,rough,scaled,no,2.777019971715351,stocky,35.25882848707454,4,yes,no,long,curved,club,Scotland,9,49.582593688566206,no,no,no,U,1989,Hebridean Black
-female,elder,grey,purple,black,41.27469903957909,snub,curved,yes,rough,mixed,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Open Ocean,7,36.62612177108927,no,yes,no,AB,1977,Hebridean Black
-unknown,adult,grey,blue,black,0.0,square,curved,yes,rough,scaled,no,3.8743361370017886,stocky,50.68253235344406,3,yes,no,long,curved,club,Scotland,7,38.78650247038695,no,yes,no,TX,2003,Hebridean Black
-male,unknown,mottled,purple,black,20.79358784181147,snub,curved,yes,rough,scaled,no,2.5714687332314417,stocky,0.0,4,yes,no,long,curved,club,Wales,9,0.0,no,yes,no,U,2005,Hebridean Black
-female,unknown,black,purple,black,24.258951333743884,square,curved,yes,rough,scaled,no,0.0,stocky,56.47400282819164,4,yes,no,long,curved,club,Scotland,10,0.0,no,yes,no,NK,2001,Hebridean Black
-female,elder,white,purple,white,0.0,square,curved,yes,rough,scaled,no,6.083112433381312,stocky,105.89957379304985,3,yes,no,long,curved,club,Scotland,8,37.591986626834476,no,yes,no,TR,1988,Hebridean Black
-male,elder,black,purple,mottled,22.095839147084526,snub,curved,yes,rough,scaled,no,3.710004970857872,stocky,0.0,4,yes,no,long,curved,club,Open Ocean,9,0.0,no,yes,no,WX,1992,Hebridean Black
-unknown,elder,grey,blue,black,27.60283989219546,square,curved,yes,rough,scaled,no,0.0,stocky,65.83861169879603,4,yes,no,long,curved,club,Britain,8,35.56294839566334,no,no,no,KN,1992,Hebridean Black
-unknown,unknown,black,purple,mottled,22.193411639898184,snub,curved,yes,rough,scaled,no,3.130190573322526,stocky,56.92023108549052,4,yes,no,long,curved,club,Open Ocean,9,33.833734932940295,no,yes,no,SX,1988,Hebridean Black
-female,adult,grey,blue,black,20.015337934305247,square,curved,yes,rough,scaled,no,3.3039695386329226,stocky,41.45217675212084,4,yes,no,long,curved,club,Open Ocean,8,0.0,no,yes,no,BB,2015,Hebridean Black
-male,juvenile,mottled,purple,black,0.0,square,curved,yes,rough,scaled,no,1.9104705651293357,stocky,17.875426680895366,3,yes,no,long,curved,club,Scotland,10,0.0,no,no,no,NN,2008,Hebridean Black
-unknown,elder,white,blue,white,18.740813472200855,snub,curved,yes,rough,scaled,no,0.0,stocky,40.75362216874061,4,yes,no,long,curved,club,Scotland,9,0.0,no,no,no,U,2006,Hebridean Black
-male,juvenile,grey,green,mottled,8.306220512155823,square,curved,yes,rough,scaled,no,1.5791166351638912,stocky,12.01006218999423,4,yes,no,long,curved,club,Scotland,8,0.0,no,yes,no,FF,2011,Hebridean Black
-female,unknown,black,purple,mottled,15.436389263730957,snub,curved,yes,rough,scaled,no,0.0,stocky,39.398639458645725,4,yes,no,long,curved,club,Scotland,9,38.21299371905204,no,yes,no,U,1977,Hebridean Black
-female,unknown,black,blue,black,0.0,snub,curved,yes,rough,scaled,no,0.0,stocky,54.75035497884265,4,yes,no,long,curved,club,Open Ocean,10,34.03076854079485,no,yes,no,OH,2002,Hebridean Black
-unknown,unknown,grey,blue,black,0.0,square,curved,yes,rough,scaled,no,2.6693221639830575,stocky,40.86317965868605,4,yes,no,long,curved,club,Britain,9,0.0,no,yes,no,OK,2015,Hebridean Black
-female,adult,grey,purple,mottled,29.81128271964413,square,curved,partial,rough,mixed,no,3.5552587943584903,stocky,52.910333864187756,4,yes,no,long,curved,club,Scotland,8,34.21968364594068,no,yes,no,OK,1982,Hebridean Black
-unknown,elder,grey,purple,black,20.431649838297897,square,curved,yes,rough,scaled,no,2.6769186618276986,stocky,41.57876216671331,3,yes,no,long,curved,club,Scotland,10,36.24932706027938,no,yes,no,NK,1979,Hebridean Black
-unknown,elder,black,green,black,0.0,snub,curved,yes,rough,scaled,no,4.286951676067834,stocky,69.65839124660474,4,yes,no,long,curved,club,Scotland,10,0.0,no,yes,no,TX,1995,Hebridean Black
-male,juvenile,grey,blue,black,9.409928744255241,snub,curved,yes,rough,scaled,no,0.0,stocky,14.2460182017505,4,yes,no,long,curved,club,Britain,8,0.0,no,yes,no,SR,2016,Hebridean Black
-male,adult,black,purple,black,14.892510415673794,square,curved,yes,rough,scaled,no,2.0668640390332493,stocky,28.29061266680055,4,yes,no,long,curved,club,Britain,7,0.0,no,yes,no,TX,2005,Hebridean Black
-male,adult,grey,blue,black,0.0,snub,curved,yes,rough,scaled,no,1.1742984069974844,stocky,18.540581875603593,3,yes,no,long,curved,club,Scotland,7,36.85300258292204,no,no,no,TR,1986,Hebridean Black
-unknown,elder,mottled,green,black,0.0,snub,curved,yes,rough,mixed,no,2.9732472892309785,stocky,67.28332563153946,4,yes,no,long,curved,club,Britain,7,0.0,no,yes,no,TX,1983,Hebridean Black
-female,juvenile,black,blue,mottled,12.99965793231355,square,curved,yes,rough,scaled,no,2.4798930843095164,stocky,34.98516488312417,4,yes,no,long,curved,club,Scotland,10,49.18995667126862,no,yes,no,U,2018,Hebridean Black
-female,unknown,black,blue,black,26.732636073392456,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,3,yes,no,long,curved,club,Wales,8,0.0,no,yes,no,LM,1996,Hebridean Black
-male,juvenile,mottled,blue,mottled,0.0,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Scotland,9,43.958785981256284,no,yes,no,FF,2008,Hebridean Black
-male,adult,black,purple,black,0.0,square,curved,yes,rough,scaled,no,2.081523737774665,stocky,32.70345635988828,4,yes,no,long,curved,club,Scotland,7,37.587525974918606,no,yes,no,AB,2001,Hebridean Black
-male,unknown,white,purple,white,18.20294592227495,square,curved,yes,rough,scaled,no,1.8006078948718067,stocky,0.0,4,yes,no,long,curved,club,Open Ocean,10,38.92175486361707,no,yes,no,LM,1994,Hebridean Black
-female,juvenile,grey,blue,black,15.87837848407517,square,curved,yes,rough,scaled,no,1.701212902841086,stocky,38.80602742875262,4,yes,no,long,curved,club,Wales,8,0.0,no,yes,no,NR,2009,Hebridean Black
-female,adult,mottled,blue,black,27.014172278653493,snub,curved,partial,rough,mixed,no,0.0,stocky,49.92149764077624,4,yes,no,long,curved,club,Scotland,8,35.325156807257855,no,no,no,TR,1993,Hebridean Black
-unknown,elder,mottled,blue,black,23.026518032529314,square,curved,yes,rough,scaled,no,2.509993983143246,stocky,0.0,4,yes,no,long,curved,club,Open Ocean,8,39.75896082422795,no,yes,no,NR,1986,Hebridean Black
-unknown,unknown,black,purple,mottled,0.0,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,2,yes,no,long,curved,club,Britain,9,36.30934308290468,no,yes,no,TX,2011,Hebridean Black
-female,elder,black,blue,black,31.045118671971288,snub,curved,partial,rough,mixed,no,3.7644337203250076,stocky,60.12509628695018,4,yes,no,long,curved,club,Scotland,9,38.89245021075256,no,no,no,NR,2004,Hebridean Black
-male,unknown,grey,purple,mottled,0.0,snub,curved,yes,rough,scaled,no,1.862276735940709,stocky,32.41532595806765,4,yes,no,long,curved,club,Scotland,8,34.11392511687635,no,yes,no,TR,1976,Hebridean Black
-female,juvenile,mottled,blue,mottled,13.731822205682104,snub,curved,yes,rough,scaled,no,2.18556422477743,stocky,0.0,3,yes,no,long,curved,club,Scotland,10,43.89048493744555,no,yes,no,WX,2018,Hebridean Black
-unknown,unknown,black,purple,black,27.151716397863456,square,curved,yes,rough,scaled,no,3.060667009490082,stocky,56.31964977221766,4,yes,no,long,curved,club,Open Ocean,7,33.78980819987198,no,yes,no,FF,2005,Hebridean Black
-male,adult,grey,purple,black,0.0,snub,curved,yes,rough,scaled,no,0.0,stocky,29.285890901428807,4,yes,no,long,curved,club,Open Ocean,7,36.37012353881634,no,no,no,VM,2013,Hebridean Black
-unknown,elder,grey,purple,black,0.0,square,curved,yes,rough,scaled,no,3.047982407278796,stocky,0.0,4,yes,no,long,curved,club,Scotland,8,34.65791070648993,no,yes,no,FF,1985,Hebridean Black
-unknown,elder,grey,blue,black,18.920508934517606,square,curved,yes,rough,scaled,no,2.5930859678557288,stocky,52.065405727597174,3,yes,no,long,curved,club,Wales,10,39.66924651204006,no,yes,no,NK,1977,Hebridean Black
-unknown,juvenile,grey,blue,black,23.192223974444836,square,curved,yes,rough,scaled,no,3.935125769391393,stocky,46.28533320607715,3,yes,no,long,curved,club,Wales,9,45.284335997953,no,yes,no,SR,2011,Hebridean Black
-unknown,adult,grey,green,black,19.65443979998267,square,curved,yes,rough,scaled,no,2.295918812350243,stocky,36.423370242438565,4,yes,no,long,curved,club,Ireland,10,0.0,no,yes,no,NN,2000,Hebridean Black
-unknown,elder,black,purple,black,0.0,snub,curved,yes,rough,scaled,no,3.85563577566381,stocky,59.91800712275287,2,yes,no,long,curved,club,Open Ocean,8,38.14776199843595,no,yes,no,NR,2011,Hebridean Black
-unknown,adult,grey,purple,black,17.498218758341668,snub,curved,yes,rough,scaled,no,2.428545552976852,stocky,35.96686594172949,3,yes,no,long,curved,club,Wales,7,39.853782024300266,no,yes,no,NN,2006,Hebridean Black
-male,unknown,grey,green,black,19.589497111132495,square,curved,yes,rough,scaled,no,2.2649040992603684,stocky,0.0,4,yes,no,long,curved,club,Scotland,8,0.0,no,yes,no,OK,1976,Hebridean Black
-unknown,unknown,mottled,blue,mottled,15.489705948981522,snub,curved,yes,rough,scaled,no,0.0,stocky,40.47974211649463,4,yes,no,long,curved,club,Ireland,10,39.03618390891464,no,no,no,TX,2023,Hebridean Black
-female,adult,grey,blue,black,26.97768016129947,square,curved,yes,rough,scaled,no,2.876395043639439,stocky,0.0,4,yes,no,long,curved,club,Britain,8,0.0,no,no,no,CT,1996,Hebridean Black
-male,unknown,black,blue,mottled,23.84940729441605,square,curved,yes,rough,scaled,no,2.471990528707042,stocky,49.65277226105806,4,yes,no,long,curved,club,Scotland,9,38.62491347926827,no,yes,no,WX,2011,Hebridean Black
-female,elder,black,purple,black,42.97852054822644,snub,curved,yes,rough,scaled,no,0.0,stocky,91.63013573921046,4,yes,no,long,curved,club,Ireland,9,0.0,no,yes,no,SX,1976,Hebridean Black
-unknown,unknown,black,blue,mottled,0.0,snub,curved,yes,rough,scaled,no,2.4776254241713964,stocky,37.7204414258852,4,yes,no,long,curved,club,Britain,10,0.0,no,yes,no,FF,2007,Hebridean Black
-male,unknown,grey,blue,mottled,16.308849869061206,square,curved,yes,rough,scaled,no,0.0,stocky,32.44340806548682,3,yes,no,long,curved,club,Scotland,7,0.0,no,yes,no,OK,2021,Hebridean Black
-female,elder,black,purple,mottled,0.0,snub,curved,yes,rough,scaled,no,5.782354335354241,stocky,103.81880489883491,3,yes,no,long,curved,club,Scotland,7,36.26731331701909,no,no,no,AB,2002,Hebridean Black
-female,elder,mottled,green,black,36.92179705724578,square,curved,yes,rough,scaled,no,3.6050145065899115,stocky,76.8112828565314,4,yes,no,long,curved,club,Britain,7,0.0,no,no,no,KN,2003,Hebridean Black
-unknown,unknown,mottled,purple,mottled,16.393612887411695,square,curved,yes,rough,scaled,no,2.3571956771042637,stocky,33.611226854489814,4,yes,no,long,curved,club,Open Ocean,9,0.0,no,yes,no,TX,2010,Hebridean Black
-male,unknown,grey,purple,black,18.626917034279252,snub,curved,yes,rough,scaled,no,2.6778908484978903,stocky,44.90122520028088,4,yes,no,long,curved,club,Scotland,7,40.16849627655241,no,no,no,SR,1986,Hebridean Black
-female,adult,black,blue,black,21.75329896461433,snub,curved,partial,rough,mixed,no,3.167148707095708,stocky,0.0,4,yes,no,long,curved,club,Britain,9,0.0,no,no,no,DR,2005,Hebridean Black
-male,unknown,grey,purple,black,0.0,square,curved,yes,rough,scaled,no,2.4967810728047515,stocky,32.90150472045735,4,yes,no,long,curved,club,Scotland,9,38.81393318641913,no,no,no,BB,1981,Hebridean Black
-unknown,elder,black,blue,black,0.0,square,curved,yes,rough,scaled,no,3.958941442701486,stocky,66.02982684712059,4,yes,no,long,curved,club,Ireland,7,0.0,no,yes,no,OH,1983,Hebridean Black
-female,elder,mottled,blue,black,0.0,snub,curved,partial,rough,mixed,no,0.0,stocky,72.9184059738794,2,yes,no,long,curved,club,Ireland,9,36.10590306194737,no,no,no,OK,1980,Hebridean Black
-unknown,elder,black,blue,black,18.049379262877846,square,curved,yes,rough,mixed,no,3.153301973582969,stocky,41.86660668336049,4,yes,no,long,curved,club,Scotland,9,39.66103063314057,no,yes,no,SR,2015,Hebridean Black
-female,juvenile,white,purple,white,0.0,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Scotland,9,0.0,no,yes,no,VM,2016,Hebridean Black
-female,unknown,grey,blue,mottled,28.702266222163626,square,curved,yes,rough,scaled,no,3.700638491479983,stocky,70.5362000712958,4,yes,no,long,curved,club,Britain,7,0.0,no,no,no,VM,2015,Hebridean Black
-female,elder,grey,purple,mottled,41.81543123370154,square,curved,partial,rough,mixed,no,5.932869603523981,stocky,92.63825618638747,4,yes,no,long,curved,club,Wales,9,37.98965978375654,no,yes,no,WX,2001,Hebridean Black
-female,unknown,mottled,purple,black,27.083644765338367,square,curved,yes,rough,scaled,no,3.9524101707646975,stocky,56.5085059073699,4,yes,no,long,curved,club,Britain,10,36.038294575066935,no,yes,no,SX,2011,Hebridean Black
-female,elder,mottled,purple,black,0.0,snub,curved,yes,rough,mixed,no,4.756339003515304,stocky,83.27342467337706,4,yes,no,long,curved,club,Scotland,7,0.0,no,no,no,BR,2011,Hebridean Black
-unknown,adult,grey,blue,black,0.0,square,curved,yes,rough,scaled,no,2.1550131385511975,stocky,0.0,4,yes,no,long,curved,club,Scotland,9,0.0,no,no,no,LM,2005,Hebridean Black
-unknown,adult,black,blue,mottled,25.061413747178488,snub,curved,partial,rough,mixed,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Ireland,10,36.585836942916586,no,yes,no,DR,2006,Hebridean Black
-unknown,elder,black,purple,black,0.0,square,curved,partial,rough,mixed,no,4.214769214079515,stocky,58.71758641207588,4,yes,no,long,curved,club,Britain,10,39.52411515667695,no,no,no,CT,1991,Hebridean Black
-female,juvenile,mottled,purple,black,0.0,square,curved,yes,rough,scaled,no,2.004800456325943,stocky,34.460672345229206,4,yes,no,long,curved,club,Scotland,10,47.63161041967066,no,yes,no,NR,1991,Hebridean Black
-unknown,adult,white,blue,white,24.683287977200816,square,curved,yes,rough,scaled,no,3.942092851866076,stocky,52.99482700535051,4,yes,no,long,curved,club,Scotland,8,36.00835519776553,no,yes,no,BB,1989,Hebridean Black
-unknown,adult,grey,purple,mottled,0.0,square,curved,yes,rough,mixed,no,4.1425073401293835,stocky,62.65543444342625,4,yes,no,long,curved,club,Wales,7,40.51799220586791,no,yes,no,NN,1991,Hebridean Black
-female,elder,black,green,black,0.0,snub,curved,yes,rough,scaled,no,3.15867299760371,stocky,0.0,4,yes,no,long,curved,club,Ireland,7,37.444958955799585,no,yes,no,AB,2004,Hebridean Black
-male,unknown,grey,purple,black,17.499833167156506,snub,curved,yes,rough,scaled,no,2.3786541304091604,stocky,0.0,4,yes,no,long,curved,club,Scotland,8,0.0,no,yes,no,U,1977,Hebridean Black
-female,elder,grey,blue,black,40.70620701154322,square,curved,yes,rough,mixed,no,4.616383282915888,stocky,0.0,3,yes,no,long,curved,club,Scotland,9,0.0,no,yes,no,SX,2009,Hebridean Black
-unknown,unknown,black,purple,black,24.90719146715621,snub,curved,yes,rough,scaled,no,3.3305378713893177,stocky,0.0,4,yes,no,long,curved,club,Open Ocean,7,0.0,no,yes,no,LM,2003,Hebridean Black
-male,elder,black,purple,mottled,0.0,square,curved,partial,rough,mixed,no,0.0,stocky,36.77717313984971,4,yes,no,long,curved,club,Scotland,7,36.103259722819224,no,yes,no,WX,1982,Hebridean Black
-male,elder,black,purple,black,0.0,square,curved,yes,rough,scaled,no,2.4719430999835734,stocky,50.93537884745167,4,yes,no,long,curved,club,Scotland,9,40.582478034822245,no,yes,no,DR,1996,Hebridean Black
-male,adult,grey,purple,mottled,0.0,square,curved,yes,rough,scaled,no,1.7098473073779912,stocky,20.13632733233029,3,yes,no,long,curved,club,Ireland,9,39.302978947546244,no,yes,no,SR,2005,Hebridean Black
-female,adult,mottled,green,black,0.0,square,curved,yes,rough,scaled,no,2.080622847645858,stocky,0.0,2,yes,no,long,curved,club,Scotland,9,41.063718817268644,no,yes,no,BB,1984,Hebridean Black
-female,unknown,grey,blue,mottled,17.228267971928314,snub,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Britain,10,0.0,no,yes,no,NN,2004,Hebridean Black
-male,adult,mottled,purple,black,11.27407524828375,snub,curved,yes,rough,scaled,no,0.0,stocky,20.030422545384486,3,yes,no,long,curved,club,Wales,9,36.73381500107169,no,yes,no,TX,1978,Hebridean Black
-female,adult,grey,blue,black,0.0,snub,curved,yes,rough,scaled,no,3.450904536221878,stocky,41.5545403593089,4,yes,no,long,curved,club,Wales,9,41.075519740249526,no,no,no,DR,1998,Hebridean Black
-unknown,unknown,white,blue,white,0.0,square,curved,partial,rough,mixed,no,0.0,stocky,71.44891780705638,2,yes,no,long,curved,club,Britain,7,0.0,no,yes,no,VM,1982,Hebridean Black
-unknown,unknown,mottled,green,black,21.753575083403227,square,curved,yes,rough,scaled,no,3.60292717272117,stocky,0.0,4,yes,no,long,curved,club,Scotland,10,37.88466334991146,no,yes,no,TX,1997,Hebridean Black
-female,unknown,grey,blue,black,0.0,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Ireland,10,36.38362970960695,no,yes,no,SR,2004,Hebridean Black
-female,elder,white,green,white,0.0,snub,curved,yes,rough,scaled,no,0.0,stocky,62.181299964062475,4,yes,no,long,curved,club,Scotland,7,39.45653328401429,no,yes,no,BR,1977,Hebridean Black
-male,unknown,grey,blue,black,24.61831557204372,square,curved,yes,rough,scaled,no,3.8292620507357,stocky,54.046926336516805,4,yes,no,long,curved,club,Britain,7,0.0,no,no,no,OH,1976,Hebridean Black
-male,adult,grey,blue,black,11.757173077624715,snub,curved,yes,rough,scaled,no,0.0,stocky,0.0,3,yes,no,long,curved,club,Open Ocean,7,37.438578101555564,no,yes,no,FF,1989,Hebridean Black
-unknown,adult,mottled,purple,black,25.00152802474004,snub,curved,partial,rough,mixed,no,0.0,stocky,51.54453835794217,4,yes,no,long,curved,club,Wales,9,39.5106012892615,no,yes,no,WX,1982,Hebridean Black
-female,juvenile,grey,purple,mottled,13.264966292258716,snub,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Scotland,9,0.0,no,no,no,DR,1981,Hebridean Black
-female,unknown,mottled,blue,black,15.96806473393703,square,curved,yes,rough,scaled,no,1.7269664213439917,stocky,30.63347714346736,4,yes,no,long,curved,club,Open Ocean,7,39.707089956756164,no,yes,no,BB,2016,Hebridean Black
-female,elder,grey,blue,black,42.06978629895531,snub,curved,yes,rough,scaled,no,4.272323857302818,stocky,82.07565330777543,4,yes,no,long,curved,club,Scotland,7,0.0,no,no,no,AB,2004,Hebridean Black
-unknown,elder,grey,blue,black,0.0,square,curved,yes,rough,scaled,no,2.10378993937654,stocky,0.0,3,yes,no,long,curved,club,Wales,9,36.87832269526894,no,no,no,OK,1998,Hebridean Black
-female,elder,black,green,mottled,44.15973336061541,snub,curved,yes,rough,scaled,no,6.05087065002415,stocky,96.6410809818185,4,yes,no,long,curved,club,Open Ocean,8,0.0,no,yes,no,LM,2004,Hebridean Black
-female,elder,black,blue,mottled,31.806705562764776,snub,curved,yes,rough,scaled,no,4.1751937729064545,stocky,62.3442942255042,2,yes,no,long,curved,club,Britain,8,0.0,no,yes,no,CT,1990,Hebridean Black
-male,juvenile,white,purple,white,0.0,snub,curved,yes,rough,scaled,no,1.6830215075145136,stocky,18.66230842847704,4,yes,no,long,curved,club,Open Ocean,10,49.05806218263748,no,yes,no,TX,1991,Hebridean Black
-female,juvenile,black,green,black,0.0,square,curved,yes,rough,scaled,no,2.2316259626217514,stocky,40.226919535564726,3,yes,no,long,curved,club,Britain,9,0.0,no,yes,no,NN,1988,Hebridean Black
-male,elder,black,blue,mottled,0.0,square,curved,yes,rough,scaled,no,2.3769222672971084,stocky,38.72507160677946,3,yes,no,long,curved,club,Britain,7,37.56738735094693,no,no,no,NK,1995,Hebridean Black
-male,unknown,grey,blue,black,29.259243872297944,snub,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Wales,10,40.727858416261434,no,no,no,AB,1992,Hebridean Black
-unknown,adult,grey,green,black,0.0,snub,curved,yes,rough,scaled,no,1.8360716575884521,stocky,0.0,4,yes,no,long,curved,club,Britain,10,33.772589962862774,no,yes,no,KN,2012,Hebridean Black
-female,adult,grey,blue,black,21.34195905328947,snub,curved,partial,rough,mixed,no,0.0,stocky,45.38193442396685,4,yes,no,long,curved,club,Scotland,10,36.90216974727274,no,yes,no,LM,1997,Hebridean Black
-male,unknown,black,blue,black,28.454880266532363,snub,curved,yes,rough,scaled,no,0.0,stocky,61.71868472118661,4,yes,no,long,curved,club,Ireland,10,0.0,no,yes,no,NK,2022,Hebridean Black
-unknown,unknown,grey,blue,black,0.0,square,curved,yes,rough,scaled,no,2.3261622713237378,stocky,48.393131483927974,4,yes,no,long,curved,club,Scotland,8,36.40997884659455,no,yes,no,BR,1977,Hebridean Black
-male,unknown,white,purple,white,28.124289924750975,square,curved,yes,rough,scaled,no,0.0,stocky,61.15121223723919,4,yes,no,long,curved,club,Britain,10,0.0,no,yes,no,NR,1982,Hebridean Black
-unknown,unknown,black,purple,mottled,26.8160266607759,square,curved,yes,rough,scaled,no,3.645290407555297,stocky,0.0,3,yes,no,long,curved,club,Wales,10,35.94463171454111,no,no,no,NN,2016,Hebridean Black
-female,elder,grey,purple,black,0.0,square,curved,yes,rough,scaled,no,0.0,stocky,65.15435093900953,3,yes,no,long,curved,club,Britain,9,0.0,no,yes,no,LM,1996,Hebridean Black
-unknown,adult,grey,blue,black,0.0,snub,curved,yes,rough,scaled,no,2.149712276343438,stocky,29.49402624312958,3,yes,no,long,curved,club,Ireland,8,34.91938183895955,no,no,no,TX,1993,Hebridean Black
-male,unknown,black,blue,mottled,19.79184070961412,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Scotland,8,0.0,no,yes,no,FF,1996,Hebridean Black
-female,adult,black,blue,mottled,0.0,snub,curved,yes,rough,scaled,no,2.454085746854121,stocky,0.0,4,yes,no,long,curved,club,Wales,9,0.0,no,no,no,BR,2016,Hebridean Black
-male,juvenile,black,blue,black,9.334416350526626,snub,curved,yes,rough,scaled,no,1.395096263501253,stocky,0.0,4,yes,no,long,curved,club,Scotland,10,45.238443562583754,no,yes,no,VM,2014,Hebridean Black
-unknown,unknown,grey,blue,mottled,0.0,snub,curved,yes,rough,scaled,no,1.6619111595701885,stocky,33.86187002178752,4,yes,no,long,curved,club,Scotland,10,34.37073830475454,no,no,no,DR,1998,Hebridean Black
-unknown,unknown,black,purple,mottled,0.0,square,curved,yes,rough,scaled,no,0.0,stocky,62.61667514346414,4,yes,no,long,curved,club,Wales,10,0.0,no,yes,no,LM,2012,Hebridean Black
-female,juvenile,black,green,black,19.31175066934102,square,curved,yes,rough,scaled,no,0.0,stocky,39.60475780169374,3,yes,no,long,curved,club,Wales,8,0.0,no,yes,no,U,2010,Hebridean Black
-female,adult,grey,blue,black,0.0,snub,curved,yes,rough,scaled,no,3.143379356658438,stocky,0.0,3,yes,no,long,curved,club,Wales,8,33.790056672874826,no,no,no,CT,1979,Hebridean Black
-unknown,unknown,black,purple,mottled,0.0,snub,curved,yes,rough,scaled,no,1.6812880718503023,stocky,0.0,4,yes,no,long,curved,club,Scotland,10,38.76225441055936,no,yes,no,KN,1993,Hebridean Black
-unknown,elder,black,purple,black,31.072044563404397,snub,curved,yes,rough,scaled,no,0.0,stocky,70.10985381130217,4,yes,no,long,curved,club,Scotland,7,35.473239176659135,no,yes,no,SX,1997,Hebridean Black
-unknown,adult,grey,purple,black,22.44875146681531,snub,curved,yes,rough,mixed,no,2.6760600036571613,stocky,41.27523214905135,4,yes,no,long,curved,club,Wales,10,39.666573970710154,no,yes,no,NR,1997,Hebridean Black
-unknown,adult,grey,green,black,30.892230042226817,square,curved,yes,rough,scaled,no,3.06160653839117,stocky,59.97167418787191,4,yes,no,long,curved,club,Scotland,7,35.96543215247421,no,yes,no,SR,2004,Hebridean Black
-female,elder,black,purple,black,45.927113007609506,snub,curved,yes,rough,scaled,no,5.688771915006544,stocky,93.06009619678912,4,yes,no,long,curved,club,Open Ocean,8,34.53592441530051,no,yes,no,OH,2016,Hebridean Black
-female,juvenile,grey,blue,black,0.0,snub,curved,yes,rough,scaled,no,3.4411950739351562,stocky,58.427279750363645,3,yes,no,long,curved,club,Britain,9,0.0,no,yes,no,NN,1987,Hebridean Black
-unknown,unknown,grey,blue,black,26.730488521564133,square,curved,yes,rough,scaled,no,2.9257477964174194,stocky,0.0,4,yes,no,long,curved,club,Scotland,9,39.88650804169857,no,no,no,FF,1996,Hebridean Black
-unknown,unknown,grey,blue,black,15.318132257203047,square,curved,partial,rough,mixed,no,2.136943913765313,stocky,0.0,4,yes,no,long,curved,club,Wales,9,41.09557852805189,no,no,no,BB,1983,Hebridean Black
-unknown,adult,grey,blue,black,24.43950687008183,square,curved,yes,rough,scaled,no,4.0542142382897275,stocky,0.0,4,yes,no,long,curved,club,Scotland,7,35.61442250988465,no,yes,no,FF,1994,Hebridean Black
-unknown,adult,grey,purple,mottled,0.0,snub,curved,yes,rough,scaled,no,2.938611253748528,stocky,38.52850226863708,4,yes,no,long,curved,club,Open Ocean,9,0.0,no,yes,no,NR,2007,Hebridean Black
-unknown,unknown,grey,blue,mottled,16.03969451313853,snub,curved,yes,rough,scaled,no,0.0,stocky,42.38530416401375,4,yes,no,long,curved,club,Britain,9,36.702245016627515,no,yes,no,TR,1997,Hebridean Black
-male,elder,grey,blue,black,21.051427143938046,square,curved,yes,rough,scaled,no,3.4383478378076493,stocky,51.887781352676505,3,yes,no,long,curved,club,Scotland,9,38.190963734974225,no,yes,no,TX,2013,Hebridean Black
-unknown,elder,black,green,black,25.081761409684532,snub,curved,yes,rough,scaled,no,0.0,stocky,50.69205316737383,3,yes,no,long,curved,club,Scotland,8,36.23585632826809,no,yes,no,CT,1980,Hebridean Black
-unknown,elder,grey,green,black,0.0,snub,curved,partial,rough,mixed,no,2.312569501726572,stocky,40.775286948753475,4,yes,no,long,curved,club,Scotland,8,35.283024895854204,no,yes,no,KN,1983,Hebridean Black
-unknown,unknown,grey,blue,black,26.65907229496507,snub,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Scotland,10,0.0,no,yes,no,TX,1990,Hebridean Black
-female,adult,white,blue,white,18.23093366321345,square,curved,yes,rough,scaled,no,1.8992288320814787,stocky,0.0,3,yes,no,long,curved,club,Wales,10,38.99101445400338,no,yes,no,NR,1996,Hebridean Black
-female,unknown,mottled,blue,black,14.283970816401487,snub,curved,yes,rough,scaled,no,1.966323004876273,stocky,36.049810197229384,4,yes,no,long,curved,club,Scotland,8,0.0,no,yes,no,VM,2023,Hebridean Black
-female,adult,grey,blue,mottled,18.412280459519494,snub,curved,yes,rough,scaled,no,2.0889917523588495,stocky,0.0,4,yes,no,long,curved,club,Open Ocean,9,0.0,no,no,no,LM,1997,Hebridean Black
-male,elder,black,green,mottled,18.365634920059247,snub,curved,yes,rough,scaled,no,1.918231337852269,stocky,39.26047679023511,4,yes,no,long,curved,club,Scotland,9,38.43093540394005,no,yes,no,BR,1993,Hebridean Black
-male,adult,mottled,blue,black,17.944320674330033,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Britain,8,36.310198710608276,no,yes,no,TX,1980,Hebridean Black
-male,adult,white,purple,white,12.793413130229169,square,curved,yes,rough,mixed,no,1.3194986554286163,stocky,20.82435116195937,4,yes,no,long,curved,club,Ireland,7,34.73513166234612,no,no,no,CT,2021,Hebridean Black
-female,unknown,grey,purple,black,24.15002920403374,snub,curved,yes,rough,scaled,no,0.0,stocky,53.75737190257556,4,yes,no,long,curved,club,Scotland,10,35.903023042169174,no,yes,no,VM,1997,Hebridean Black
-female,elder,black,blue,mottled,0.0,square,curved,yes,rough,scaled,no,4.4006189534106905,stocky,84.82141505532144,3,yes,no,long,curved,club,Scotland,8,37.533222244544746,no,no,no,BB,2018,Hebridean Black
-unknown,adult,black,blue,black,24.689621212757807,snub,curved,yes,rough,mixed,no,4.098143393992179,stocky,47.81268595461028,4,yes,no,long,curved,club,Scotland,8,0.0,no,yes,no,CT,2013,Hebridean Black
-unknown,unknown,grey,purple,black,15.632744859241804,snub,curved,yes,rough,scaled,no,1.728356001693053,stocky,33.51557056809731,4,yes,no,long,curved,club,Open Ocean,7,0.0,no,no,no,KN,2019,Hebridean Black
-male,adult,black,blue,black,13.49487174268629,snub,curved,yes,rough,scaled,no,1.3436011298835377,stocky,20.226161483055957,4,yes,no,long,curved,club,Scotland,8,0.0,no,yes,no,TX,2020,Hebridean Black
-female,elder,grey,blue,black,31.723542171781006,square,curved,yes,rough,scaled,no,5.073382752499118,stocky,66.00971296888427,4,yes,no,long,curved,club,Scotland,9,34.02836263981063,no,no,no,TX,1983,Hebridean Black
-female,adult,mottled,purple,mottled,19.842605631501044,square,curved,yes,rough,scaled,no,0.0,stocky,38.96209102529185,4,yes,no,long,curved,club,Britain,9,40.96974718204145,no,yes,no,U,1979,Hebridean Black
-male,adult,grey,blue,black,16.000473143897054,square,curved,yes,rough,scaled,no,0.0,stocky,25.877905311442884,4,yes,no,long,curved,club,Wales,9,36.02256843883864,no,yes,no,AB,1989,Hebridean Black
-unknown,elder,black,purple,mottled,14.476162868542293,square,curved,yes,rough,mixed,no,2.1707856507000756,stocky,32.986745984745205,3,yes,no,long,curved,club,Scotland,7,0.0,no,no,no,WX,1975,Hebridean Black
-female,unknown,black,purple,black,21.1933606454929,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,3,yes,no,long,curved,club,Ireland,10,37.29652231234969,no,yes,no,WX,1989,Hebridean Black
-female,elder,white,purple,white,0.0,square,curved,yes,rough,scaled,no,4.258117500895505,stocky,77.30240453541121,4,yes,no,long,curved,club,Ireland,8,0.0,no,no,no,BR,2015,Hebridean Black
-unknown,adult,mottled,purple,mottled,17.320229210347268,square,curved,yes,rough,scaled,no,2.5209179195769273,stocky,37.77195275657559,4,yes,no,long,curved,club,Open Ocean,10,0.0,no,yes,no,OH,2007,Hebridean Black
-female,elder,mottled,purple,mottled,0.0,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Scotland,8,34.3459175673752,no,yes,no,TR,1979,Hebridean Black
-female,adult,grey,purple,mottled,0.0,snub,curved,yes,rough,scaled,no,3.3390859386366647,stocky,55.90889812198873,4,yes,no,long,curved,club,Open Ocean,10,36.127256111705535,no,yes,no,SR,2001,Hebridean Black
-female,juvenile,black,purple,black,14.054723785952731,snub,curved,yes,rough,scaled,no,0.0,stocky,43.98428945424178,4,yes,no,long,curved,club,Britain,8,47.92885843582563,no,yes,no,LM,1991,Hebridean Black
-male,juvenile,black,purple,black,0.0,snub,curved,yes,rough,scaled,no,1.2380553293620868,stocky,0.0,2,yes,no,long,curved,club,Scotland,8,0.0,no,yes,no,WX,1979,Hebridean Black
-male,unknown,black,blue,black,19.230962489445723,snub,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Ireland,8,35.00001145200557,no,yes,no,LM,2004,Hebridean Black
-male,unknown,mottled,green,black,25.479341929362477,snub,curved,yes,rough,scaled,no,4.039875681808315,stocky,0.0,4,yes,no,long,curved,club,Open Ocean,10,0.0,no,yes,no,NN,1981,Hebridean Black
-unknown,adult,black,purple,black,17.819445339169476,snub,curved,yes,rough,mixed,no,2.6086503387047917,stocky,0.0,4,yes,no,long,curved,club,Open Ocean,10,0.0,no,yes,no,KN,1981,Hebridean Black
-female,juvenile,grey,purple,black,20.70413570884981,square,curved,yes,rough,scaled,no,2.392467431130448,stocky,50.957405266847665,3,yes,no,long,curved,club,Open Ocean,9,0.0,no,no,no,BR,1993,Hebridean Black
-male,adult,black,purple,mottled,10.443933458485096,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Wales,9,37.4410918640156,no,yes,no,BB,1976,Hebridean Black
-male,unknown,grey,blue,mottled,26.271932357315585,snub,curved,yes,rough,scaled,no,2.9280266544817106,stocky,66.95281966880628,4,yes,no,long,curved,club,Britain,8,0.0,no,yes,no,OK,2011,Hebridean Black
-unknown,juvenile,grey,purple,black,17.166022169620497,snub,curved,yes,rough,scaled,no,0.0,stocky,42.40014117832464,4,yes,no,long,curved,club,Scotland,7,50.72495188524834,no,no,no,VM,2018,Hebridean Black
-unknown,elder,black,blue,black,24.136953113812243,snub,curved,yes,rough,scaled,no,3.0024089668575864,stocky,0.0,4,yes,no,long,curved,club,Scotland,9,36.72867621988694,no,no,no,KN,1989,Hebridean Black
-male,adult,mottled,blue,mottled,13.8764329131933,snub,curved,yes,rough,scaled,no,1.5078189518739131,stocky,27.800818439889245,4,yes,no,long,curved,club,Scotland,7,0.0,no,no,no,DR,2013,Hebridean Black
-female,unknown,grey,purple,mottled,0.0,square,curved,yes,rough,scaled,no,2.4734311857831828,stocky,53.0822433399984,4,yes,no,long,curved,club,Ireland,8,36.084025544553434,no,yes,no,AB,1980,Hebridean Black
-male,adult,black,purple,black,0.0,square,curved,yes,rough,mixed,no,1.5752971074773034,stocky,0.0,4,yes,no,long,curved,club,Wales,7,35.7034491309177,no,yes,no,NN,2016,Hebridean Black
-unknown,unknown,mottled,blue,mottled,0.0,square,curved,yes,rough,scaled,no,2.9658212778063837,stocky,51.9812471593186,3,yes,no,long,curved,club,Britain,7,33.906819979552736,no,no,no,NK,2014,Hebridean Black
-female,adult,grey,purple,black,24.722292101018148,square,curved,yes,rough,scaled,no,2.611570977806432,stocky,47.6993995803371,4,yes,no,long,curved,club,Ireland,10,0.0,no,yes,no,NK,1980,Hebridean Black
-female,adult,black,blue,black,0.0,square,curved,yes,rough,scaled,no,3.763354421387836,stocky,52.65676312497855,4,yes,no,long,curved,club,Britain,8,37.63660832262708,no,yes,no,AB,2014,Hebridean Black
-female,juvenile,mottled,purple,black,12.596480880701806,snub,curved,yes,rough,scaled,no,0.0,stocky,26.496043253560416,4,yes,no,long,curved,club,Britain,10,0.0,no,yes,no,TR,2023,Hebridean Black
-unknown,adult,mottled,blue,mottled,0.0,square,curved,yes,rough,scaled,no,4.509380958070929,stocky,55.97645739974993,4,yes,no,long,curved,club,Wales,7,0.0,no,yes,no,CT,1988,Hebridean Black
-male,juvenile,mottled,purple,mottled,0.0,snub,curved,yes,rough,scaled,no,0.0,stocky,0.0,3,yes,no,long,curved,club,Britain,9,42.798453020857046,no,yes,no,NK,2021,Hebridean Black
-female,unknown,grey,purple,black,19.20037113763467,snub,curved,yes,rough,scaled,no,3.018103711018175,stocky,0.0,4,yes,no,long,curved,club,Britain,10,36.24406392729347,no,yes,no,OH,1982,Hebridean Black
-male,unknown,black,purple,black,0.0,square,curved,yes,rough,scaled,no,3.1331626731511326,stocky,0.0,3,yes,no,long,curved,club,Scotland,8,33.79590753986551,no,yes,no,BB,2005,Hebridean Black
-unknown,unknown,grey,purple,black,15.109414124888126,square,curved,yes,rough,mixed,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Scotland,8,35.621174727531304,no,yes,no,TR,2010,Hebridean Black
-male,adult,black,purple,mottled,0.0,snub,curved,yes,rough,scaled,no,3.0482656085513185,stocky,0.0,4,yes,no,long,curved,club,Scotland,8,40.47464473104664,no,yes,no,SR,1977,Hebridean Black
-male,juvenile,black,blue,black,6.341492379193152,snub,curved,yes,rough,scaled,no,0.9810300081260714,stocky,11.01589944609022,3,yes,no,long,curved,club,Scotland,10,46.412896132793534,no,yes,no,OH,1978,Hebridean Black
-male,unknown,mottled,blue,mottled,17.926756849455842,square,curved,yes,rough,scaled,no,2.4239972409413033,stocky,41.99688390954496,3,yes,no,long,curved,club,Scotland,10,38.471315107113774,no,yes,no,NK,2009,Hebridean Black
-unknown,adult,black,purple,black,16.32460902277192,snub,curved,partial,rough,mixed,no,0.0,stocky,34.93388607331716,4,yes,no,long,curved,club,Scotland,7,0.0,no,yes,no,TR,1983,Hebridean Black
-unknown,juvenile,white,blue,white,0.0,square,curved,yes,rough,scaled,no,4.025421889625626,stocky,41.873088308974765,4,yes,no,long,curved,club,Scotland,7,43.18643191080814,no,yes,no,OH,1999,Hebridean Black
-unknown,juvenile,mottled,blue,black,0.0,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Wales,9,49.07189694413976,no,yes,no,SX,1979,Hebridean Black
-female,elder,black,purple,mottled,30.861555592161245,square,curved,partial,rough,mixed,no,0.0,stocky,67.18470205189169,4,yes,no,long,curved,club,Scotland,7,34.93961283598997,no,yes,no,AB,2002,Hebridean Black
-female,adult,black,purple,black,21.116824054977766,snub,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Britain,9,33.79089768280508,no,yes,no,U,2014,Hebridean Black
-female,adult,black,blue,mottled,19.038827927876383,square,curved,yes,rough,scaled,no,2.4210698002421744,stocky,0.0,4,yes,no,long,curved,club,Ireland,8,0.0,no,no,no,U,1993,Hebridean Black
-unknown,adult,black,purple,mottled,0.0,square,curved,partial,rough,mixed,no,0.0,stocky,37.200111308958896,4,yes,no,long,curved,club,Wales,9,0.0,no,yes,no,SX,1998,Hebridean Black
-female,elder,grey,purple,black,27.09680641982291,snub,curved,yes,rough,scaled,no,3.3327818499161643,stocky,59.75361039786704,4,yes,no,long,curved,club,Scotland,9,37.74188399835395,no,yes,no,KN,1983,Hebridean Black
-male,elder,grey,blue,mottled,19.159682065801746,square,curved,yes,rough,scaled,no,2.568991594892974,stocky,39.37053826449843,4,yes,no,long,curved,club,Scotland,8,36.762737575150204,no,yes,no,BR,2000,Hebridean Black
-male,unknown,black,blue,mottled,19.208272908365423,square,curved,partial,rough,mixed,no,0.0,stocky,51.581342171596575,4,yes,no,long,curved,club,Britain,9,0.0,no,yes,no,AB,2021,Hebridean Black
-male,adult,grey,blue,black,16.43482352891142,snub,curved,yes,rough,scaled,no,1.6138804900446688,stocky,28.971308731847436,3,yes,no,long,curved,club,Scotland,8,36.0266267320948,no,yes,no,BB,1990,Hebridean Black
-female,juvenile,mottled,purple,black,0.0,snub,curved,partial,rough,mixed,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Ireland,10,48.09678483849842,no,yes,no,OK,2021,Hebridean Black
-male,adult,black,blue,mottled,0.0,square,curved,yes,rough,scaled,no,2.239438765030412,stocky,39.91236008783285,3,yes,no,long,curved,club,Britain,7,37.81137112399779,no,yes,no,BR,2005,Hebridean Black
-unknown,adult,mottled,purple,mottled,14.145880481132963,snub,curved,yes,rough,scaled,no,2.2828768288207866,stocky,32.67012876408007,4,yes,no,long,curved,club,Ireland,8,39.12125174494261,no,no,no,OH,2008,Hebridean Black
-female,adult,black,blue,black,19.475395437781156,square,curved,yes,rough,scaled,no,2.089079669846914,stocky,34.43096041879806,4,yes,no,long,curved,club,Scotland,10,40.627159202615715,no,yes,no,CT,2008,Hebridean Black
-female,unknown,grey,purple,mottled,0.0,square,curved,yes,rough,scaled,no,2.638096731551255,stocky,53.270575684868035,4,yes,no,long,curved,club,Britain,9,39.47468819605908,no,yes,no,BB,2018,Hebridean Black
-female,adult,white,purple,white,24.798616764192495,square,curved,yes,rough,scaled,no,3.2411358706453877,stocky,0.0,4,yes,no,long,curved,club,Scotland,8,38.90736155188347,no,yes,no,NK,1999,Hebridean Black
-unknown,unknown,grey,purple,mottled,0.0,square,curved,yes,rough,scaled,no,3.5924184185824686,stocky,60.19293508051425,4,yes,no,long,curved,club,Scotland,9,0.0,no,yes,no,BB,1988,Hebridean Black
-unknown,unknown,black,purple,black,18.89244280588469,square,curved,yes,rough,scaled,no,2.1660391994555015,stocky,47.63216495747137,3,yes,no,long,curved,club,Scotland,9,34.00605772049484,no,yes,no,SR,1994,Hebridean Black
-male,adult,grey,blue,black,9.6599591305519,square,curved,yes,rough,scaled,no,1.3860049544391442,stocky,0.0,4,yes,no,long,curved,club,Scotland,7,36.428057929123966,no,yes,no,WX,1994,Hebridean Black
-female,elder,mottled,blue,mottled,35.456815189599936,square,curved,partial,rough,mixed,no,5.631960240214472,stocky,91.56721935339517,4,yes,no,long,curved,club,Ireland,9,0.0,no,yes,no,OK,2023,Hebridean Black
-male,adult,grey,purple,black,18.865487005868317,snub,curved,yes,rough,scaled,no,2.5897094653497277,stocky,0.0,4,yes,no,long,curved,club,Britain,9,33.81106405623027,no,yes,no,BR,1997,Hebridean Black
-female,unknown,mottled,blue,mottled,22.64163389529332,snub,curved,yes,rough,scaled,no,2.888768078434747,stocky,0.0,4,yes,no,long,curved,club,Wales,9,37.63128166115214,no,no,no,KN,2014,Hebridean Black
-unknown,juvenile,grey,blue,mottled,17.825481121520102,snub,curved,partial,rough,mixed,no,2.1488784853333343,stocky,49.23533112708185,3,yes,no,long,curved,club,Scotland,8,0.0,no,yes,no,TR,1975,Hebridean Black
-unknown,juvenile,grey,purple,mottled,0.0,square,curved,yes,rough,scaled,no,3.9832697420426726,stocky,0.0,3,yes,no,long,curved,club,Ireland,7,46.9141246442325,no,yes,no,BR,1984,Hebridean Black
-unknown,adult,grey,purple,black,25.24787268879578,snub,curved,yes,rough,scaled,no,3.9717842478331344,stocky,60.64889894265894,4,yes,no,long,curved,club,Scotland,10,34.50585235862157,no,yes,no,KN,2008,Hebridean Black
-male,juvenile,grey,blue,mottled,5.820416409562447,snub,curved,yes,rough,scaled,no,0.0,stocky,11.243853468509272,3,yes,no,long,curved,club,Ireland,10,50.68144210846541,no,yes,no,U,1979,Hebridean Black
-female,elder,white,green,white,42.208693586579365,snub,curved,yes,rough,scaled,no,5.816422380854547,stocky,0.0,4,yes,no,long,curved,club,Britain,8,0.0,no,yes,no,NK,2009,Hebridean Black
-female,adult,black,purple,black,19.60246723263634,square,curved,yes,rough,scaled,no,2.3474392317517916,stocky,36.41957975205389,3,yes,no,long,curved,club,Scotland,8,36.73493190697218,no,yes,no,OH,1983,Hebridean Black
-unknown,elder,black,purple,black,0.0,square,curved,yes,rough,scaled,no,3.5026960544326244,stocky,59.02202813033294,2,yes,no,long,curved,club,Ireland,9,0.0,no,no,no,SX,2000,Hebridean Black
-unknown,unknown,mottled,purple,black,19.091103272514466,snub,curved,yes,rough,scaled,no,2.5146598540103704,stocky,36.87009810479334,3,yes,no,long,curved,club,Scotland,7,35.50496924163687,no,yes,no,BR,1981,Hebridean Black
-female,unknown,mottled,purple,mottled,0.0,snub,curved,yes,rough,scaled,no,2.185006212008138,stocky,36.47597104122286,4,yes,no,long,curved,club,Britain,9,40.03810656782756,no,yes,no,NN,2004,Hebridean Black
-unknown,adult,mottled,blue,mottled,26.4522036708567,square,curved,yes,rough,scaled,no,3.1650589315273434,stocky,0.0,4,yes,no,long,curved,club,Britain,10,40.84068468487284,no,no,no,DR,1984,Hebridean Black
-unknown,elder,black,purple,mottled,30.586574085090213,square,curved,yes,rough,scaled,no,2.998479911468066,stocky,68.67203877511643,3,yes,no,long,curved,club,Scotland,9,0.0,no,yes,no,BB,1984,Hebridean Black
-female,unknown,grey,purple,mottled,0.0,snub,curved,yes,rough,scaled,no,3.543062142122742,stocky,55.92973544232349,4,yes,no,long,curved,club,Ireland,10,39.53968581888911,no,yes,no,TR,2011,Hebridean Black
-female,elder,mottled,purple,black,27.675350856972535,snub,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Scotland,7,40.31971648499908,no,yes,no,DR,1991,Hebridean Black
-unknown,unknown,grey,purple,black,17.86920301408674,square,curved,yes,rough,scaled,no,1.9621909506902515,stocky,38.49846415592026,4,yes,no,long,curved,club,Britain,9,36.269328775793355,no,no,no,AB,1977,Hebridean Black
-unknown,elder,black,green,mottled,0.0,snub,curved,yes,rough,mixed,no,2.901372344811855,stocky,43.74250910154146,4,yes,no,long,curved,club,Scotland,7,0.0,no,yes,no,NK,2002,Hebridean Black
-female,unknown,black,blue,mottled,0.0,snub,curved,yes,rough,scaled,no,0.0,stocky,68.89480609036902,4,yes,no,long,curved,club,Scotland,7,40.0824534276366,no,yes,no,SR,2014,Hebridean Black
-female,unknown,mottled,purple,black,0.0,square,curved,yes,rough,scaled,no,3.2294331477449605,stocky,73.63802152090116,4,yes,no,long,curved,club,Scotland,8,36.600982366900546,no,yes,no,TX,1997,Hebridean Black
-male,elder,grey,blue,mottled,0.0,square,curved,yes,rough,scaled,no,3.499851797233387,stocky,48.61456469515524,4,yes,no,long,curved,club,Scotland,7,0.0,no,yes,no,TR,1991,Hebridean Black
-unknown,adult,grey,blue,black,16.60707704316445,snub,curved,yes,rough,mixed,no,1.671372802437608,stocky,31.204864404969193,3,yes,no,long,curved,club,Britain,7,0.0,no,yes,no,BR,1980,Hebridean Black
-unknown,unknown,grey,purple,mottled,0.0,snub,curved,yes,rough,scaled,no,2.9960475799674726,stocky,51.15187557302396,4,yes,no,long,curved,club,Scotland,7,38.16724557579036,no,yes,no,WX,1992,Hebridean Black
-unknown,unknown,black,green,mottled,21.39296070669517,snub,curved,yes,rough,scaled,no,2.7374713154294374,stocky,52.76408745084402,4,yes,no,long,curved,club,Ireland,7,37.245775087573186,no,yes,no,U,1983,Hebridean Black
-unknown,elder,black,blue,black,0.0,snub,curved,yes,rough,scaled,no,4.265952685848712,stocky,71.4684996827378,4,yes,no,long,curved,club,Britain,7,0.0,no,no,no,AB,2022,Hebridean Black
-female,unknown,black,purple,mottled,20.188971025151407,snub,curved,yes,rough,scaled,no,2.5101244965270366,stocky,0.0,2,yes,no,long,curved,club,Scotland,10,39.11037176037599,no,yes,no,TX,2009,Hebridean Black
-female,unknown,grey,purple,black,22.81695836533785,snub,curved,yes,rough,scaled,no,3.0006979715896787,stocky,46.887585382345925,4,yes,no,long,curved,club,Scotland,9,0.0,no,yes,no,OK,2012,Hebridean Black
-female,adult,black,purple,black,0.0,snub,curved,yes,rough,scaled,no,0.0,stocky,47.11231292282571,4,yes,no,long,curved,club,Scotland,10,0.0,no,yes,no,FF,2012,Hebridean Black
-unknown,elder,mottled,purple,mottled,0.0,snub,curved,yes,rough,scaled,no,4.18691872366907,stocky,59.702289755106904,4,yes,no,long,curved,club,Open Ocean,7,0.0,no,yes,no,BB,1993,Hebridean Black
-female,elder,black,purple,black,38.4021968998521,square,curved,yes,rough,scaled,no,0.0,stocky,83.01616572837055,4,yes,no,long,curved,club,Ireland,7,36.99340592060164,no,yes,no,AB,2011,Hebridean Black
-unknown,elder,white,blue,white,29.88429148603693,square,curved,yes,rough,scaled,no,0.0,stocky,67.12061815871499,4,yes,no,long,curved,club,Wales,8,40.33440352367854,no,yes,no,FF,1977,Hebridean Black
-male,adult,black,blue,mottled,0.0,snub,curved,yes,rough,scaled,no,1.3399277075585145,stocky,16.72695076287399,4,yes,no,long,curved,club,Scotland,7,36.280492333883274,no,yes,no,KN,1992,Hebridean Black
-male,juvenile,white,blue,white,8.469092949427246,snub,curved,yes,rough,scaled,no,1.548275797316455,stocky,14.817638050940786,4,yes,no,long,curved,club,Scotland,8,46.15252127714745,no,yes,no,U,1977,Hebridean Black
-male,juvenile,mottled,blue,mottled,8.652817086598898,snub,curved,yes,rough,scaled,no,0.0,stocky,14.410700188825093,4,yes,no,long,curved,club,Scotland,9,45.766315027198964,no,no,no,OK,2020,Hebridean Black
-unknown,juvenile,grey,blue,mottled,18.513103439314516,snub,curved,yes,rough,scaled,no,1.864040270823887,stocky,0.0,4,yes,no,long,curved,club,Scotland,10,43.343965525395625,no,yes,no,WX,2016,Hebridean Black
-female,adult,black,purple,black,0.0,square,curved,yes,rough,scaled,no,2.9656188619368047,stocky,36.29464999330115,4,yes,no,long,curved,club,Open Ocean,10,0.0,no,yes,no,KN,2014,Hebridean Black
-male,unknown,grey,blue,black,0.0,snub,curved,yes,rough,scaled,no,0.0,stocky,0.0,3,yes,no,long,curved,club,Scotland,9,36.80527660400125,no,yes,no,BB,2016,Hebridean Black
-female,elder,black,purple,mottled,0.0,square,curved,yes,rough,scaled,no,3.941372277286986,stocky,74.19585410593643,4,yes,no,long,curved,club,Wales,9,0.0,no,no,no,OH,1998,Hebridean Black
-male,adult,grey,blue,black,21.372839071799365,square,curved,yes,rough,scaled,no,0.0,stocky,31.935368005406197,2,yes,no,long,curved,club,Britain,7,0.0,no,no,no,DR,1997,Hebridean Black
-male,juvenile,grey,purple,black,10.603448791880247,square,curved,yes,rough,scaled,no,0.0,stocky,16.446477355613393,4,yes,no,long,curved,club,Scotland,10,0.0,no,no,no,LM,1979,Hebridean Black
-female,juvenile,grey,blue,black,0.0,snub,curved,yes,rough,scaled,no,1.9072555535841276,stocky,38.59657986853324,2,yes,no,long,curved,club,Scotland,10,49.103117873830534,no,yes,no,BR,2022,Hebridean Black
-unknown,elder,grey,purple,black,22.773862691549706,square,curved,yes,rough,scaled,no,2.343312399964033,stocky,0.0,4,yes,no,long,curved,club,Open Ocean,7,0.0,no,no,no,NK,1996,Hebridean Black
-male,adult,grey,blue,black,17.295377376236072,snub,curved,yes,rough,scaled,no,2.064358660578988,stocky,32.38444976136697,3,yes,no,long,curved,club,Scotland,8,0.0,no,no,no,OK,1975,Hebridean Black
-female,adult,black,purple,mottled,0.0,snub,curved,yes,rough,scaled,no,3.1070897305268894,stocky,49.85680236584675,2,yes,no,long,curved,club,Scotland,10,37.014260243092416,no,yes,no,KN,1978,Hebridean Black
-female,unknown,grey,green,mottled,31.747392476764666,snub,curved,yes,rough,scaled,no,3.650643306568207,stocky,64.18194887446684,4,yes,no,long,curved,club,Scotland,9,0.0,no,no,no,U,1986,Hebridean Black
-female,elder,grey,purple,black,45.14580638435786,square,curved,yes,rough,scaled,no,6.379093608943924,stocky,0.0,4,yes,no,long,curved,club,Britain,7,39.57520875629545,no,yes,no,NR,1982,Hebridean Black
-unknown,unknown,grey,purple,black,19.59698221482992,snub,curved,yes,rough,scaled,no,2.950683250311334,stocky,41.595457741462305,3,yes,no,long,curved,club,Scotland,10,35.028575735912746,no,yes,no,SR,1989,Hebridean Black
-unknown,adult,mottled,green,black,0.0,snub,curved,yes,rough,scaled,no,0.0,stocky,43.36065503530294,3,yes,no,long,curved,club,Scotland,9,35.81922965155162,no,yes,no,NR,2006,Hebridean Black
-unknown,elder,grey,blue,mottled,22.962071791613255,snub,curved,yes,rough,scaled,no,0.0,stocky,51.44630619177673,3,yes,no,long,curved,club,Scotland,10,38.78305735617517,no,yes,no,WX,2003,Hebridean Black
-female,elder,black,blue,black,43.726097119254554,snub,curved,yes,rough,scaled,no,0.0,stocky,81.07548831696153,4,yes,no,long,curved,club,Open Ocean,7,40.44161442633351,no,yes,no,LM,2014,Hebridean Black
-female,unknown,black,blue,black,25.185717302090183,square,curved,yes,rough,scaled,no,3.439170813805335,stocky,56.97513387382098,4,yes,no,long,curved,club,Scotland,10,0.0,no,yes,no,AB,1976,Hebridean Black
-unknown,unknown,black,blue,mottled,19.34405486423517,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Open Ocean,8,40.96336808213635,no,yes,no,WX,1989,Hebridean Black
-unknown,adult,black,blue,black,18.103310803473523,snub,curved,partial,rough,mixed,no,2.783851929405839,stocky,38.07180965029346,4,yes,no,long,curved,club,Scotland,7,38.482952525587045,no,no,no,FF,2019,Hebridean Black
-unknown,elder,grey,purple,black,0.0,snub,curved,yes,rough,scaled,no,3.309806243081187,stocky,43.42865751841398,4,yes,no,long,curved,club,Scotland,9,37.254898513958786,no,yes,no,DR,1994,Hebridean Black
-female,adult,grey,blue,black,17.42955086652384,snub,curved,yes,rough,scaled,no,2.6181813743540254,stocky,0.0,3,yes,no,long,curved,club,Britain,10,0.0,no,no,no,BR,1978,Hebridean Black
-female,unknown,white,blue,white,24.407839871318004,square,curved,yes,rough,scaled,no,3.824254701083203,stocky,52.8109535273593,4,yes,no,long,curved,club,Ireland,7,36.26509248382394,no,yes,no,KN,1996,Hebridean Black
-unknown,unknown,mottled,purple,mottled,18.021191129037256,square,curved,yes,rough,scaled,no,0.0,stocky,36.79170051488703,4,yes,no,long,curved,club,Scotland,8,40.43409597728175,no,yes,no,TR,2020,Hebridean Black
-unknown,unknown,mottled,purple,black,0.0,square,curved,yes,rough,scaled,no,3.297924011764569,stocky,0.0,3,yes,no,long,curved,club,Scotland,7,40.85394813265691,no,yes,no,AB,2013,Hebridean Black
-female,adult,grey,purple,mottled,25.89525916940665,snub,curved,yes,rough,scaled,no,3.2915765576092713,stocky,48.16716447722238,4,yes,no,long,curved,club,Open Ocean,9,37.21909546480353,no,no,no,NN,2022,Hebridean Black
-female,unknown,mottled,blue,black,25.803186895478238,square,curved,yes,rough,scaled,no,3.4614335028671857,stocky,55.446644012047834,4,yes,no,long,curved,club,Open Ocean,7,0.0,no,yes,no,U,1978,Hebridean Black
-unknown,unknown,grey,green,black,26.947882867267346,square,curved,yes,rough,scaled,no,3.2089311875807867,stocky,59.876961280640906,4,yes,no,long,curved,club,Britain,9,40.44101918327118,no,yes,no,DR,2015,Hebridean Black
-male,adult,mottled,green,black,20.119251959105267,square,curved,yes,rough,scaled,no,3.302588643842979,stocky,35.19609337356112,4,yes,no,long,curved,club,Scotland,8,39.650859029446515,no,yes,no,NK,2005,Hebridean Black
-female,unknown,mottled,blue,mottled,19.71331531345411,snub,curved,yes,rough,scaled,no,1.9300874633325245,stocky,0.0,2,yes,no,long,curved,club,Wales,7,38.70424369113472,no,yes,no,KN,2018,Hebridean Black
-male,adult,black,blue,black,17.478808379569642,snub,curved,yes,rough,scaled,no,1.8282071691592212,stocky,30.02820435354504,4,yes,no,long,curved,club,Scotland,7,0.0,no,yes,no,KN,1994,Hebridean Black
-male,unknown,grey,green,black,27.727999436007472,snub,curved,yes,rough,scaled,no,4.0294782171419525,stocky,60.43856449171143,4,yes,no,long,curved,club,Open Ocean,9,36.26600123124479,no,yes,no,TX,1998,Hebridean Black
-unknown,juvenile,grey,blue,black,16.728901535202056,square,curved,yes,rough,scaled,no,3.14663281874131,stocky,49.21169413498447,3,yes,no,long,curved,club,Britain,7,0.0,no,yes,no,BB,1989,Hebridean Black
-female,elder,grey,blue,black,34.81563534178493,snub,curved,yes,rough,scaled,no,4.460285742396747,stocky,70.86596198107054,4,yes,no,long,curved,club,Scotland,7,34.29787991355989,no,yes,no,NR,2003,Hebridean Black
-unknown,adult,grey,blue,black,0.0,snub,curved,yes,rough,scaled,no,2.642705252490737,stocky,33.32297149422949,4,yes,no,long,curved,club,Ireland,7,34.59701067404079,no,yes,no,SR,2012,Hebridean Black
-unknown,juvenile,grey,green,black,0.0,snub,curved,yes,rough,scaled,no,0.0,stocky,50.45267632053043,4,yes,no,long,curved,club,Scotland,7,51.30513381128343,no,yes,no,VM,1999,Hebridean Black
-male,adult,grey,blue,mottled,0.0,snub,curved,yes,rough,scaled,no,0.0,stocky,29.49426849926312,4,yes,no,long,curved,club,Open Ocean,8,37.25194370836461,no,yes,no,DR,1997,Hebridean Black
-female,unknown,black,purple,black,0.0,snub,curved,yes,rough,scaled,no,2.846754228697815,stocky,49.13183385011129,3,yes,no,long,curved,club,Ireland,8,36.5376539546721,no,yes,no,VM,1989,Hebridean Black
-unknown,unknown,grey,blue,black,24.727101184712303,square,curved,yes,rough,scaled,no,2.6848096418554763,stocky,0.0,4,yes,no,long,curved,club,Ireland,10,38.56890224346711,no,yes,no,SR,1985,Hebridean Black
-unknown,elder,grey,blue,mottled,0.0,square,curved,partial,rough,mixed,no,2.8599190404098267,stocky,41.23811232940635,4,yes,no,long,curved,club,Ireland,9,37.62628254609883,no,yes,no,NK,2012,Hebridean Black
-female,juvenile,grey,blue,mottled,13.12572377699645,snub,curved,yes,rough,scaled,no,2.5205830296621192,stocky,0.0,2,yes,no,long,curved,club,Scotland,9,47.517505823815945,no,yes,no,U,1981,Hebridean Black
-male,adult,grey,green,black,16.677302894278178,square,curved,yes,rough,scaled,no,2.0375906863841613,stocky,30.738926908247894,4,yes,no,long,curved,club,Britain,8,38.617445792003004,no,yes,no,AB,2002,Hebridean Black
-unknown,unknown,black,purple,black,30.98831334852303,snub,curved,yes,rough,scaled,no,3.8038819324199937,stocky,63.15992633469038,4,yes,no,long,curved,club,Ireland,9,37.5140359514603,no,yes,no,FF,1990,Hebridean Black
-male,elder,black,blue,mottled,24.63408093149078,square,curved,yes,rough,scaled,no,0.0,stocky,53.3212863994573,4,yes,no,long,curved,club,Scotland,9,35.405878918465085,no,yes,no,U,1992,Hebridean Black
-unknown,adult,mottled,purple,black,28.835025364167727,snub,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Scotland,7,41.143572570340794,no,yes,no,OK,2017,Hebridean Black
-unknown,adult,grey,purple,black,22.279089300852966,square,curved,yes,rough,scaled,no,2.8480013696019224,stocky,0.0,4,yes,no,long,curved,club,Scotland,7,39.08482419490293,no,no,no,BB,2006,Hebridean Black
-male,unknown,black,blue,black,23.422713759468145,snub,curved,yes,rough,scaled,no,3.281614965350462,stocky,48.21731698084383,3,yes,no,long,curved,club,Scotland,7,0.0,no,yes,no,BR,1986,Hebridean Black
-unknown,elder,mottled,blue,black,0.0,snub,curved,yes,rough,scaled,no,3.109098142828654,stocky,61.039182900772694,4,yes,no,long,curved,club,Scotland,7,0.0,no,yes,no,BB,1988,Hebridean Black
-female,adult,black,blue,black,26.08525992250198,snub,curved,yes,rough,scaled,no,2.6608463550864383,stocky,45.705136422845285,4,yes,no,long,curved,club,Britain,10,39.89460207847335,no,yes,no,SR,1992,Hebridean Black
-unknown,adult,black,purple,mottled,16.1697790851853,snub,curved,yes,rough,scaled,no,2.0076528889460064,stocky,35.79013606482196,3,yes,no,long,curved,club,Wales,8,33.919534233809955,no,yes,no,BR,2015,Hebridean Black
-unknown,unknown,black,blue,black,30.03667125774793,square,curved,yes,rough,scaled,no,3.7869202065662444,stocky,67.10146224641994,4,yes,no,long,curved,club,Scotland,7,37.874058512766176,no,yes,no,NR,1975,Hebridean Black
-female,unknown,black,blue,mottled,19.994200232131817,snub,curved,yes,rough,scaled,no,2.5045298721580234,stocky,49.34872851080961,4,yes,no,long,curved,club,Britain,9,34.81891268113128,no,yes,no,WX,1996,Hebridean Black
-unknown,adult,mottled,blue,mottled,20.33593128595557,snub,curved,yes,rough,scaled,no,0.0,stocky,36.48826897143166,3,yes,no,long,curved,club,Scotland,8,40.90347137050446,no,no,no,WX,2012,Hebridean Black
+female,unknown,grey,green,black,0.0,snub,curved,yes,rough,scaled,no,2.85249996056677,stocky,43.161003623792034,3,yes,no,long,curved,club,Ireland,9,34.23900887075141,no,yes,no,SR,1980,Hebridean Black
+male,elder,black,blue,black,20.04367060454265,snub,curved,yes,rough,scaled,no,2.6480146104100473,stocky,49.21349629012085,3,yes,no,long,curved,club,Scotland,8,40.50669811754498,no,yes,no,VM,1996,Hebridean Black
+unknown,unknown,mottled,purple,black,14.437008433413645,square,curved,yes,rough,scaled,no,1.5230515348516505,stocky,35.930301016888066,4,yes,no,long,curved,club,Scotland,7,36.377388923322364,no,yes,no,U,1981,Hebridean Black
+male,unknown,black,purple,black,16.894457788158803,square,curved,yes,rough,scaled,no,2.30670075244754,stocky,0.0,4,yes,no,long,curved,club,Scotland,9,37.86167320914379,no,no,no,SR,1980,Hebridean Black
+female,elder,black,purple,mottled,32.1413313613277,square,curved,yes,rough,mixed,no,4.590066841155488,stocky,0.0,4,yes,no,long,curved,club,Ireland,8,35.40542324059726,no,yes,no,U,1985,Hebridean Black
+female,unknown,grey,blue,mottled,0.0,square,curved,yes,rough,scaled,no,3.7784712389256185,stocky,65.60791317241886,3,yes,no,long,curved,club,Ireland,10,0.0,no,yes,no,NN,2007,Hebridean Black
+male,unknown,black,blue,mottled,0.0,square,curved,yes,rough,scaled,no,2.811352319879592,stocky,40.77299736408023,3,yes,no,long,curved,club,Scotland,10,34.33549358537551,no,yes,no,NR,2019,Hebridean Black
+male,elder,black,blue,black,0.0,snub,curved,yes,rough,scaled,no,3.060457413807867,stocky,0.0,3,yes,no,long,curved,club,Scotland,9,39.63616729222408,no,yes,no,DR,2004,Hebridean Black
+male,elder,black,blue,mottled,0.0,square,curved,yes,rough,scaled,no,2.7884518112140326,stocky,52.550345276156484,4,yes,no,long,curved,club,Britain,8,37.93616040975438,no,no,no,BB,2020,Hebridean Black
+male,adult,grey,blue,mottled,13.917539803491987,snub,curved,yes,rough,scaled,no,1.9296034512404103,stocky,20.787638598135157,4,yes,no,long,curved,club,Scotland,9,35.199599685116794,no,yes,no,LM,2011,Hebridean Black
+unknown,juvenile,grey,purple,black,16.001737973709535,snub,curved,yes,rough,scaled,no,1.7241497554428253,stocky,35.78901365730088,4,yes,no,long,curved,club,Scotland,8,46.75040133084894,no,no,no,NN,1982,Hebridean Black
+female,juvenile,black,purple,black,17.632345333291035,square,curved,yes,rough,mixed,no,3.248971029030136,stocky,53.29507261364557,2,yes,no,long,curved,club,Britain,9,46.251098572945665,no,no,no,LM,2013,Hebridean Black
+unknown,adult,grey,purple,black,16.00929025057705,snub,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Scotland,9,40.386567793682275,no,no,no,KN,2015,Hebridean Black
+female,unknown,grey,blue,black,20.66285756479022,square,curved,yes,rough,scaled,no,2.9645268564243183,stocky,43.595494362879,3,yes,no,long,curved,club,Britain,8,0.0,no,yes,no,LM,2023,Hebridean Black
+female,adult,grey,green,black,20.381719115054015,square,curved,yes,rough,scaled,no,1.9490156477656093,stocky,35.36275973370802,4,yes,no,long,curved,club,Ireland,10,34.592620712301894,no,yes,no,OH,1997,Hebridean Black
+male,elder,black,green,black,21.7144340040299,snub,curved,yes,rough,scaled,no,2.7938350901247184,stocky,48.67269970855109,4,yes,no,long,curved,club,Scotland,8,35.59849835810468,no,yes,no,NK,2018,Hebridean Black
+unknown,adult,black,purple,mottled,0.0,snub,curved,yes,rough,scaled,no,0.0,stocky,41.09759664134103,4,yes,no,long,curved,club,Scotland,9,40.66816504138577,no,yes,no,NR,2020,Hebridean Black
+unknown,adult,black,green,mottled,0.0,snub,curved,yes,rough,scaled,no,2.409134494130535,stocky,44.778340697287696,3,yes,no,long,curved,club,Scotland,7,38.32687904730096,no,yes,no,NR,1995,Hebridean Black
+female,adult,grey,green,black,0.0,snub,curved,yes,rough,scaled,no,2.4615523303149134,stocky,0.0,4,yes,no,long,curved,club,Scotland,8,0.0,no,yes,no,SR,1979,Hebridean Black
+male,unknown,black,purple,mottled,0.0,snub,curved,yes,rough,scaled,no,2.3369627087405096,stocky,0.0,4,yes,no,long,curved,club,Scotland,7,36.74118749986203,no,no,no,AB,2007,Hebridean Black
+female,unknown,black,purple,black,0.0,snub,curved,yes,rough,scaled,no,2.0753034619212936,stocky,37.17813771480659,4,yes,no,long,curved,club,Britain,10,38.33960339013375,no,yes,no,OK,2022,Hebridean Black
+male,juvenile,grey,purple,mottled,9.10269547796631,snub,curved,yes,rough,scaled,no,1.4411850425127029,stocky,17.106080880162462,4,yes,no,long,curved,club,Wales,9,0.0,no,no,no,NR,1997,Hebridean Black
+female,adult,grey,purple,mottled,18.093576360081045,square,curved,partial,rough,mixed,no,0.0,stocky,34.68762256888528,4,yes,no,long,curved,club,Scotland,10,36.8492498888885,no,yes,no,SR,1991,Hebridean Black
+male,adult,black,blue,black,12.397055227631036,snub,curved,yes,rough,scaled,no,0.0,stocky,19.945882421783924,4,yes,no,long,curved,club,Open Ocean,8,36.81926446778596,no,yes,no,AB,2018,Hebridean Black
+female,unknown,black,blue,black,14.51523171560032,square,curved,yes,rough,scaled,no,1.9781669895604994,stocky,38.09320935072662,4,yes,no,long,curved,club,Scotland,9,40.590448458318534,no,no,no,U,1991,Hebridean Black
+female,juvenile,grey,purple,black,13.968809268494992,square,curved,yes,rough,mixed,no,0.0,stocky,28.617905661406297,3,yes,no,long,curved,club,Scotland,9,49.38632110781411,no,no,no,FF,1987,Hebridean Black
+unknown,adult,grey,purple,mottled,0.0,snub,curved,yes,rough,scaled,no,2.964216350851954,stocky,0.0,4,yes,no,long,curved,club,Open Ocean,10,0.0,no,yes,no,NR,2011,Hebridean Black
+male,unknown,black,blue,mottled,0.0,square,curved,yes,rough,scaled,no,0.0,stocky,60.74175690820222,4,yes,no,long,curved,club,Britain,7,0.0,no,yes,no,TR,2006,Hebridean Black
+female,elder,black,purple,mottled,39.57534080424449,snub,curved,yes,rough,scaled,no,6.456384704752898,stocky,95.32303011154663,3,yes,no,long,curved,club,Wales,7,36.802572911670936,no,yes,no,FF,1993,Hebridean Black
+unknown,unknown,grey,blue,black,16.59823305790539,snub,curved,yes,rough,scaled,no,1.9114033121043001,stocky,34.50775429475827,4,yes,no,long,curved,club,Ireland,10,36.895630432994274,no,yes,no,WX,2014,Hebridean Black
+unknown,juvenile,mottled,blue,black,0.0,snub,curved,yes,rough,mixed,no,0.0,stocky,53.695297835365125,4,yes,no,long,curved,club,Scotland,7,50.07869467394765,no,no,no,BB,1983,Hebridean Black
+unknown,adult,grey,blue,black,27.279800323567812,snub,curved,yes,rough,scaled,no,4.192110897000874,stocky,0.0,4,yes,no,long,curved,club,Scotland,9,39.27874207620305,no,yes,no,SX,2021,Hebridean Black
+male,adult,grey,purple,mottled,13.912009678076613,snub,curved,yes,rough,scaled,no,1.3005821708046588,stocky,0.0,2,yes,no,long,curved,club,Britain,9,35.31955816306311,no,yes,no,BR,1988,Hebridean Black
+unknown,unknown,grey,purple,black,0.0,snub,curved,yes,rough,scaled,no,3.374782724849941,stocky,71.40496216111703,4,yes,no,long,curved,club,Scotland,9,0.0,no,no,no,LM,2002,Hebridean Black
+male,adult,black,blue,black,0.0,snub,curved,yes,rough,scaled,no,1.4689150580803922,stocky,18.308747481358584,3,yes,no,long,curved,club,Britain,7,36.327862568171625,no,yes,no,AB,2021,Hebridean Black
+unknown,adult,grey,purple,black,0.0,square,curved,yes,rough,scaled,no,2.847532114881173,stocky,0.0,4,yes,no,long,curved,club,Scotland,10,40.42763296244319,no,yes,no,SR,1981,Hebridean Black
+unknown,unknown,black,purple,black,23.8953205690972,snub,curved,partial,rough,mixed,no,2.915260464504032,stocky,51.02942560009216,3,yes,no,long,curved,club,Ireland,9,38.56908241210056,no,yes,no,NK,2005,Hebridean Black
+male,unknown,black,purple,mottled,0.0,snub,curved,yes,rough,scaled,no,0.0,stocky,47.2015883424539,4,yes,no,long,curved,club,Ireland,10,0.0,no,no,no,AB,1993,Hebridean Black
+female,elder,grey,blue,mottled,29.658844970918956,snub,curved,yes,rough,scaled,no,3.6624933948940877,stocky,70.38042975466415,4,yes,no,long,curved,club,Scotland,8,39.898338416762385,no,no,no,OH,1994,Hebridean Black
+unknown,elder,grey,purple,mottled,0.0,snub,curved,yes,rough,scaled,no,0.0,stocky,44.29160699674898,4,yes,no,long,curved,club,Scotland,8,39.25466639087746,no,no,no,SX,1979,Hebridean Black
+male,unknown,grey,purple,black,18.509065020938007,snub,curved,yes,rough,scaled,no,0.0,stocky,0.0,3,yes,no,long,curved,club,Scotland,7,35.174596654828626,no,no,no,SX,2004,Hebridean Black
+female,juvenile,grey,purple,mottled,0.0,square,curved,partial,rough,mixed,no,2.6820021993403294,stocky,36.14159423030408,3,yes,no,long,curved,club,Scotland,8,42.91978052343814,no,no,no,BR,1985,Hebridean Black
+unknown,elder,grey,purple,black,25.481132571140854,snub,curved,yes,rough,scaled,no,0.0,stocky,49.203960284646264,4,yes,no,long,curved,club,Scotland,8,0.0,no,yes,no,VM,2018,Hebridean Black
+unknown,elder,grey,blue,black,16.49164076214605,snub,curved,yes,rough,scaled,no,0.0,stocky,39.88805439794063,4,yes,no,long,curved,club,Britain,8,37.089876354462454,no,yes,no,NK,1981,Hebridean Black
+male,adult,grey,blue,black,15.45718292060841,square,curved,yes,rough,mixed,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Scotland,9,0.0,no,yes,no,AB,1996,Hebridean Black
+unknown,juvenile,black,purple,mottled,0.0,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Scotland,10,0.0,no,no,no,VM,1995,Hebridean Black
+unknown,adult,black,purple,mottled,31.521337475391597,square,curved,yes,rough,scaled,no,4.227870391591385,stocky,0.0,4,yes,no,long,curved,club,Scotland,9,38.0288172735136,no,yes,no,BR,2003,Hebridean Black
+female,elder,black,green,black,33.907790231497444,snub,curved,yes,rough,scaled,no,4.2695905217028,stocky,73.43154606875243,4,yes,no,long,curved,club,Wales,9,38.024798332129706,no,yes,no,LM,2006,Hebridean Black
+male,elder,grey,blue,black,19.659626877041788,snub,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Scotland,7,0.0,no,no,no,LM,1980,Hebridean Black
+male,juvenile,grey,purple,mottled,0.0,square,curved,partial,rough,mixed,no,0.7742370502324172,stocky,9.942681715104106,4,yes,no,long,curved,club,Ireland,9,44.79296741360996,no,no,no,FF,2017,Hebridean Black
+female,unknown,grey,purple,black,27.702649169472586,square,curved,yes,rough,scaled,no,4.164341770322394,stocky,73.73707952449024,4,yes,no,long,curved,club,Scotland,8,34.564871141942035,no,yes,no,NN,1983,Hebridean Black
+female,juvenile,grey,purple,black,18.188144506085486,snub,curved,yes,rough,scaled,no,0.0,stocky,41.44463886363758,4,yes,no,long,curved,club,Britain,8,42.77637109563231,no,no,no,OH,1985,Hebridean Black
+female,elder,white,blue,white,0.0,snub,curved,partial,rough,mixed,no,0.0,stocky,88.7590398934925,4,yes,no,long,curved,club,Scotland,9,34.15646463098093,no,yes,no,SX,2020,Hebridean Black
+female,elder,grey,purple,black,41.875196558411176,snub,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Britain,8,0.0,no,yes,no,OK,2022,Hebridean Black
+unknown,elder,black,green,black,16.174270460153252,snub,curved,yes,rough,mixed,no,0.0,stocky,35.052823112875835,4,yes,no,long,curved,club,Scotland,8,34.91268955831791,no,no,no,WX,2023,Hebridean Black
+female,unknown,black,purple,mottled,26.104959225115874,square,curved,yes,rough,scaled,no,4.071781155730474,stocky,0.0,4,yes,no,long,curved,club,Scotland,10,0.0,no,yes,no,DR,2009,Hebridean Black
+unknown,unknown,black,purple,black,30.584031261947658,square,curved,yes,rough,scaled,no,0.0,stocky,58.30905042291363,4,yes,no,long,curved,club,Scotland,9,39.279150320701035,no,yes,no,OH,1984,Hebridean Black
+unknown,elder,mottled,blue,black,0.0,square,curved,yes,rough,scaled,no,2.2777259385148216,stocky,0.0,4,yes,no,long,curved,club,Wales,9,38.43185078680341,no,yes,no,WX,2009,Hebridean Black
+female,elder,black,blue,mottled,41.35014285491689,snub,curved,yes,rough,mixed,no,6.722693086251509,stocky,87.85103713903449,4,yes,no,long,curved,club,Scotland,7,37.08956031523561,no,yes,no,OK,1987,Hebridean Black
+female,unknown,grey,green,mottled,16.0524385743675,snub,curved,yes,rough,scaled,no,2.0229643401466335,stocky,0.0,4,yes,no,long,curved,club,Scotland,10,0.0,no,yes,no,WX,2001,Hebridean Black
+male,juvenile,black,purple,mottled,0.0,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Britain,10,0.0,no,no,no,SR,1977,Hebridean Black
+female,unknown,grey,green,black,30.217174918983332,square,curved,yes,rough,scaled,no,4.618123655933026,stocky,61.78664986993107,4,yes,no,long,curved,club,Scotland,8,0.0,no,yes,no,DR,1994,Hebridean Black
+male,juvenile,black,blue,mottled,0.0,square,curved,yes,rough,scaled,no,1.1818346428224116,stocky,0.0,4,yes,no,long,curved,club,Wales,9,49.02305521183499,no,no,no,TX,2010,Hebridean Black
+female,unknown,grey,purple,mottled,13.613324957268539,snub,curved,yes,rough,mixed,no,0.0,stocky,34.37066739625665,4,yes,no,long,curved,club,Open Ocean,8,35.17872317404921,no,yes,no,VM,1995,Hebridean Black
+male,unknown,black,blue,black,0.0,square,curved,partial,rough,mixed,no,0.0,stocky,56.598100633082076,2,yes,no,long,curved,club,Scotland,10,0.0,no,yes,no,VM,2013,Hebridean Black
+unknown,unknown,grey,blue,black,20.99897643380549,square,curved,yes,rough,scaled,no,3.361392674526468,stocky,56.17807745259466,4,yes,no,long,curved,club,Scotland,10,35.274337581788295,no,yes,no,DR,2009,Hebridean Black
+female,unknown,black,blue,mottled,0.0,square,curved,yes,rough,scaled,no,3.0168248768126285,stocky,52.23572909835512,4,yes,no,long,curved,club,Britain,7,38.53623961521857,no,no,no,VM,1985,Hebridean Black
+male,elder,grey,green,black,23.514356397189182,square,curved,yes,rough,scaled,no,0.0,stocky,58.91835274318051,4,yes,no,long,curved,club,Ireland,7,40.32139360716565,no,yes,no,BR,2001,Hebridean Black
+female,elder,black,purple,black,32.13680880335821,square,curved,yes,rough,scaled,no,5.263592392671822,stocky,0.0,4,yes,no,long,curved,club,Scotland,7,0.0,no,yes,no,DR,1976,Hebridean Black
+unknown,unknown,mottled,green,mottled,0.0,snub,curved,yes,rough,scaled,no,2.3469045025093185,stocky,56.35711239066914,3,yes,no,long,curved,club,Scotland,10,38.09141065576602,no,no,no,FF,1986,Hebridean Black
+male,unknown,grey,purple,black,0.0,square,curved,yes,rough,scaled,no,3.325557110326719,stocky,67.49863378327298,3,yes,no,long,curved,club,Britain,8,35.790539389393835,no,yes,no,TR,1998,Hebridean Black
+unknown,juvenile,mottled,blue,black,23.776743009233947,snub,curved,yes,rough,scaled,no,2.265225324364725,stocky,55.11263697507894,4,yes,no,long,curved,club,Britain,10,49.60996278371705,no,no,no,U,1992,Hebridean Black
+male,elder,mottled,blue,black,22.139165016174516,snub,curved,yes,rough,scaled,no,0.0,stocky,51.6385574917342,4,yes,no,long,curved,club,Open Ocean,9,41.1351112162497,no,yes,no,TR,2012,Hebridean Black
+unknown,juvenile,mottled,blue,black,15.518183529137955,snub,curved,yes,rough,scaled,no,1.9093878476683042,stocky,43.2676049102848,4,yes,no,long,curved,club,Scotland,10,0.0,no,no,no,OH,2014,Hebridean Black
+male,unknown,black,purple,black,28.26739180573196,snub,curved,yes,rough,scaled,no,3.317335751427559,stocky,64.91018816938913,4,yes,no,long,curved,club,Britain,7,41.113161479321384,no,no,no,LM,1987,Hebridean Black
+female,unknown,grey,blue,mottled,30.31334173993865,square,curved,yes,rough,scaled,no,4.014443612635457,stocky,56.96194579576658,4,yes,no,long,curved,club,Scotland,8,40.159818125463545,no,no,no,FF,1982,Hebridean Black
+unknown,unknown,grey,purple,black,21.225695828120163,square,curved,yes,rough,scaled,no,3.4248804938963118,stocky,50.20155630742275,4,yes,no,long,curved,club,Ireland,8,0.0,no,yes,no,SX,2015,Hebridean Black
+male,unknown,grey,purple,black,26.487061412081683,square,curved,yes,rough,mixed,no,3.7830256140050955,stocky,62.856067281425524,4,yes,no,long,curved,club,Open Ocean,10,41.1122781099832,no,yes,no,DR,1999,Hebridean Black
+unknown,unknown,black,purple,black,26.483109988543603,square,curved,yes,rough,scaled,no,3.9500705006056487,stocky,68.82897494210208,4,yes,no,long,curved,club,Wales,8,36.545651947798845,no,no,no,AB,1996,Hebridean Black
+unknown,adult,grey,green,mottled,14.169548596332781,square,curved,yes,rough,scaled,no,1.9304001500308934,stocky,29.099588371520937,4,yes,no,long,curved,club,Wales,8,0.0,no,yes,no,NR,1993,Hebridean Black
+male,juvenile,black,blue,mottled,8.372353610211333,snub,curved,yes,rough,scaled,no,1.5118963666294367,stocky,12.862623022201419,3,yes,no,long,curved,club,Scotland,10,0.0,no,no,no,AB,1975,Hebridean Black
+unknown,elder,white,purple,white,21.88771854429783,square,curved,yes,rough,scaled,no,2.62190738924158,stocky,43.64095838228919,4,yes,no,long,curved,club,Wales,8,41.20529771910299,no,yes,no,OK,1992,Hebridean Black
+unknown,unknown,black,blue,mottled,21.651298482487473,square,curved,yes,rough,scaled,no,2.765243998120455,stocky,44.44585007324825,4,yes,no,long,curved,club,Britain,8,39.49973998822325,no,yes,no,TR,1992,Hebridean Black
+unknown,unknown,mottled,blue,black,0.0,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Scotland,7,0.0,no,yes,no,NN,1977,Hebridean Black
+unknown,unknown,black,green,mottled,0.0,square,curved,yes,rough,scaled,no,3.379862903069285,stocky,58.121850944155476,4,yes,no,long,curved,club,Britain,7,33.81800143348964,no,yes,no,WX,2013,Hebridean Black
+female,adult,grey,blue,black,24.330232660418275,snub,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Wales,9,34.76453650779132,no,yes,no,BB,2003,Hebridean Black
+female,adult,black,blue,mottled,18.909135391825608,square,curved,yes,rough,scaled,no,3.0141270353699983,stocky,38.20697905727057,2,yes,no,long,curved,club,Wales,10,37.287416826253086,no,yes,no,KN,1981,Hebridean Black
+unknown,unknown,black,blue,black,0.0,square,curved,yes,rough,scaled,no,2.6467949217750477,stocky,41.16590576326425,2,yes,no,long,curved,club,Scotland,9,34.22888434062374,no,yes,no,BR,2002,Hebridean Black
+female,unknown,black,blue,black,0.0,square,curved,yes,rough,scaled,no,1.9520054055210343,stocky,0.0,4,yes,no,long,curved,club,Scotland,9,38.559989244902255,no,yes,no,BB,2005,Hebridean Black
+female,unknown,grey,purple,black,26.671161998680446,square,curved,yes,rough,scaled,no,2.9436319442286654,stocky,0.0,4,yes,no,long,curved,club,Britain,8,0.0,no,yes,no,NR,1984,Hebridean Black
+male,adult,black,purple,black,0.0,square,curved,yes,rough,scaled,no,0.0,stocky,32.293244090691005,4,yes,no,long,curved,club,Ireland,8,38.907893033845454,no,yes,no,CT,1987,Hebridean Black
+male,adult,grey,blue,black,10.768742963849146,square,curved,yes,rough,scaled,no,1.1901264359099037,stocky,16.24026429068745,2,yes,no,long,curved,club,Scotland,7,0.0,no,yes,no,OK,1975,Hebridean Black
+male,unknown,grey,blue,mottled,25.72979851657211,snub,curved,partial,rough,mixed,no,2.6316189501691967,stocky,57.20470374783143,3,yes,no,long,curved,club,Open Ocean,7,0.0,no,yes,no,OK,2003,Hebridean Black
+female,elder,black,blue,black,0.0,square,curved,yes,rough,scaled,no,4.613085832647668,stocky,77.82235394097809,4,yes,no,long,curved,club,Wales,9,40.434448837641895,no,yes,no,DR,2012,Hebridean Black
+male,elder,mottled,purple,black,24.26913897810726,snub,curved,yes,rough,scaled,no,0.0,stocky,48.1826025674444,4,yes,no,long,curved,club,Wales,9,38.20983393784087,no,yes,no,OH,2013,Hebridean Black
+female,juvenile,mottled,purple,black,15.342011836054006,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Wales,9,51.80788026001777,no,no,no,TR,1999,Hebridean Black
+unknown,adult,mottled,blue,mottled,0.0,snub,curved,yes,rough,scaled,no,3.513325013627016,stocky,0.0,3,yes,no,long,curved,club,Scotland,9,0.0,no,no,no,VM,2020,Hebridean Black
+unknown,elder,black,purple,black,31.05313687285423,square,curved,yes,rough,mixed,no,3.215749369819485,stocky,61.43887458901878,4,yes,no,long,curved,club,Britain,8,36.20599131266093,no,yes,no,NN,1979,Hebridean Black
+unknown,adult,mottled,blue,black,17.153330424185782,snub,curved,yes,rough,mixed,no,1.6092686207022997,stocky,32.82940827909791,3,yes,no,long,curved,club,Scotland,7,34.49935569885536,no,yes,no,BB,1978,Hebridean Black
+unknown,juvenile,mottled,blue,black,18.496276149918568,square,curved,yes,rough,scaled,no,2.923515817517389,stocky,57.2028267459023,4,yes,no,long,curved,club,Scotland,10,50.420337189432,no,no,no,AB,1997,Hebridean Black
+female,juvenile,grey,purple,black,17.841243301835274,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Scotland,8,47.7200627566583,no,no,no,TR,1979,Hebridean Black
+male,elder,black,blue,black,0.0,square,curved,yes,rough,scaled,no,2.2802734342137083,stocky,39.16489678413489,4,yes,no,long,curved,club,Scotland,7,0.0,no,yes,no,NN,2008,Hebridean Black
+male,adult,black,blue,black,0.0,square,curved,yes,rough,scaled,no,1.2835352435204173,stocky,0.0,4,yes,no,long,curved,club,Scotland,8,0.0,no,yes,no,OH,1995,Hebridean Black
+female,adult,mottled,blue,mottled,16.8399575564288,snub,curved,yes,rough,scaled,no,0.0,stocky,35.317991670759845,4,yes,no,long,curved,club,Ireland,8,0.0,no,yes,no,U,2016,Hebridean Black
+unknown,unknown,mottled,blue,black,18.97563816560112,square,curved,yes,rough,scaled,no,1.9011346849675583,stocky,0.0,4,yes,no,long,curved,club,Scotland,9,37.66499151672406,no,yes,no,AB,2004,Hebridean Black
+unknown,unknown,grey,green,mottled,0.0,square,curved,yes,rough,scaled,no,2.6605960284165318,stocky,54.16100200119086,4,yes,no,long,curved,club,Britain,7,35.30282070310835,no,yes,no,TX,1992,Hebridean Black
+unknown,elder,mottled,blue,black,0.0,square,curved,yes,rough,scaled,no,0.0,stocky,39.77191965759991,4,yes,no,long,curved,club,Scotland,7,0.0,no,yes,no,TR,1975,Hebridean Black
+male,adult,mottled,blue,black,16.0179652797797,square,curved,yes,rough,scaled,no,0.0,stocky,30.501779119754918,4,yes,no,long,curved,club,Scotland,9,35.597264054443556,no,no,no,NR,2017,Hebridean Black
+unknown,unknown,mottled,blue,black,18.810231951704846,square,curved,yes,rough,scaled,no,1.8101731075692946,stocky,41.74617881865384,4,yes,no,long,curved,club,Scotland,7,37.0717964538957,no,yes,no,AB,1998,Hebridean Black
+male,adult,black,purple,black,18.269042938340224,square,curved,yes,rough,scaled,no,1.7131499131653365,stocky,33.155161471798614,2,yes,no,long,curved,club,Scotland,7,37.96134087594928,no,no,no,FF,1990,Hebridean Black
+male,adult,mottled,blue,black,0.0,snub,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Scotland,8,0.0,no,no,no,CT,2016,Hebridean Black
+unknown,unknown,black,blue,black,30.7086303143562,square,curved,yes,rough,scaled,no,3.16769299555269,stocky,0.0,4,yes,no,long,curved,club,Open Ocean,7,40.61017834554889,no,no,no,TX,1976,Hebridean Black
+female,elder,black,blue,black,36.02516212608685,square,curved,yes,rough,scaled,no,5.044002302170069,stocky,84.9399006486341,4,yes,no,long,curved,club,Ireland,9,40.438514048015946,no,yes,no,LM,1996,Hebridean Black
+male,unknown,mottled,blue,black,26.014793626885815,square,curved,partial,rough,mixed,no,3.310344363155793,stocky,55.94169269143264,3,yes,no,long,curved,club,Ireland,7,34.62714844463808,no,yes,no,NK,1978,Hebridean Black
+female,adult,black,blue,mottled,0.0,square,curved,yes,rough,scaled,no,3.7399291528345584,stocky,47.40936919030331,4,yes,no,long,curved,club,Scotland,9,40.384009692961776,no,yes,no,OK,1999,Hebridean Black
+male,juvenile,grey,purple,black,9.776871692933165,square,curved,partial,rough,mixed,no,0.0,stocky,15.901365098536289,4,yes,no,long,curved,club,Ireland,10,44.732537832739936,no,no,no,KN,2017,Hebridean Black
+unknown,unknown,grey,purple,black,0.0,square,curved,yes,rough,scaled,no,0.0,stocky,39.522796098543026,4,yes,no,long,curved,club,Open Ocean,10,0.0,no,yes,no,OH,2003,Hebridean Black
+female,unknown,black,purple,mottled,22.71577464241196,square,curved,partial,rough,mixed,no,2.309586995039562,stocky,0.0,4,yes,no,long,curved,club,Britain,8,41.107449349424996,no,no,no,OK,1981,Hebridean Black
+female,unknown,grey,purple,black,0.0,square,curved,yes,rough,scaled,no,2.146816781709375,stocky,44.0886822905505,4,yes,no,long,curved,club,Britain,9,0.0,no,no,no,LM,1992,Hebridean Black
+unknown,unknown,black,blue,black,27.782974019030082,square,curved,yes,rough,scaled,no,0.0,stocky,59.06066881602675,3,yes,no,long,curved,club,Wales,8,35.373515269230644,no,yes,no,BR,1981,Hebridean Black
+female,adult,mottled,purple,black,0.0,square,curved,yes,rough,scaled,no,2.941802404860764,stocky,39.90563646704378,4,yes,no,long,curved,club,Scotland,10,39.568044354222295,no,yes,no,NN,2021,Hebridean Black
+male,elder,black,blue,black,17.769621346613793,snub,curved,yes,rough,mixed,no,0.0,stocky,42.12981716857402,4,yes,no,long,curved,club,Scotland,8,35.131169454189745,no,yes,no,TX,2011,Hebridean Black
+unknown,adult,grey,purple,mottled,17.29772259608872,snub,curved,yes,rough,scaled,no,0.0,stocky,35.63618110615938,4,yes,no,long,curved,club,Britain,9,34.477997851734976,no,no,no,TX,2017,Hebridean Black
+female,elder,black,purple,black,45.700014897815365,square,curved,yes,rough,scaled,no,0.0,stocky,100.99094958344008,4,yes,no,long,curved,club,Scotland,8,41.114626388357614,no,yes,no,CT,2013,Hebridean Black
+female,adult,black,purple,mottled,0.0,square,curved,yes,rough,scaled,no,2.7897235661892066,stocky,46.897164629944065,4,yes,no,long,curved,club,Scotland,9,0.0,no,yes,no,SR,1976,Hebridean Black
+unknown,juvenile,grey,blue,black,21.972963595086146,snub,curved,yes,rough,scaled,no,2.4156746897916004,stocky,0.0,4,yes,no,long,curved,club,Wales,9,46.14057251357901,no,no,no,LM,2009,Hebridean Black
+female,unknown,mottled,blue,black,20.42367809407198,square,curved,yes,rough,scaled,no,2.974472878500818,stocky,0.0,4,yes,no,long,curved,club,Wales,9,38.85231528521952,no,no,no,BR,1996,Hebridean Black
+male,juvenile,black,blue,mottled,0.0,square,curved,yes,rough,scaled,no,0.9868217862742039,stocky,0.0,4,yes,no,long,curved,club,Ireland,8,51.519894545386194,no,no,no,U,2013,Hebridean Black
+female,unknown,mottled,green,black,24.95833445222157,square,curved,yes,rough,scaled,no,0.0,stocky,58.56960326116619,4,yes,no,long,curved,club,Wales,10,0.0,no,yes,no,WX,1996,Hebridean Black
+unknown,elder,grey,blue,mottled,0.0,snub,curved,yes,rough,scaled,no,3.921011242176895,stocky,55.252331736743216,4,yes,no,long,curved,club,Wales,8,0.0,no,yes,no,AB,2019,Hebridean Black
+female,unknown,grey,blue,mottled,18.064786404807244,square,curved,partial,rough,mixed,no,2.8744095141093218,stocky,36.85678904559977,4,yes,no,long,curved,club,Open Ocean,7,35.39024377380726,no,yes,no,LM,2009,Hebridean Black
+female,elder,black,purple,black,49.0240730465472,snub,curved,yes,rough,mixed,no,6.24283294633879,stocky,110.65249331125533,4,yes,no,long,curved,club,Ireland,7,40.37098165953622,no,yes,no,DR,1997,Hebridean Black
+unknown,elder,grey,purple,black,28.177234965190657,square,curved,yes,rough,scaled,no,0.0,stocky,64.1489088195901,4,yes,no,long,curved,club,Scotland,7,0.0,no,yes,no,TR,1978,Hebridean Black
+female,unknown,black,blue,mottled,22.851529766506093,square,curved,yes,rough,scaled,no,2.207532828736827,stocky,51.68195515105957,4,yes,no,long,curved,club,Scotland,7,41.0137989289814,no,yes,no,SX,1989,Hebridean Black
+male,adult,black,blue,black,22.457029042698778,square,curved,yes,rough,scaled,no,2.7425628306299115,stocky,0.0,3,yes,no,long,curved,club,Britain,9,37.14340233748945,no,no,no,NK,2004,Hebridean Black
+male,unknown,black,purple,black,27.304171937284256,snub,curved,yes,rough,scaled,no,3.376550716828259,stocky,0.0,4,yes,no,long,curved,club,Scotland,9,36.59632850652292,no,yes,no,NR,2010,Hebridean Black
+female,juvenile,grey,purple,black,12.938468688512419,square,curved,yes,rough,scaled,no,2.141231525060173,stocky,22.576047979902224,4,yes,no,long,curved,club,Scotland,10,0.0,no,no,no,AB,1996,Hebridean Black
+female,unknown,black,blue,mottled,21.211945139207124,snub,curved,yes,rough,scaled,no,2.768258281936772,stocky,0.0,4,yes,no,long,curved,club,Scotland,10,34.92021005000037,no,yes,no,KN,2003,Hebridean Black
+unknown,unknown,mottled,blue,mottled,0.0,snub,curved,yes,rough,scaled,no,4.203374317579386,stocky,69.84042565322659,4,yes,no,long,curved,club,Scotland,7,40.350763087571586,no,yes,no,NK,2022,Hebridean Black
+unknown,unknown,black,purple,mottled,15.812310700494649,snub,curved,yes,rough,scaled,no,2.475673295342672,stocky,34.53703982974007,4,yes,no,long,curved,club,Scotland,10,0.0,no,yes,no,WX,1999,Hebridean Black
+female,unknown,black,blue,black,21.264391521835062,snub,curved,yes,rough,scaled,no,2.4790209860410983,stocky,41.28615376440286,4,yes,no,long,curved,club,Scotland,7,0.0,no,yes,no,LM,1990,Hebridean Black
+unknown,unknown,grey,green,black,20.401904870552194,square,curved,yes,rough,mixed,no,3.0070960538433265,stocky,54.385093342583744,4,yes,no,long,curved,club,Britain,8,36.087968883374934,no,yes,no,NK,1983,Hebridean Black
+female,adult,grey,blue,black,16.210335740529615,square,curved,yes,rough,scaled,no,0.0,stocky,39.44491356369267,4,yes,no,long,curved,club,Scotland,9,33.88202739753448,no,no,no,AB,1987,Hebridean Black
+male,juvenile,black,blue,black,6.718270681953011,snub,curved,yes,rough,scaled,no,1.1678995473029414,stocky,13.03162194056143,4,yes,no,long,curved,club,Scotland,9,50.13464819725531,no,no,no,TR,2022,Hebridean Black
+male,elder,grey,blue,mottled,0.0,square,curved,yes,rough,scaled,no,2.792553532222628,stocky,0.0,4,yes,no,long,curved,club,Scotland,7,37.45562304779725,no,yes,no,OK,2015,Hebridean Black
+female,unknown,white,blue,white,24.2419734508912,snub,curved,yes,rough,scaled,no,2.501908388769706,stocky,54.26147810081153,4,yes,no,long,curved,club,Scotland,8,0.0,no,yes,no,NR,1986,Hebridean Black
+unknown,elder,black,blue,mottled,15.788320038823716,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Britain,8,37.386964575556554,no,no,no,NN,1992,Hebridean Black
+unknown,elder,black,blue,black,28.262181414272398,square,curved,partial,rough,mixed,no,0.0,stocky,57.652664653298245,4,yes,no,long,curved,club,Wales,10,39.892658295818634,no,no,no,TX,2022,Hebridean Black
+unknown,elder,grey,purple,black,0.0,square,curved,yes,rough,mixed,no,2.5607761858425784,stocky,38.058291875667685,3,yes,no,long,curved,club,Scotland,10,39.29357782302216,no,yes,no,OK,1994,Hebridean Black
+male,elder,black,green,mottled,19.461215025249267,snub,curved,partial,rough,mixed,no,2.4842589701561937,stocky,37.89411209538439,3,yes,no,long,curved,club,Ireland,8,0.0,no,yes,no,NN,2019,Hebridean Black
+unknown,adult,black,green,black,23.566636521998195,square,curved,partial,rough,mixed,no,3.856562162062215,stocky,50.932532963341245,4,yes,no,long,curved,club,Scotland,10,0.0,no,yes,no,DR,1991,Hebridean Black
+male,adult,mottled,blue,mottled,15.071806710283179,snub,curved,yes,rough,mixed,no,1.4022361927028728,stocky,26.542800452849356,2,yes,no,long,curved,club,Britain,9,34.27526804557425,no,no,no,OH,2010,Hebridean Black
+female,elder,grey,purple,mottled,27.16427903870208,square,curved,yes,rough,scaled,no,3.3455099689219017,stocky,60.72696369282188,4,yes,no,long,curved,club,Scotland,7,40.515430499822344,no,no,no,U,2016,Hebridean Black
+male,elder,grey,green,mottled,22.649057791216116,square,curved,yes,rough,scaled,no,2.6295900403160157,stocky,0.0,4,yes,no,long,curved,club,Wales,7,39.25118700520096,no,yes,no,NK,1980,Hebridean Black
+unknown,adult,grey,purple,mottled,30.005270574645703,snub,curved,yes,rough,scaled,no,4.432059957458087,stocky,52.281966724229186,4,yes,no,long,curved,club,Scotland,10,0.0,no,yes,no,LM,1990,Hebridean Black
+female,elder,grey,blue,black,32.64894485771478,snub,curved,yes,rough,scaled,no,0.0,stocky,82.65624003835389,4,yes,no,long,curved,club,Britain,9,0.0,no,no,no,TX,1978,Hebridean Black
+unknown,unknown,black,purple,black,18.77351363759941,square,curved,partial,rough,mixed,no,2.931214046102413,stocky,49.83327072476502,4,yes,no,long,curved,club,Scotland,7,0.0,no,no,no,SX,1991,Hebridean Black
+unknown,unknown,black,blue,black,17.739938190755023,snub,curved,yes,rough,scaled,no,0.0,stocky,45.645839905045364,4,yes,no,long,curved,club,Wales,9,39.980421995506184,no,yes,no,FF,1981,Hebridean Black
+female,juvenile,mottled,purple,black,0.0,snub,curved,yes,rough,scaled,no,1.4362956400394338,stocky,0.0,4,yes,no,long,curved,club,Scotland,8,46.622798401933125,no,no,no,AB,2002,Hebridean Black
+female,adult,black,purple,mottled,22.865357289119128,snub,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Scotland,8,35.03595486676862,no,yes,no,SR,1998,Hebridean Black
+unknown,unknown,grey,blue,black,0.0,square,curved,yes,rough,scaled,no,0.0,stocky,67.6998188905263,3,yes,no,long,curved,club,Scotland,8,36.358052938775685,no,no,no,BB,1983,Hebridean Black
+unknown,elder,mottled,blue,mottled,0.0,snub,curved,yes,rough,scaled,no,2.678172277318151,stocky,0.0,3,yes,no,long,curved,club,Britain,8,34.01925150612008,no,yes,no,NR,1976,Hebridean Black
+female,unknown,mottled,blue,mottled,19.378729628536632,square,curved,yes,rough,scaled,no,2.310276227551338,stocky,47.788993460132865,4,yes,no,long,curved,club,Scotland,7,35.94127780408624,no,yes,no,CT,2019,Hebridean Black
+female,juvenile,grey,purple,mottled,19.117959655235207,square,curved,yes,rough,scaled,no,3.9384409311130284,stocky,55.17483615968254,4,yes,no,long,curved,club,Scotland,9,0.0,no,no,no,NK,1987,Hebridean Black
+unknown,elder,grey,blue,black,25.32475650091687,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Wales,7,34.987661586216426,no,yes,no,LM,2010,Hebridean Black
+female,adult,mottled,purple,mottled,0.0,square,curved,yes,rough,scaled,no,2.222800862207436,stocky,38.15032870240374,3,yes,no,long,curved,club,Wales,9,0.0,no,yes,no,TR,2017,Hebridean Black
+male,unknown,grey,blue,mottled,0.0,square,curved,yes,rough,scaled,no,2.340723626108731,stocky,35.11927800297507,3,yes,no,long,curved,club,Scotland,9,37.95175258031342,no,yes,no,SR,1977,Hebridean Black
+male,adult,mottled,blue,black,21.62459041288937,snub,curved,partial,rough,mixed,no,2.258443815910956,stocky,37.765805882970696,4,yes,no,long,curved,club,Scotland,9,35.03827597446207,no,yes,no,VM,1990,Hebridean Black
+unknown,elder,mottled,purple,mottled,0.0,snub,curved,partial,rough,mixed,no,2.938598041762033,stocky,55.33274145392902,4,yes,no,long,curved,club,Ireland,7,40.130588258118436,no,yes,no,NN,2018,Hebridean Black
+unknown,unknown,grey,purple,mottled,22.869200419437874,square,curved,yes,rough,scaled,no,3.098996711834101,stocky,54.982295213684736,4,yes,no,long,curved,club,Scotland,10,39.97821326684711,no,no,no,U,1980,Hebridean Black
+male,unknown,white,purple,white,0.0,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Scotland,7,34.96137737275615,no,yes,no,CT,1999,Hebridean Black
+female,juvenile,mottled,blue,mottled,17.174044098299216,snub,curved,yes,rough,scaled,no,0.0,stocky,43.50232592219779,3,yes,no,long,curved,club,Scotland,9,49.095908952545244,no,no,no,U,2004,Hebridean Black
+male,juvenile,black,blue,black,12.8382671872306,square,curved,yes,rough,scaled,no,0.0,stocky,20.231326876510582,2,yes,no,long,curved,club,Scotland,8,49.866100129255216,no,no,no,AB,2004,Hebridean Black
+female,unknown,black,purple,black,20.886984044355316,square,curved,yes,rough,scaled,no,2.974113459903583,stocky,46.013325077831595,3,yes,no,long,curved,club,Scotland,10,38.66940716001102,no,yes,no,FF,2019,Hebridean Black
+female,adult,black,green,mottled,19.559979755155215,square,curved,yes,rough,scaled,no,2.675914128353132,stocky,40.96822959211494,2,yes,no,long,curved,club,Scotland,10,34.725130961763,no,no,no,BR,2014,Hebridean Black
+unknown,unknown,black,purple,black,0.0,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Open Ocean,7,0.0,no,yes,no,VM,2023,Hebridean Black
+male,adult,black,purple,black,0.0,square,curved,yes,rough,scaled,no,2.3498577036325976,stocky,29.780960273160613,4,yes,no,long,curved,club,Scotland,9,38.76484134912026,no,yes,no,FF,2009,Hebridean Black
+female,adult,grey,purple,black,0.0,snub,curved,yes,rough,scaled,no,3.4211153565015153,stocky,0.0,4,yes,no,long,curved,club,Scotland,9,35.6782310081605,no,no,no,SX,1993,Hebridean Black
+unknown,adult,black,purple,mottled,0.0,square,curved,partial,rough,mixed,no,2.631866241536524,stocky,49.32182531059961,4,yes,no,long,curved,club,Scotland,10,0.0,no,yes,no,DR,1976,Hebridean Black
+female,juvenile,white,blue,white,0.0,square,curved,yes,rough,mixed,no,0.0,stocky,0.0,3,yes,no,long,curved,club,Wales,8,50.55479082314498,no,no,no,BR,1993,Hebridean Black
+male,unknown,black,green,mottled,22.44740794028443,snub,curved,yes,rough,scaled,no,0.0,stocky,48.823745192106365,4,yes,no,long,curved,club,Scotland,10,34.98969737198026,no,yes,no,U,2021,Hebridean Black
+unknown,elder,grey,blue,mottled,0.0,square,curved,yes,rough,scaled,no,4.362120742460393,stocky,64.21661044394126,4,yes,no,long,curved,club,Ireland,9,35.388472952475105,no,yes,no,BR,2012,Hebridean Black
+male,unknown,black,purple,mottled,24.877364928756382,square,curved,yes,rough,scaled,no,0.0,stocky,61.487384491617604,4,yes,no,long,curved,club,Britain,8,0.0,no,no,no,OH,2012,Hebridean Black
+female,adult,black,blue,black,30.106317842537752,square,curved,yes,rough,mixed,no,0.0,stocky,53.125919048822325,4,yes,no,long,curved,club,Ireland,10,0.0,no,yes,no,KN,2014,Hebridean Black
+unknown,juvenile,mottled,blue,black,23.78820966906412,snub,curved,yes,rough,scaled,no,2.7361679280764624,stocky,0.0,4,yes,no,long,curved,club,Scotland,8,44.539265362788555,no,no,no,BB,1981,Hebridean Black
+female,juvenile,black,purple,mottled,0.0,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Scotland,8,49.7506762646173,no,no,no,SX,1995,Hebridean Black
+male,unknown,grey,purple,black,15.402555619992123,snub,curved,yes,rough,scaled,no,2.4745539261281992,stocky,38.24284123418286,4,yes,no,long,curved,club,Scotland,9,37.59799481208169,no,yes,no,KN,2008,Hebridean Black
+female,unknown,grey,green,black,0.0,square,curved,partial,rough,mixed,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Ireland,9,37.23427346702329,no,yes,no,FF,1999,Hebridean Black
+male,elder,grey,purple,mottled,22.93424578651874,snub,curved,partial,rough,mixed,no,0.0,stocky,60.30572551688358,4,yes,no,long,curved,club,Scotland,7,36.20438165779572,no,yes,no,CT,2009,Hebridean Black
+female,unknown,grey,blue,black,26.1800484330656,square,curved,yes,rough,scaled,no,2.992415880449735,stocky,54.00507606293915,4,yes,no,long,curved,club,Open Ocean,8,35.9578532415182,no,yes,no,SX,2023,Hebridean Black
+unknown,juvenile,black,purple,mottled,0.0,snub,curved,yes,rough,scaled,no,0.0,stocky,60.78700883563065,3,yes,no,long,curved,club,Britain,9,47.891615857012525,no,no,no,VM,2002,Hebridean Black
+unknown,juvenile,grey,purple,mottled,22.88598293881284,snub,curved,yes,rough,mixed,no,3.8803208574977663,stocky,57.24470583226209,4,yes,no,long,curved,club,Scotland,7,0.0,no,no,no,TR,2013,Hebridean Black
+unknown,elder,black,purple,mottled,0.0,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,3,yes,no,long,curved,club,Scotland,7,0.0,no,yes,no,KN,1995,Hebridean Black
+male,juvenile,grey,blue,black,6.9947841291514035,square,curved,yes,rough,scaled,no,1.1698115262240423,stocky,10.632689687431085,4,yes,no,long,curved,club,Britain,9,51.81355159197906,no,no,no,U,1999,Hebridean Black
+female,elder,black,blue,black,0.0,square,curved,yes,rough,scaled,no,6.0003657462483035,stocky,106.09368480820349,4,yes,no,long,curved,club,Scotland,7,0.0,no,yes,no,NK,1978,Hebridean Black
+male,unknown,black,purple,black,0.0,square,curved,partial,rough,mixed,no,0.0,stocky,39.55632349957247,4,yes,no,long,curved,club,Britain,8,0.0,no,no,no,WX,1995,Hebridean Black
+male,unknown,black,blue,black,20.36940437696822,snub,curved,yes,rough,scaled,no,3.114635938650947,stocky,52.48962003581486,2,yes,no,long,curved,club,Scotland,8,34.39641121882373,no,yes,no,SX,2010,Hebridean Black
+female,adult,grey,blue,black,25.543152521229874,snub,curved,partial,rough,mixed,no,3.049487250848412,stocky,46.84011872461131,3,yes,no,long,curved,club,Britain,8,0.0,no,yes,no,TR,2000,Hebridean Black
+male,adult,grey,blue,mottled,22.368362584875687,snub,curved,yes,rough,scaled,no,3.034875195045787,stocky,38.76587143729485,4,yes,no,long,curved,club,Britain,9,0.0,no,no,no,BR,1982,Hebridean Black
+female,unknown,mottled,purple,mottled,26.047137911496765,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Scotland,7,36.34914469947864,no,yes,no,BB,2009,Hebridean Black
+male,unknown,grey,purple,black,0.0,square,curved,yes,rough,scaled,no,3.140152689590363,stocky,64.38535145355485,4,yes,no,long,curved,club,Britain,10,36.22757556873014,no,yes,no,TR,2012,Hebridean Black
+unknown,elder,mottled,purple,mottled,0.0,snub,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Britain,9,0.0,no,no,no,NN,2017,Hebridean Black
+male,adult,grey,purple,black,15.42898169535017,snub,curved,yes,rough,scaled,no,1.5709723461797986,stocky,25.273600902221222,3,yes,no,long,curved,club,Britain,7,41.01050297426081,no,yes,no,OH,2011,Hebridean Black
+female,juvenile,black,purple,mottled,17.92524921282253,snub,curved,yes,rough,scaled,no,1.9752293041600082,stocky,53.0897494737189,4,yes,no,long,curved,club,Scotland,9,48.07013334946181,no,no,no,KN,2000,Hebridean Black
+female,unknown,black,purple,black,14.563050666782752,snub,curved,yes,rough,scaled,no,1.5495035660633922,stocky,35.507818445525174,4,yes,no,long,curved,club,Scotland,8,37.77123992300944,no,yes,no,SX,1986,Hebridean Black
+male,juvenile,white,purple,white,5.5762166290141035,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Britain,8,0.0,no,no,no,NR,1977,Hebridean Black
+female,juvenile,black,purple,black,0.0,square,curved,yes,rough,scaled,no,1.4917898802292038,stocky,25.898526529934273,4,yes,no,long,curved,club,Britain,10,46.559446404006785,no,no,no,U,1992,Hebridean Black
+unknown,adult,black,purple,mottled,0.0,square,curved,yes,rough,scaled,no,1.9328175979855835,stocky,31.007985075834092,4,yes,no,long,curved,club,Ireland,10,34.38527094911765,no,no,no,BR,2010,Hebridean Black
+female,unknown,grey,blue,mottled,0.0,square,curved,yes,rough,scaled,no,1.7108382531789055,stocky,32.287598923865346,4,yes,no,long,curved,club,Ireland,8,36.84475849740225,no,yes,no,U,2020,Hebridean Black
+male,elder,grey,blue,black,26.87536673137866,snub,curved,partial,rough,mixed,no,2.706614824014461,stocky,0.0,4,yes,no,long,curved,club,Open Ocean,7,40.762083299309936,no,yes,no,DR,2019,Hebridean Black
+male,adult,black,purple,black,19.529749078714595,snub,curved,yes,rough,scaled,no,0.0,stocky,0.0,2,yes,no,long,curved,club,Ireland,7,36.96467860209552,no,no,no,OH,1984,Hebridean Black
+male,juvenile,black,blue,black,0.0,snub,curved,yes,rough,scaled,no,0.0,stocky,17.846546368257965,4,yes,no,long,curved,club,Open Ocean,10,47.00979811967738,no,no,no,FF,1978,Hebridean Black
+unknown,unknown,mottled,purple,black,26.580751231598843,snub,curved,yes,rough,scaled,no,0.0,stocky,0.0,3,yes,no,long,curved,club,Scotland,8,0.0,no,yes,no,OH,1980,Hebridean Black
+female,elder,white,blue,white,36.65023143133656,snub,curved,yes,rough,scaled,no,3.4774314178518617,stocky,71.91997383894129,4,yes,no,long,curved,club,Scotland,8,40.44659554431029,no,yes,no,NN,2015,Hebridean Black
+male,adult,grey,blue,black,10.251297217972386,square,curved,yes,rough,scaled,no,1.6428209287085886,stocky,17.566688546310257,4,yes,no,long,curved,club,Scotland,8,41.01140251409504,no,no,no,AB,2004,Hebridean Black
+male,elder,black,purple,black,17.296320041222256,square,curved,yes,rough,scaled,no,2.9661823871346833,stocky,44.8476986909391,4,yes,no,long,curved,club,Scotland,8,0.0,no,no,no,TR,1994,Hebridean Black
+male,unknown,grey,blue,black,0.0,snub,curved,yes,rough,scaled,no,4.091511925800598,stocky,62.54759003390298,3,yes,no,long,curved,club,Scotland,9,0.0,no,yes,no,WX,1975,Hebridean Black
+unknown,elder,grey,blue,mottled,16.31111817808454,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Open Ocean,8,35.368335344793394,no,yes,no,NN,2023,Hebridean Black
+unknown,juvenile,black,purple,black,19.897423905787562,square,curved,yes,rough,scaled,no,2.319651445126281,stocky,51.248557067500904,2,yes,no,long,curved,club,Open Ocean,8,51.354345715806865,no,no,no,WX,2019,Hebridean Black
+unknown,juvenile,black,blue,mottled,0.0,square,curved,yes,rough,scaled,no,0.0,stocky,82.26430230020779,4,yes,no,long,curved,club,Scotland,9,0.0,no,no,no,AB,1989,Hebridean Black
+female,unknown,black,purple,mottled,26.75295273457789,square,curved,yes,rough,scaled,no,0.0,stocky,63.21386810754045,4,yes,no,long,curved,club,Scotland,8,34.82777775591218,no,yes,no,TR,1984,Hebridean Black
+unknown,elder,mottled,blue,mottled,0.0,snub,curved,yes,rough,mixed,no,3.6475036938264056,stocky,73.56730466420474,4,yes,no,long,curved,club,Scotland,7,36.21415876118303,no,yes,no,NN,2011,Hebridean Black
+male,juvenile,black,green,black,9.80703020960226,snub,curved,yes,rough,scaled,no,1.9532491439765478,stocky,0.0,4,yes,no,long,curved,club,Britain,10,45.24736999835989,no,no,no,VM,1999,Hebridean Black
+female,adult,black,purple,black,0.0,snub,curved,yes,rough,scaled,no,3.396919652455491,stocky,50.78346403103032,4,yes,no,long,curved,club,Wales,8,39.76210351568273,no,no,no,WX,1989,Hebridean Black
+unknown,elder,black,blue,mottled,0.0,snub,curved,yes,rough,scaled,no,0.0,stocky,59.106020142957206,4,yes,no,long,curved,club,Scotland,8,0.0,no,no,no,BB,2015,Hebridean Black
+unknown,adult,black,blue,mottled,18.239157236799926,snub,curved,yes,rough,scaled,no,2.708248567619632,stocky,0.0,4,yes,no,long,curved,club,Scotland,9,0.0,no,yes,no,VM,1985,Hebridean Black
+unknown,unknown,grey,purple,black,17.547502028163546,square,curved,yes,rough,scaled,no,2.4801606332583495,stocky,36.460465119166315,4,yes,no,long,curved,club,Scotland,8,36.42951966058081,no,yes,no,LM,1988,Hebridean Black
+female,unknown,grey,blue,black,0.0,snub,curved,yes,rough,scaled,no,3.853969082636785,stocky,0.0,4,yes,no,long,curved,club,Open Ocean,9,36.39319046364678,no,yes,no,CT,1986,Hebridean Black
+male,adult,black,purple,black,10.369047964633292,snub,curved,yes,rough,scaled,no,1.5102681742058888,stocky,17.64768391402274,4,yes,no,long,curved,club,Ireland,9,39.18851798904243,no,yes,no,SX,2014,Hebridean Black
+male,elder,black,blue,black,19.890177356658995,square,curved,yes,rough,scaled,no,2.1550656240350103,stocky,43.35445626894325,4,yes,no,long,curved,club,Scotland,8,0.0,no,yes,no,WX,1991,Hebridean Black
+male,unknown,grey,purple,mottled,0.0,snub,curved,yes,rough,scaled,no,3.1340937432216003,stocky,64.28026102373086,4,yes,no,long,curved,club,Scotland,10,35.216814781489475,no,yes,no,TX,1995,Hebridean Black
+male,unknown,black,green,mottled,28.22823603322644,snub,curved,yes,rough,scaled,no,0.0,stocky,54.470598625461804,3,yes,no,long,curved,club,Scotland,7,35.865085983571554,no,yes,no,NR,1995,Hebridean Black
+unknown,unknown,mottled,blue,mottled,23.71438239833734,snub,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Ireland,9,35.549019711914795,no,no,no,DR,2023,Hebridean Black
+female,unknown,black,purple,mottled,18.180437662873317,snub,curved,partial,rough,mixed,no,0.0,stocky,39.366595931694,4,yes,no,long,curved,club,Scotland,10,35.78284328075009,no,yes,no,SR,2022,Hebridean Black
+unknown,juvenile,black,blue,black,21.917925714439964,snub,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Ireland,8,44.25728406465166,no,no,no,NK,2008,Hebridean Black
+unknown,unknown,black,blue,black,0.0,square,curved,yes,rough,scaled,no,2.8977043377768568,stocky,0.0,4,yes,no,long,curved,club,Ireland,8,36.37768949520247,no,yes,no,U,1994,Hebridean Black
+male,adult,white,blue,white,21.860733787505712,square,curved,yes,rough,scaled,no,2.4111353487781786,stocky,33.677237035241575,4,yes,no,long,curved,club,Britain,9,39.90248867703377,no,yes,no,FF,2005,Hebridean Black
+female,unknown,black,blue,black,23.740964423692777,square,curved,partial,rough,mixed,no,3.769367704670315,stocky,61.467328596383496,3,yes,no,long,curved,club,Scotland,8,37.02250250738107,no,yes,no,SX,2006,Hebridean Black
+unknown,elder,black,blue,mottled,16.560643521639697,square,curved,yes,rough,scaled,no,0.0,stocky,43.48703932943622,4,yes,no,long,curved,club,Scotland,9,35.64341178424863,no,yes,no,OK,2012,Hebridean Black
+male,juvenile,black,purple,black,12.038088314666469,square,curved,yes,rough,scaled,no,1.478034527239721,stocky,19.285765429681234,2,yes,no,long,curved,club,Britain,10,50.32179069076333,no,no,no,DR,1986,Hebridean Black
+unknown,juvenile,grey,purple,black,19.521648694704826,square,curved,yes,rough,scaled,no,1.8165349448251709,stocky,0.0,4,yes,no,long,curved,club,Scotland,9,0.0,no,no,no,WX,2001,Hebridean Black
+male,unknown,black,blue,black,0.0,snub,curved,yes,rough,mixed,no,2.195094347565437,stocky,41.29916791161792,4,yes,no,long,curved,club,Scotland,10,0.0,no,yes,no,SR,1983,Hebridean Black
+male,elder,grey,purple,black,23.20832766305935,snub,curved,yes,rough,scaled,no,2.6150204355484936,stocky,48.94865923602563,4,yes,no,long,curved,club,Britain,8,0.0,no,yes,no,BB,2021,Hebridean Black
+male,juvenile,mottled,blue,mottled,6.890437949544851,square,curved,yes,rough,scaled,no,0.7473019984786935,stocky,13.51325580127392,3,yes,no,long,curved,club,Scotland,10,51.161225018702204,no,no,no,U,1983,Hebridean Black
+female,unknown,black,blue,mottled,25.143941411165596,snub,curved,yes,rough,scaled,no,3.9400032422919296,stocky,63.17603227558604,4,yes,no,long,curved,club,Scotland,7,37.51822599669709,no,yes,no,WX,2015,Hebridean Black
+female,unknown,grey,purple,mottled,0.0,snub,curved,yes,rough,scaled,no,3.711327118502075,stocky,54.165346546300064,3,yes,no,long,curved,club,Open Ocean,10,38.11638850041878,no,no,no,VM,2005,Hebridean Black
+unknown,adult,grey,blue,black,0.0,snub,curved,yes,rough,scaled,no,1.9553933643327017,stocky,41.322361289149654,4,yes,no,long,curved,club,Scotland,7,0.0,no,no,no,KN,1983,Hebridean Black
+female,unknown,black,purple,mottled,0.0,square,curved,yes,rough,scaled,no,3.578017676849807,stocky,57.48061322042412,4,yes,no,long,curved,club,Scotland,9,0.0,no,yes,no,BR,1984,Hebridean Black
+female,adult,black,blue,black,0.0,square,curved,yes,rough,scaled,no,2.460285595193128,stocky,43.74208459595212,4,yes,no,long,curved,club,Scotland,9,37.36985628299817,no,no,no,FF,2004,Hebridean Black
+female,unknown,mottled,purple,black,25.853956364132046,square,curved,yes,rough,scaled,no,0.0,stocky,65.6713663368946,4,yes,no,long,curved,club,Britain,7,40.94811335656874,no,yes,no,U,2015,Hebridean Black
+male,juvenile,black,purple,mottled,0.0,square,curved,partial,rough,mixed,no,1.6380669989856602,stocky,22.25106551359308,3,yes,no,long,curved,club,Scotland,10,45.48585594832461,no,no,no,NN,1998,Hebridean Black
+unknown,juvenile,black,purple,black,26.708039857127876,square,curved,yes,rough,scaled,no,3.723686040919606,stocky,0.0,4,yes,no,long,curved,club,Wales,10,52.23355817312786,no,no,no,DR,1979,Hebridean Black
+male,unknown,grey,green,mottled,0.0,square,curved,yes,rough,scaled,no,3.1724686926620795,stocky,57.43237461760751,3,yes,no,long,curved,club,Scotland,10,38.86835960317599,no,yes,no,VM,1997,Hebridean Black
+unknown,adult,black,purple,black,25.588196264090428,snub,curved,yes,rough,scaled,no,3.0624027442101207,stocky,0.0,4,yes,no,long,curved,club,Wales,7,34.492260403380094,no,yes,no,BR,2005,Hebridean Black
+female,juvenile,black,green,black,0.0,snub,curved,yes,rough,scaled,no,2.203714445624684,stocky,37.41193983206892,4,yes,no,long,curved,club,Scotland,10,44.43021249948937,no,no,no,NK,1983,Hebridean Black
+male,adult,mottled,purple,black,17.67833503512493,snub,curved,yes,rough,scaled,no,2.386404482402116,stocky,33.1455074475466,4,yes,no,long,curved,club,Scotland,8,36.55692691018958,no,no,no,U,1984,Hebridean Black
+unknown,unknown,mottled,purple,mottled,16.72373905689045,square,curved,yes,rough,mixed,no,2.0149987748076796,stocky,38.070985482800594,4,yes,no,long,curved,club,Scotland,7,37.25666878206797,no,yes,no,SX,1977,Hebridean Black
+unknown,unknown,black,purple,mottled,0.0,snub,curved,yes,rough,scaled,no,1.5712561404673728,stocky,33.44338917691948,3,yes,no,long,curved,club,Wales,10,0.0,no,no,no,AB,1988,Hebridean Black
+female,elder,mottled,purple,black,31.072782082824002,square,curved,yes,rough,scaled,no,4.1133173150815905,stocky,0.0,4,yes,no,long,curved,club,Scotland,8,40.93701209050838,no,yes,no,SR,1980,Hebridean Black
+male,elder,white,purple,white,18.905602407286874,snub,curved,partial,rough,mixed,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Scotland,7,38.72420865944534,no,no,no,WX,1981,Hebridean Black
+female,unknown,grey,blue,black,18.784172546391442,square,curved,yes,rough,scaled,no,1.8970939069553312,stocky,40.303404005551755,4,yes,no,long,curved,club,Open Ocean,9,38.67682835106688,no,no,no,NK,1999,Hebridean Black
+female,elder,black,blue,black,25.508007922432444,snub,curved,yes,rough,scaled,no,3.4763957966856416,stocky,0.0,4,yes,no,long,curved,club,Scotland,8,34.37386444176881,no,no,no,AB,2004,Hebridean Black
+female,adult,mottled,purple,black,0.0,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Britain,8,35.533625268058294,no,yes,no,TX,1979,Hebridean Black
+male,unknown,mottled,purple,mottled,0.0,snub,curved,yes,rough,scaled,no,0.0,stocky,37.9320405948426,4,yes,no,long,curved,club,Scotland,7,34.74129029874456,no,no,no,KN,1991,Hebridean Black
+male,unknown,grey,blue,black,27.29295162180297,square,curved,yes,rough,mixed,no,0.0,stocky,53.04719978372333,2,yes,no,long,curved,club,Scotland,8,36.95027922065754,no,yes,no,WX,1980,Hebridean Black
+unknown,juvenile,black,purple,black,0.0,square,curved,yes,rough,scaled,no,2.833094542898302,stocky,54.69296882136206,4,yes,no,long,curved,club,Scotland,7,0.0,no,no,no,BR,1989,Hebridean Black
+unknown,elder,black,purple,mottled,0.0,snub,curved,yes,rough,scaled,no,0.0,stocky,45.52653654958063,4,yes,no,long,curved,club,Britain,9,39.513404896528044,no,no,no,VM,1981,Hebridean Black
+female,unknown,black,blue,black,0.0,snub,curved,yes,rough,scaled,no,3.609419413944165,stocky,0.0,3,yes,no,long,curved,club,Open Ocean,10,36.17594081297516,no,no,no,CT,2020,Hebridean Black
+unknown,elder,grey,blue,black,0.0,square,curved,yes,rough,scaled,no,2.58075156581517,stocky,41.27310117345602,4,yes,no,long,curved,club,Ireland,10,0.0,no,yes,no,SX,2010,Hebridean Black
+unknown,unknown,mottled,blue,black,15.93682754132746,square,curved,yes,rough,scaled,no,2.0911560293630824,stocky,31.92801937904062,3,yes,no,long,curved,club,Scotland,10,34.71681084203217,no,yes,no,NR,1975,Hebridean Black
+female,adult,black,blue,mottled,0.0,square,curved,yes,rough,scaled,no,0.0,stocky,40.132403640200216,4,yes,no,long,curved,club,Scotland,10,40.2907000482922,no,yes,no,LM,1983,Hebridean Black
+unknown,unknown,grey,purple,black,23.814133880230443,square,curved,partial,rough,mixed,no,2.534046634399568,stocky,0.0,4,yes,no,long,curved,club,Open Ocean,10,34.28012717129478,no,yes,no,CT,1999,Hebridean Black
+unknown,unknown,mottled,purple,mottled,26.817757159992286,square,curved,partial,rough,mixed,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Open Ocean,9,0.0,no,no,no,BB,1999,Hebridean Black
+female,elder,grey,purple,black,0.0,snub,curved,yes,rough,scaled,no,3.8605697722396797,stocky,0.0,4,yes,no,long,curved,club,Scotland,9,34.04491305959806,no,yes,no,NK,2015,Hebridean Black
+female,unknown,mottled,purple,black,20.940111410805994,square,curved,yes,rough,scaled,no,3.4589906226294045,stocky,51.74657531246044,3,yes,no,long,curved,club,Scotland,9,36.39121489654281,no,yes,no,U,1990,Hebridean Black
+female,adult,mottled,purple,black,28.37750168379421,square,curved,yes,rough,scaled,no,3.896712183384886,stocky,52.37299058025053,2,yes,no,long,curved,club,Scotland,10,0.0,no,yes,no,TR,2011,Hebridean Black
+female,unknown,grey,purple,mottled,18.827931296839125,square,curved,yes,rough,scaled,no,2.1942236110927404,stocky,0.0,4,yes,no,long,curved,club,Britain,10,39.26678951313519,no,yes,no,TR,1990,Hebridean Black
+unknown,adult,grey,green,black,0.0,square,curved,yes,rough,scaled,no,3.241639225395387,stocky,53.2774822974218,4,yes,no,long,curved,club,Scotland,9,0.0,no,yes,no,TX,1998,Hebridean Black
+unknown,unknown,black,blue,mottled,0.0,square,curved,yes,rough,scaled,no,2.1101906284699683,stocky,31.371169251848418,4,yes,no,long,curved,club,Scotland,8,0.0,no,yes,no,TX,1979,Hebridean Black
+female,adult,grey,purple,black,0.0,square,curved,yes,rough,scaled,no,0.0,stocky,52.633302849684135,3,yes,no,long,curved,club,Ireland,8,0.0,no,yes,no,OK,2017,Hebridean Black
+male,unknown,black,purple,mottled,26.992166496690547,snub,curved,yes,rough,mixed,no,4.177620064618926,stocky,69.99330942352572,4,yes,no,long,curved,club,Scotland,7,0.0,no,yes,no,VM,1995,Hebridean Black
+unknown,elder,mottled,blue,mottled,16.250084957552126,snub,curved,yes,rough,scaled,no,1.8456604594500856,stocky,35.72468731537417,4,yes,no,long,curved,club,Britain,9,0.0,no,no,no,DR,1980,Hebridean Black
+unknown,unknown,grey,purple,black,20.091187128521447,square,curved,partial,rough,mixed,no,0.0,stocky,51.82515738288329,2,yes,no,long,curved,club,Wales,10,34.58086981364023,no,yes,no,NN,2017,Hebridean Black
+female,juvenile,grey,blue,black,13.462930869989702,snub,curved,yes,rough,scaled,no,2.0556822168280737,stocky,27.25388675206184,4,yes,no,long,curved,club,Scotland,8,0.0,no,no,no,SR,1996,Hebridean Black
+female,unknown,grey,green,mottled,27.80472011583508,snub,curved,yes,rough,scaled,no,2.837659636363243,stocky,62.21865319137162,4,yes,no,long,curved,club,Ireland,7,0.0,no,yes,no,SX,1997,Hebridean Black
+unknown,elder,mottled,purple,black,27.437854498800878,snub,curved,yes,rough,scaled,no,4.001055046118414,stocky,55.24638227440708,4,yes,no,long,curved,club,Open Ocean,9,36.67361301596017,no,yes,no,FF,1986,Hebridean Black
+female,elder,grey,blue,black,30.58997717573739,square,curved,yes,rough,scaled,no,3.5168903674472682,stocky,72.68379483636265,4,yes,no,long,curved,club,Scotland,7,40.96181582994934,no,yes,no,LM,2006,Hebridean Black
+female,elder,grey,blue,black,33.557665085681464,square,curved,yes,rough,scaled,no,0.0,stocky,75.0385674383234,4,yes,no,long,curved,club,Scotland,8,41.017237659639676,no,yes,no,FF,1980,Hebridean Black
+female,adult,black,purple,black,22.637214530576447,snub,curved,yes,rough,scaled,no,3.9770903721712063,stocky,51.396851267084166,4,yes,no,long,curved,club,Wales,10,0.0,no,yes,no,DR,1986,Hebridean Black
+female,elder,black,purple,mottled,28.38754843528386,snub,curved,yes,rough,scaled,no,3.3880187260682186,stocky,0.0,4,yes,no,long,curved,club,Wales,7,38.17830956857137,no,yes,no,LM,1980,Hebridean Black
+unknown,adult,grey,blue,black,29.391873997559703,snub,curved,yes,rough,scaled,no,4.4371910672100014,stocky,60.28386233444701,4,yes,no,long,curved,club,Wales,7,35.389413758477524,no,no,no,VM,1981,Hebridean Black
+female,unknown,grey,purple,black,31.128047503265115,square,curved,yes,rough,scaled,no,4.326770690016049,stocky,61.946525281633775,4,yes,no,long,curved,club,Scotland,9,0.0,no,yes,no,SR,1981,Hebridean Black
+male,elder,grey,blue,black,21.960507912214613,snub,curved,yes,rough,scaled,no,2.437914569435542,stocky,0.0,4,yes,no,long,curved,club,Scotland,7,40.36143613166312,no,yes,no,OK,2007,Hebridean Black
+unknown,adult,black,blue,black,27.36673428691432,square,curved,yes,rough,scaled,no,4.19476137437592,stocky,0.0,4,yes,no,long,curved,club,Open Ocean,10,0.0,no,yes,no,SX,1993,Hebridean Black
+unknown,elder,mottled,green,mottled,0.0,square,curved,yes,rough,scaled,no,3.792406608432863,stocky,68.2826291451783,4,yes,no,long,curved,club,Wales,10,0.0,no,yes,no,TR,1989,Hebridean Black
+female,unknown,black,purple,black,27.374598198667492,square,curved,yes,rough,scaled,no,2.9160963594752642,stocky,59.84579457788735,4,yes,no,long,curved,club,Open Ocean,7,39.08737022881106,no,yes,no,OH,2022,Hebridean Black
+unknown,adult,black,purple,black,17.715783886945257,snub,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Scotland,7,40.844227238995096,no,yes,no,NK,2013,Hebridean Black
+unknown,elder,white,purple,white,0.0,snub,curved,yes,rough,mixed,no,0.0,stocky,57.55219169701826,4,yes,no,long,curved,club,Scotland,7,0.0,no,no,no,LM,2015,Hebridean Black
+unknown,unknown,black,purple,black,23.048844492463026,square,curved,yes,rough,scaled,no,0.0,stocky,0.0,4,yes,no,long,curved,club,Scotland,8,0.0,no,yes,no,LM,2007,Hebridean Black
+male,unknown,grey,blue,black,15.49571855160899,snub,curved,yes,rough,scaled,no,1.8889907542479962,stocky,34.180960988372235,3,yes,no,long,curved,club,Britain,9,36.89863981689945,no,yes,no,KN,1992,Hebridean Black
+unknown,juvenile,black,purple,mottled,0.0,square,curved,partial,rough,mixed,no,0.0,stocky,48.57098593462578,4,yes,no,long,curved,club,Ireland,9,0.0,no,no,no,OK,2019,Hebridean Black
+male,elder,grey,purple,mottled,21.81495710560888,snub,curved,yes,rough,scaled,no,2.052732830359386,stocky,0.0,4,yes,no,long,curved,club,Ireland,8,36.27968727773947,no,no,no,SX,1976,Hebridean Black
+unknown,unknown,black,blue,mottled,14.068048242567098,snub,curved,yes,rough,scaled,no,2.0967657124793884,stocky,0.0,4,yes,no,long,curved,club,Open Ocean,8,0.0,no,yes,no,BR,1988,Hebridean Black
+unknown,juvenile,black,blue,black,27.340167704065063,square,curved,yes,rough,scaled,no,4.628928987416106,stocky,66.35749785715592,4,yes,no,long,curved,club,Scotland,7,0.0,no,no,no,NR,1983,Hebridean Black
+female,juvenile,grey,blue,mottled,12.109943030360697,square,curved,yes,rough,scaled,no,2.0991269644662767,stocky,30.957420929938134,4,yes,no,long,curved,club,Britain,10,44.164344447171125,no,no,no,SX,1975,Hebridean Black
