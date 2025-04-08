@@ -144,7 +144,12 @@ for i in range(num_of_specimens):
     dragon['feathers_present'] = 'no'
     dragon['length_of_horns'] = 'long'
     dragon['shape_of_horns'] = 'pointed'
-    dragon['shape_of_tail'] = random.choice(['pointed', 'spiked'])
+
+    club_tail_deformity = 0.10  # 10% chance of club tail
+    if random.random() < club_tail_deformity:
+        dragon['shape_of_tail'] = 'club'
+    else:
+        dragon['shape_of_tail'] = random.choice(['pointed', 'spiked'])
 
     dragon['loc_of_sighting'] = random.choices(
         locale,
@@ -160,7 +165,7 @@ for i in range(num_of_specimens):
     dragon['breathing_ice_observed'] = 'no'
 
     dragon['observed_by'] = random.choice(initials)
-    dragon['year_observed'] = random.randint(1975, 2023)
+    dragon['year_observed'] = random.randint(1955, 2023)
 
     dragon['species'] = 'Hungarian Horntail'
 

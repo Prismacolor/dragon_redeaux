@@ -3,7 +3,7 @@ import numpy as np
 import os
 import pandas as pd
 
-num_of_specimens = random.randint(1500, 2501)
+num_of_specimens = random.randint(720, 1643)
 specimens = []
 
 columns = ['gender', 'estimated_age', 'color_of_scales', 'color_of_eyes', 'color_of_wings', 'est_body_length',
@@ -200,7 +200,7 @@ for i in range(num_of_specimens):
     dragon['breathing_fire_observed'] = 'yes' if random.random() < fire_chance else 'no'
     dragon['breathing_ice_observed'] = 'no'
     dragon['observed_by'] = random.choice(initials)
-    dragon['year_observed'] = random.randint(1975, 2023)
+    dragon['year_observed'] = random.randint(1955, 2023)
 
     dragon['species'] = 'Egyptian Copperbelly'
 

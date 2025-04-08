@@ -2,6 +2,8 @@ import os
 import subprocess
 from concurrent.futures import ThreadPoolExecutor
 from logger import logger
+import importlib.util
+import sys
 
 # Path to the folder containing the Python scripts
 scripts_folder = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "dragon_data_scripts")
@@ -20,6 +22,7 @@ def run_python_script(script):
         print(f"Completed: {script_path}")
     except subprocess.CalledProcessError as e:
         print(f"Error while running {script_path}: {e}")
+        print(f"Error output: {e.stderr}")
     except FileNotFoundError:
         print(f"Script not found: {script_path}")
 
@@ -43,6 +46,25 @@ def run_scripts_in_folder(folder):
     logger.info('Data creation complete.')
 
 
+def run_python_script_in_one_process(folder):
+    logger.info('Creating data...')
+    scripts = get_python_scripts(folder)
+
+    for script in scripts:
+        script_path = os.path.join(scripts_folder, script)
+
+        try:
+            # Import the script as a module
+            spec = importlib.util.spec_from_file_location("module.name", script_path)
+            module = importlib.util.module_from_spec(spec)
+            sys.modules["module.name"] = module
+            spec.loader.exec_module(module)
+            print(f"Completed: {script_path}")
+        except Exception as e:
+            print(f"Error while running {script_path}: {e}")
+
+
 # Run the utility
-run_scripts_in_folder(scripts_folder)
+# run_scripts_in_folder(scripts_folder)
+run_python_script_in_one_process(scripts_folder)
 

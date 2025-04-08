@@ -192,7 +192,7 @@ for i in range(num_of_specimens):
     dragon['breathing_ice_observed'] = 'no'
 
     dragon['observed_by'] = random.choice(initials)
-    dragon['year_observed'] = random.randint(1975, 2023)
+    dragon['year_observed'] = random.randint(1955, 2023)
 
     dragon['species'] = 'Hebridean Black'
 

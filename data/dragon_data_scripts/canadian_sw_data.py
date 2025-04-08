@@ -3,7 +3,7 @@ import numpy as np
 import os
 import pandas as pd
 
-num_of_specimens = random.randint(532, 1468)
+num_of_specimens = random.randint(832, 1468)
 specimens = []
 
 columns = ['gender', 'estimated_age', 'color_of_scales', 'color_of_eyes', 'color_of_wings', 'est_body_length',

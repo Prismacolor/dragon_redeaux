@@ -3,7 +3,7 @@ import numpy as np
 import os
 import pandas as pd
 
-num_of_specimens = random.randint(1321, 2501)
+num_of_specimens = random.randint(1321, 1901)
 specimens = []
 
 columns = ['gender', 'estimated_age', 'color_of_scales', 'color_of_eyes', 'color_of_wings', 'est_body_length',
@@ -141,7 +141,12 @@ for i in range(num_of_specimens):
 
     dragon['length_of_horns'] = 'short'
     dragon['shape_of_horns'] = 'curved'
-    dragon['shape_of_tail'] = 'pointed'
+
+    club_tail_deformity = 0.10  # 10% chance of club tail
+    if random.random() < club_tail_deformity:
+        dragon['shape_of_tail'] = 'club'
+    else:
+        dragon['shape_of_tail'] = 'pointed'
 
     # Location distribution - focus on principal territory with some in open ocean and rare in arctic
     dragon['loc_of_sighting'] = random.choices(
@@ -154,7 +159,7 @@ for i in range(num_of_specimens):
     dragon['breathing_ice_observed'] = 'no'
 
     dragon['observed_by'] = random.choice(initials)
-    dragon['year_observed'] = random.randint(1975, 2023)
+    dragon['year_observed'] = random.randint(1955, 2023)
 
     dragon['species'] = 'Common Welsh Green'
 
