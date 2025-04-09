@@ -1,9 +1,10 @@
 import os
 import subprocess
 from concurrent.futures import ThreadPoolExecutor
-from logger import logger
 import importlib.util
 import sys
+
+# from logger import logger
 
 # Path to the folder containing the Python scripts
 scripts_folder = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "dragon_data_scripts")
@@ -18,7 +19,9 @@ def run_python_script(script):
     script_path = os.path.join(scripts_folder, script)
 
     try:
-        subprocess.run(["python", script_path], check=True)
+        # subprocess.run(["python", script_path], check=True)
+        python_executable = sys.executable
+        subprocess.run([python_executable, script_path], check=True, capture_output=True, text=True)
         print(f"Completed: {script_path}")
     except subprocess.CalledProcessError as e:
         print(f"Error while running {script_path}: {e}")
@@ -29,7 +32,7 @@ def run_python_script(script):
 
 def run_scripts_in_folder(folder):
     """Run all data creation Python scripts in the specified folder."""
-    logger.info('Creating data...')
+    # logger.info('Creating data...')
     scripts = get_python_scripts(folder)
     max_workers = 4
 
@@ -43,11 +46,11 @@ def run_scripts_in_folder(folder):
     except Exception as e:
         print(e)
 
-    logger.info('Data creation complete.')
+    # logger.info('Data creation complete.')
 
 
 def run_python_script_in_one_process(folder):
-    logger.info('Creating data...')
+    # logger.info('Creating data...')
     scripts = get_python_scripts(folder)
 
     for script in scripts:
@@ -65,6 +68,6 @@ def run_python_script_in_one_process(folder):
 
 
 # Run the utility
-# run_scripts_in_folder(scripts_folder)
-run_python_script_in_one_process(scripts_folder)
+run_scripts_in_folder(scripts_folder)
+# run_python_script_in_one_process(scripts_folder)
 

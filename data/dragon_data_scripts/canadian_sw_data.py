@@ -1,9 +1,9 @@
 import random
-import numpy as np
 import os
+import numpy as np
 import pandas as pd
 
-num_of_specimens = random.randint(832, 1468)
+num_of_specimens = random.randint(1832, 2563)
 specimens = []
 
 columns = ['gender', 'estimated_age', 'color_of_scales', 'color_of_eyes', 'color_of_wings', 'est_body_length',
@@ -12,7 +12,7 @@ columns = ['gender', 'estimated_age', 'color_of_scales', 'color_of_eyes', 'color
            'shape_of_horns', 'shape_of_tail', 'loc_of_sighting', 'aggressiveness', 'flight_speed', 'is_venomous',
            'breathing_fire_observed', 'breathing_ice_observed', 'observed_by', 'year_observed', 'species']
 
-locale = ['Canada', 'Greenland', 'Open Ocean', 'Arctic']
+locale = ['Canada', 'Greenland', 'Open Ocean', 'Arctic', 'Norway', 'Sweden', 'Ukraine']
 colors = ['blue', 'grey', 'silver', 'white', 'mottled', 'pink']
 initials = ['AB', 'TR', 'NR', 'SR', 'BR', 'NN', 'FF', 'OK', 'NK', 'DR', 'LM', 'KN',
             'U', 'VM', 'SX', 'WX', 'BB', 'CT', 'OH', 'TX']
@@ -72,21 +72,21 @@ for i in range(num_of_specimens):
         base_length = random.uniform(5, 10)
         base_aggr = random.randint(5, 9)
 
-    # Apply randomness to measurements - convert to integers
+    # Apply randomness to measurements
     if random.random() > missing_data_pct:
         if gender_choice == 'male':
-            dragon['est_body_length'] = int(base_length * random.uniform(0.75, 1.5))
+            dragon['est_body_length'] = base_length * random.uniform(0.75, 1.5)
         elif gender_choice == 'female':
-            dragon['est_body_length'] = int(base_length * random.uniform(0.75, 1.25))
+            dragon['est_body_length'] = base_length * random.uniform(0.75, 1.25)
         elif gender_choice == 'xis':
-            dragon['est_body_length'] = int(base_length * random.uniform(0.65, 1.25))
+            dragon['est_body_length'] = base_length * random.uniform(0.65, 1.25)
         else:  # unknown gender
-            dragon['est_body_length'] = int(base_length * random.uniform(0.7, 1.3))
+            dragon['est_body_length'] = base_length * random.uniform(0.7, 1.3)
     else:
         dragon['est_body_length'] = 0  # Missing data
 
     if random.random() > missing_data_pct:
-        dragon['snout_length'] = int(base_length * random.uniform(0.1, 0.2))
+        dragon['snout_length'] = base_length * random.uniform(0.1, 0.2)
     else:
         dragon['snout_length'] = 0  # Missing data
 
@@ -163,7 +163,7 @@ for i in range(num_of_specimens):
     # Color of scales - rare disorder causing mottled or pink coloration
     dragon['color_of_scales'] = random.choices(
         colors,
-        weights=[40, 40, 40, 40, 5, 5],
+        weights=[20, 20, 20, 15, 15, 10],
         k=1
     )[0]
 
@@ -239,7 +239,9 @@ for i in range(num_of_specimens):
     specimens.append(dragon)
 
 specimens_df = pd.DataFrame(specimens)
-specimens_df.to_csv('../dragon_spreadsheets/canadian_sailwing.csv', columns=columns, index=False, mode='w')
+base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+output_dir = os.path.join(base_dir, "dragon_spreadsheets")
+specimens_df.to_csv(output_dir + '/canadian_sailwing.csv', columns=columns, index=False, mode='w')
 
 print(f"Generated {len(specimens)} Canadian Sailwing dragon specimens")
 print(f"Sample specimen: {specimens[0]}")

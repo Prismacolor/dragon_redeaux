@@ -1,12 +1,13 @@
 import random
+import os
 import numpy as np
 import pandas as pd
 
-'''Ahhh the elusive Amazonian blue, a mild mannered creature that enjoys fishing off the coasts 
+'''Ahhh the elusive Amazonian blue, a sometimes mild mannered creature that enjoys fishing off the coasts 
 of South and Central America. Can sometimes be found in the arctic when food is abundant.
 Adult males have a distinctive frill around their necks which they display during mating season. '''
 
-num_of_specimens = random.randint(824, 1843)  # create uneven class observations
+num_of_specimens = random.randint(1824, 3243)  # create uneven class observations
 specimens = []
 
 columns = ['gender', 'estimated_age', 'color_of_scales', 'color_of_eyes', 'color_of_wings', 'est_body_length',
@@ -16,7 +17,7 @@ columns = ['gender', 'estimated_age', 'color_of_scales', 'color_of_eyes', 'color
            'breathing_fire_observed', 'breathing_ice_observed', 'observed_by', 'year_observed', 'species']
 
 locale = ['Brazil', 'Peru', 'Open Ocean', 'Arctic', 'Chile', 'Argentina', 'Central America']
-colors = ['blue', 'grey', 'white', 'silver', 'green']
+colors = ['blue', 'grey', 'white', 'silver', 'green', 'brown', 'pink']
 initials = ['AB', 'TR', 'NR', 'SR', 'BR', 'NN', 'FF', 'OK', 'NK', 'DR', 'LM', 'KN',
             'U', 'VM', 'SX', 'WX', 'BB', 'CT', 'OH', 'TX']
 
@@ -37,56 +38,61 @@ for i in range(num_of_specimens):
                                               if random.random() < 0.20 else ['snub']),
               'shape_of_teeth': random.choice(['pointed', 'unknown']
                                               if random.random() < 0.30 else ['pointed']),
-              'scales_present': random.choice(['no', 'full', 'partial', 'unknown']
-                                              if random.random() < 0.15 else ['no', 'partial', 'full']),
+              'scales_present': random.choice(['yes', 'unknown']
+                                              if random.random() < 0.15 else ['yes']),
               'scale_texture': random.choice(['smooth', 'unknown']
                                              if random.random() < 0.20 else ['smooth']),
               'body_texture': random.choice(['scaled', 'mixed', 'unknown']
                                             if random.random() < 0.15 else ['scaled', 'mixed']),
               'shape_of_body': 'lithe'}
 
-    base_length = 0.0
-    base_limbs = 4
-
     # Set base metrics by gender and age when known
     if gender_choice != 'unknown' and age_choice != 'unknown':
         if gender_choice == 'male':
             if age_choice == 'juvenile':
                 base_length = random.uniform(2, 4)
-                base_aggr = random.normalvariate(1.5, 0.4)
+                base_aggr = random.normalvariate(7, 0.9)
             elif age_choice == 'adult':
                 base_length = random.uniform(3, 6)
-                base_aggr = random.normalvariate(1.8, 0.6)
+                base_aggr = random.normalvariate(6, 0.9)
             else:  # elder
-                base_length = random.uniform(3, 7)
-                base_aggr = random.normalvariate(1.6, 0.7)
+                base_length = random.uniform(5, 7)
+                base_aggr = random.normalvariate(5, 0.8)
         else:
             if age_choice == 'juvenile':
                 base_length = random.uniform(2, 5)
-                base_aggr = random.normalvariate(1.4, 0.5)
+                base_aggr = random.normalvariate(8, 0.9)
             elif age_choice == 'adult':
-                base_length = random.uniform(4, 7)
-                base_aggr = random.normalvariate(1.7, 0.6)
-            else:  # elder
                 base_length = random.uniform(4, 8)
-                base_aggr = random.normalvariate(1.5, 0.8)
+                base_aggr = random.normalvariate(7, 0.9)
+            else:  # elder
+                base_length = random.uniform(6, 10)
+                base_aggr = random.normalvariate(6, 0.8)
     else:
         # when gender is unknown let us guestimate
-        base_length = random.uniform(3, 6)
-        base_aggr = random.normalvariate(1.6, 0.8)
+        base_length = random.uniform(3, 8)
+        base_aggr = random.normalvariate(7, 0.8)
 
     # Adding randomness to the measurements
-    dragon['est_body_length'] = base_length * random.uniform(0.7, 1.3)
-    dragon['snout_length'] = (base_length * random.uniform(0.1, 0.2)) * random.uniform(0.7, 1.3)
+    if random.random() > missing_data_pct:
+        dragon['est_body_length'] = base_length * random.uniform(0.7, 1.3)
+    else:
+        dragon['est_body_length'] = 0  # Missing data
+
+    if dragon['est_body_length'] == 0:
+        dragon['snout_length'] = 0  # Missing data
+    else:
+        dragon['snout_length'] = (base_length * random.uniform(0.1, 0.2)) * random.uniform(0.7, 1.3)
+
     dragon['wingspan'] = base_length * random.uniform(1.5, 3.0)
 
     # Set aggressiveness (1-5 scale)
-    dragon['aggressiveness'] = max(1, min(5, round(base_aggr)))
+    dragon['aggressiveness'] = base_aggr
 
-    base_speed = 50 + (dragon['wingspan'] * random.uniform(5, 8))
+    base_speed = 60 + (dragon['wingspan'] * random.uniform(5, 8))
     dragon['flight_speed'] = base_speed * random.uniform(0.7, 1.3)
 
-    dragon['number_of_limbs'] = 4
+    dragon['number_of_limbs'] = 2
 
     # Because Amazonian Blues are elusive and sometimes spotted far away, we are not 100% sure they do not have spikes
     dragon['facial_spikes'] = random.choice(['no', 'unknown'])
@@ -97,12 +103,12 @@ for i in range(num_of_specimens):
     else:
         dragon['frilled'] = 'no'
 
-    dragon['feathers_present'] = 'no'
+    dragon['feathers_present'] = 'yes'
 
-    dragon['length_of_horns'] = random.choice(['short', 'none', 'unknown']
-                                              if random.random() < 0.15 else ['short', 'none'])
-    dragon['shape_of_horns'] = random.choice(['pointed', 'none', 'unknown']
-                                             if random.random() < 0.15 else ['pointed', 'none'])
+    dragon['length_of_horns'] = random.choice(['short', 'medium', 'unknown']
+                                              if random.random() < 0.15 else ['short', 'medium'])
+    dragon['shape_of_horns'] = random.choice(['pointed', 'twisted', 'unknown']
+                                             if random.random() < 0.15 else ['pointed', 'twisted'])
     dragon['shape_of_tail'] = random.choice(['fluted', 'unknown']
                                             if random.random() < 0.15 else ['fluted'])
     dragon['loc_of_sighting'] = random.choice(locale)
@@ -116,21 +122,13 @@ for i in range(num_of_specimens):
 
     dragon['species'] = 'Amazonian Blue'
 
-    # Introduce missing data for some specimens
-    if random.random() < missing_data_pct:
-        num_missing = random.randint(1, 3)
-        possible_missing_fields = ['est_body_length', 'snout_length', 'wingspan',
-                                   'flight_speed']
-
-        missing_fields = random.sample(possible_missing_fields, k=min(num_missing, len(possible_missing_fields)))
-
-        for field in missing_fields:
-            dragon[field] = 0  # Use 0 to indicate missing data
-
     specimens.append(dragon)
 
 specimens_df = pd.DataFrame(specimens)
-specimens_df.to_csv('../dragon_spreadsheets/amazonian_blue.csv', columns=columns, index=False, mode='w')
+
+base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+output_dir = os.path.join(base_dir, "dragon_spreadsheets")
+specimens_df.to_csv(output_dir + '/amazonian_blue.csv', columns=columns, index=False, mode='w')
 
 print(f"Generated {len(specimens)} Amazonian Blue dragon specimens")
 print(f"Sample specimen: {specimens[0]}")

@@ -3,7 +3,7 @@ import numpy as np
 import os
 import pandas as pd
 
-num_of_specimens = random.randint(112, 435)
+num_of_specimens = random.randint(1112, 2435)
 specimens = []
 
 columns = ['gender', 'estimated_age', 'color_of_scales', 'color_of_eyes', 'color_of_wings', 'est_body_length',
@@ -12,10 +12,10 @@ columns = ['gender', 'estimated_age', 'color_of_scales', 'color_of_eyes', 'color
            'length_of_horns', 'shape_of_horns', 'shape_of_tail', 'loc_of_sighting', 'aggressiveness', 'flight_speed', 'is_venomous',
            'breathing_fire_observed', 'breathing_ice_observed', 'observed_by', 'year_observed', 'species']
 
-locale = ['Britain', 'Scotland', 'Wales', 'Ireland', 'Open Ocean']
-colors = ['grey', 'black', 'mottled', 'white']
-eye_colors = ['blue', 'purple', 'green']
-wing_colors = ['black', 'mottled', 'white']
+locale = ['Britain', 'Scotland', 'Ireland', 'Norway', 'Sweden', 'Open Ocean', 'Arctic']
+colors = ['grey', 'black', 'mottled', 'white', 'blue', 'silver', 'brown']
+eye_colors = ['blue', 'yellow', 'green']
+wing_colors = ['black', 'mottled', 'white', 'brown']
 initials = ['AB', 'TR', 'NR', 'SR', 'BR', 'NN', 'FF', 'OK', 'NK', 'DR', 'LM', 'KN',
             'U', 'VM', 'SX', 'WX', 'BB', 'CT', 'OH', 'TX']
 
@@ -32,29 +32,21 @@ for i in range(num_of_specimens):
         'estimated_age': age_choice
     }
 
-    albino_chance = 0.05  # 5% chance of albinism
+    albino_chance = 0.15 # 15% chance of albinism
     if random.random() < albino_chance:
         dragon['color_of_scales'] = 'white'
     else:
-        dragon['color_of_scales'] = random.choices(
-            ['grey', 'black', 'mottled'],
-            weights=[40, 40, 20],  # Weights for non-albino colors
-            k=1
-        )[0]
+        dragon['color_of_scales'] = random.choice(colors)
 
     # Set wing color based on scale color for albinos
     if dragon['color_of_scales'] == 'white':
         dragon['color_of_wings'] = 'white'
     else:
-        dragon['color_of_wings'] = random.choices(
-            ['black', 'mottled'],
-            weights=[60, 40],
-            k=1
-        )[0]
+        dragon['color_of_wings'] = random.choice(wing_colors)
 
     dragon['color_of_eyes'] = random.choices(
         eye_colors,
-        weights=[45, 45, 10],  # 10% chance of green eyes
+        weights=[35, 45, 20],
         k=1
     )[0]
 
@@ -66,58 +58,58 @@ for i in range(num_of_specimens):
         # Male dragons
         if gender_choice == 'male':
             if age_choice == 'juvenile':
-                base_length = random.randint(6, 12)
+                base_length = random.randint(5, 9)
                 base_aggr = random.randint(8, 10)
             elif age_choice == 'adult':
-                base_length = random.randint(10, 22)
+                base_length = random.randint(7, 11)
                 base_aggr = random.randint(7, 9)
             else:  # elder
-                base_length = random.randint(18, 25)
+                base_length = random.randint(9, 12)
                 base_aggr = random.randint(7, 9)
 
         # Female dragons - generally larger
         else:
             if age_choice == 'juvenile':
-                base_length = random.randint(12, 20)
+                base_length = random.randint(6, 10)
                 base_aggr = random.randint(8, 10)
             elif age_choice == 'adult':
-                base_length = random.randint(18, 28)
+                base_length = random.randint(8, 11)
                 base_aggr = random.randint(8, 10)
             else:  # elder
-                base_length = random.randint(25, 45)
+                base_length = random.randint(9, 14)
                 base_aggr = random.randint(7, 9)
     else:
-        base_length = random.randint(15, 30)
+        base_length = random.randint(5, 12)
         base_aggr = random.randint(7, 10)
 
     if random.random() > missing_data_pct:
-        dragon['est_body_length'] = base_length * random.uniform(0.9, 1.1)
+        dragon['est_body_length'] = base_length * random.uniform(0.7, 1.12)
     else:
         dragon['est_body_length'] = 0  # Missing data
 
     if random.random() > missing_data_pct:
         if age_choice == 'juvenile':
-            dragon['snout_length'] = base_length * random.uniform(0.1, 0.2)
+            dragon['snout_length'] = base_length * random.uniform(0.10, 0.14)
         else:  # adult, elder or unknown
-            dragon['snout_length'] = base_length * random.uniform(0.1, 0.16)
+            dragon['snout_length'] = base_length * random.uniform(0.12, 0.16)
     else:
         dragon['snout_length'] = 0  # Missing data
 
     if random.random() > missing_data_pct:
         if gender_choice == 'male':
             if age_choice == 'juvenile':
-                wingspan_multiplier = random.uniform(1.5, 2.0)
+                wingspan_multiplier = random.uniform(1.2, 1.6)
             elif age_choice == 'adult':
-                wingspan_multiplier = random.uniform(1.5, 2.0)
+                wingspan_multiplier = random.uniform(1.5, 1.8)
             else:  # elder
-                wingspan_multiplier = random.uniform(2.0, 2.5)
+                wingspan_multiplier = random.uniform(1.6, 2.2)
         else:  # female or unknown
             if age_choice == 'juvenile':
-                wingspan_multiplier = random.uniform(1.8, 3.0)
+                wingspan_multiplier = random.uniform(1.4, 1.8)
             elif age_choice == 'adult':
-                wingspan_multiplier = random.uniform(1.8, 2.2)
+                wingspan_multiplier = random.uniform(1.6, 2.0)
             else:  # elder or unknown
-                wingspan_multiplier = random.uniform(2.0, 2.5)
+                wingspan_multiplier = random.uniform(1.8, 2.3)
 
         dragon['wingspan'] = base_length * wingspan_multiplier
     else:
@@ -129,11 +121,11 @@ for i in range(num_of_specimens):
     # Flight speed calculations - low due to large, heavy bodies
     if random.random() > missing_data_pct:
         if age_choice == 'juvenile':
-            base_speed = 47.5
+            base_speed = 50
         else:
-            base_speed = 37.5  # Slower adults/elders
+            base_speed = 45  # Slower adults/elders
 
-        dragon['flight_speed'] = base_speed * random.uniform(0.9, 1.1)
+        dragon['flight_speed'] = base_speed * random.uniform(0.6, 0.9)
     else:
         dragon['flight_speed'] = 0  # Missing data
 
@@ -156,25 +148,24 @@ for i in range(num_of_specimens):
     # Scale disorder where scales fall off
     scale_disorder_chance = 0.15  # 15% chance of scale disorder
     if random.random() < scale_disorder_chance:
-        dragon['scales_present'] = random.choice(['partial', 'yes'])
+        dragon['scales_present'] = random.choice(['no', 'yes'])
         dragon['body_texture'] = 'mixed'
     else:
         dragon['scales_present'] = 'yes'
         dragon['body_texture'] = 'scaled'
-
 
     dragon['scale_texture'] = 'rough'
     dragon['shape_of_body'] = 'stocky'
     dragon['facial_spikes'] = 'yes'
     dragon['frilled'] = 'no'
     dragon['feathers_present'] = 'no'
-    dragon['length_of_horns'] = 'long'
-    dragon['shape_of_horns'] = 'curved'
+    dragon['length_of_horns'] = random.choice(['medium', 'long'])
+    dragon['shape_of_horns'] = random.choice(['twisted', 'curved'])
     dragon['shape_of_tail'] = 'club'
 
     dragon['loc_of_sighting'] = random.choices(
         locale,
-        weights=[20, 50, 10, 10, 10],  # Scotland primary, others less common
+        weights=[15, 30, 10, 15, 10, 15, 15],  # Scotland primary, others less common
         k=1
     )[0]
 
@@ -189,7 +180,8 @@ for i in range(num_of_specimens):
             k=1
         )[0]
 
-    dragon['breathing_ice_observed'] = 'no'
+    if dragon['breathing_fire_observed'] == 'no' and dragon['estimated_age'] != 'juvenile':
+        dragon['breathing_ice_observed'] = random.choice(['yes', 'no'])
 
     dragon['observed_by'] = random.choice(initials)
     dragon['year_observed'] = random.randint(1955, 2023)
@@ -199,7 +191,11 @@ for i in range(num_of_specimens):
     specimens.append(dragon)
 
 specimens_df = pd.DataFrame(specimens)
-specimens_df.to_csv('../dragon_spreadsheets/hebridean_black.csv', columns=columns, index=False, mode='w')
+
+base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+output_dir = os.path.join(base_dir, "dragon_spreadsheets")
+
+specimens_df.to_csv(output_dir + '/hebridean_black.csv', columns=columns, index=False, mode='w')
 
 print(f"Generated {len(specimens)} Hebridean Black dragon specimens")
 print(f"Sample specimen: {specimens[0]}")

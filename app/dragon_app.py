@@ -104,6 +104,7 @@ def predict(model_type):
             'shape_of_snout': [input_data.get('shape_of_snout')],
             'shape_of_teeth': [input_data.get('shape_of_teeth')],
             'scales_present': [input_data.get('scales_present')],
+            'feathers_present': [input_data.get('feathers_present')],
             'scale_texture': [input_data.get('scale_texture')],
             'body_texture': [input_data.get('body_texture')],
             'snout_length': [input_data.get('snout_length')],
@@ -120,6 +121,7 @@ def predict(model_type):
             'flight_speed': [input_data.get('flight_speed')],
             'is_venomous': [input_data.get('is_venomous')],
             'breathing_fire_observed': [input_data.get('breathing_fire_observed')],
+            'breathing_ice_observed': [input_data.get('breathing_ice_observed')],
             'observed_by': [input_data.get('observed_by')],
             'year_observed': [input_data.get('year_observed')],
         }

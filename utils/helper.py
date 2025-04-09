@@ -1,4 +1,5 @@
 """helper functions"""
+import numpy as np
 import os
 import joblib
 import pandas as pd
@@ -48,7 +49,7 @@ def preprocess_data(df, encoded_labels):
     df = df.copy()
 
     # drop columns that aren't needed and shuffle data
-    df = df.drop(['observed_by', 'year_observed'], axis=1)
+    df = df.drop(['observed_by', 'year_observed', 'loc_of_sighting'], axis=1)
     df = df.dropna()
     df = df.sample(frac=1, random_state=42).reset_index(drop=True)
     df['species'] = df['species'].map(encoded_labels)
@@ -65,11 +66,18 @@ def preprocess_data(df, encoded_labels):
     scaler = StandardScaler()
     df[numerical_columns] = scaler.fit_transform(df[numerical_columns])
 
+    # categorical_features = ['gender', 'estimated_age', 'color_of_scales', 'color_of_eyes', 'color_of_wings',
+    #  'shape_of_snout', 'shape_of_teeth', 'scales_present', 'feathers_present', 'scale_texture', 'body_texture',
+    #  'shape_of_body', 'facial_spikes', 'frilled', 'length_of_horns',
+    #  'shape_of_horns', 'shape_of_tail', 'loc_of_sighting', 'is_venomous',
+    #  'breathing_fire_observed', 'breathing_ice_observed']
+
     categorical_features = ['gender', 'estimated_age', 'color_of_scales', 'color_of_eyes', 'color_of_wings',
-     'shape_of_snout', 'shape_of_teeth', 'scales_present', 'feathers_present', 'scale_texture', 'body_texture',
-     'shape_of_body', 'facial_spikes', 'frilled', 'length_of_horns',
-     'shape_of_horns', 'shape_of_tail', 'loc_of_sighting', 'is_venomous',
-     'breathing_fire_observed', 'breathing_ice_observed']
+                            'shape_of_snout', 'shape_of_teeth', 'scales_present', 'feathers_present', 'scale_texture',
+                            'body_texture','shape_of_body', 'facial_spikes', 'frilled', 'length_of_horns',
+                            'shape_of_horns', 'shape_of_tail', 'is_venomous',
+                            'breathing_fire_observed', 'breathing_ice_observed']
+
     encoder = OneHotEncoder()
     encoded_features = encoder.fit_transform(df[categorical_features]).toarray()
     df_encoded = pd.DataFrame(encoded_features, columns=encoder.get_feature_names_out(categorical_features))
@@ -81,6 +89,8 @@ def preprocess_data(df, encoded_labels):
 
     joblib.dump(encoder, model_path)
     logger.info(f"Encoder saved to {model_path}")
+
+    df_concat_onehot.to_csv('preprocessed.csv')
 
     return df_concat_onehot, labels
 
@@ -124,4 +134,50 @@ def numerical_labels_to_categories(y, reverse_labels):
     df['labels'] = df['labels'].map(reverse_labels)
 
     return df['labels']
+
+
+from sklearn.feature_selection import SelectKBest, f_classif
+
+def remove_random_features(X_train, X_val, X_test, remove_percent=25):
+    """
+    Randomly remove a percentage of features from the dataset
+
+    Parameters:
+    -----------
+    X_train, X_val, X_test : pandas DataFrames or numpy arrays
+        The feature sets to modify
+    remove_percent : int, default=25
+        Percentage of features to remove
+
+    Returns:
+    --------
+    X_train_reduced, X_val_reduced, X_test_reduced : numpy arrays
+        The datasets with features removed
+    selected_features : list
+        The names of the features that were kept
+    """
+    # Calculate how many features to keep
+    n_features = X_train.shape[1]
+    k = int(n_features * (100 - remove_percent) / 100)
+
+    # Randomly select features
+    np.random.seed(42)  # For reproducibility
+    feature_indices = np.random.choice(n_features, k, replace=False)
+
+    # Get feature names if available
+    if hasattr(X_train, 'columns'):
+        selected_features = [X_train.columns[i] for i in feature_indices]
+        X_train_reduced = X_train[selected_features]
+        X_val_reduced = X_val[selected_features]
+        X_test_reduced = X_test[selected_features]
+    else:
+        selected_features = feature_indices
+        X_train_reduced = X_train[:, feature_indices]
+        X_val_reduced = X_val[:, feature_indices]
+        X_test_reduced = X_test[:, feature_indices]
+
+    return X_train_reduced, X_val_reduced, X_test_reduced, selected_features
+
+
+
 

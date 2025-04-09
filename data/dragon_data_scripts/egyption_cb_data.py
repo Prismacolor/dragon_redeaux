@@ -12,14 +12,14 @@ columns = ['gender', 'estimated_age', 'color_of_scales', 'color_of_eyes', 'color
            'length_of_horns', 'shape_of_horns', 'shape_of_tail', 'loc_of_sighting', 'aggressiveness', 'flight_speed', 'is_venomous',
            'breathing_fire_observed', 'breathing_ice_observed', 'observed_by', 'year_observed', 'species']
 
-locale = ['Egypt', 'Sudan', 'Ethiopia', 'Saudi Arabia', 'Libya', 'Morocco', 'Open Ocean']
-colors = ['copper', 'gold', 'bronze', 'brown', 'red', 'mottled']
-eye_colors = ['red', 'yellow', 'amber', 'multicolored']
+locale = ['Egypt', 'Ethiopia', 'Kenya', 'Saudi Arabia', 'Open Ocean', 'China', 'Philippines', 'Australia', 'Papua New Guinea']
+colors = ['copper', 'gold', 'bronze', 'brown', 'red', 'mottled', 'pink']
+eye_colors = ['red', 'yellow', 'amber', 'orange', 'multicolored']
 initials = ['AB', 'TR', 'NR', 'SR', 'BR', 'NN', 'FF', 'OK', 'NK', 'DR', 'LM', 'KN',
             'U', 'VM', 'SX', 'WX', 'BB', 'CT', 'OH', 'TX']
 
 # Percentage of specimens with missing data
-missing_data_pct = 0.10
+missing_data_pct = 0.20
 
 # Adjust gender and age distributions to reflect extreme aggression
 # Fewer females than males, fewer xis than males, fewer elders due to aggression
@@ -47,10 +47,10 @@ for i in range(num_of_specimens):
         # Male dragons
         if gender_choice == 'male':
             if age_choice == 'juvenile':
-                base_length = random.uniform(1, 3)
+                base_length = random.uniform(2, 4)
                 base_aggr = random.randint(8, 10)
             elif age_choice == 'adult':
-                base_length = random.uniform(3, 4)
+                base_length = random.uniform(3, 5)
                 base_aggr = random.randint(8, 9)
             else:  # elder
                 base_length = random.uniform(4, 6)
@@ -59,49 +59,49 @@ for i in range(num_of_specimens):
         # Female dragons - more aggressive than males
         elif gender_choice == 'female':
             if age_choice == 'juvenile':
-                base_length = random.uniform(1, 4)
+                base_length = random.uniform(3, 6)
                 base_aggr = random.randint(9, 10)
             elif age_choice == 'adult':
-                base_length = random.uniform(4, 6)
+                base_length = random.uniform(4, 8)
                 base_aggr = random.randint(9, 10)
             else:  # elder
-                base_length = random.uniform(5, 7)
+                base_length = random.uniform(6, 10)
                 base_aggr = random.randint(9, 10)
 
         # Xis dragons
         else:
             if age_choice == 'juvenile':
-                base_length = random.uniform(1, 4)
+                base_length = random.uniform(2, 6)
                 base_aggr = random.randint(8, 10)
             elif age_choice == 'adult':
-                base_length = random.uniform(3, 7)
+                base_length = random.uniform(3, 8)
                 base_aggr = random.randint(8, 10)
             else:  # elder
-                base_length = random.uniform(5, 8)
+                base_length = random.uniform(5, 11)
                 base_aggr = random.randint(8, 10)
     else:
         # When gender or age is unknown, use a mid-range value
-        base_length = random.uniform(3, 6)
+        base_length = random.uniform(3, 9)
         base_aggr = random.randint(8, 10)
 
-    if random.random() < 0.05:  # 5% chance of unusually long specimen
-        base_length *= random.uniform(1.5, 2.0)
+    if random.random() < 0.10:  # 5% chance of unusually long specimen
+        base_length *= random.uniform(1.2, 2.1)
 
     if random.random() > missing_data_pct:
-        dragon['est_body_length'] = base_length * random.uniform(0.9, 1.1)
+        dragon['est_body_length'] = base_length * random.uniform(0.7, 1.15)
     else:
         dragon['est_body_length'] = 0  # Missing data
 
     if random.random() > missing_data_pct:
         if age_choice == 'juvenile':
-            dragon['snout_length'] = base_length * random.uniform(0.25, 0.3)
+            dragon['snout_length'] = base_length * random.uniform(0.15, 0.3)
         else:  # adult, elder or unknown
-            dragon['snout_length'] = base_length * random.uniform(0.15, 0.2)
+            dragon['snout_length'] = base_length * random.uniform(0.25, 0.275)
     else:
         dragon['snout_length'] = 0  # Missing data
 
     # Account for missing wings due to aggression
-    missing_wing_chance = 0.03  # 3% chance of missing a wing
+    missing_wing_chance = 0.08  # 8% chance of missing a wing
     has_wing_injury = False
     dragon['aggressiveness'] = base_aggr
 
@@ -112,22 +112,22 @@ for i in range(num_of_specimens):
     if random.random() > missing_data_pct:
         if has_wing_injury:
             # Reduced wingspan due to injury
-            wingspan_multiplier = random.uniform(0.8, 1.5)
+            wingspan_multiplier = random.uniform(0.6, 1.8)
         else:
             if gender_choice == 'male':
                 if age_choice == 'juvenile':
-                    wingspan_multiplier = random.uniform(2.0, 2.5)
+                    wingspan_multiplier = random.uniform(1.8, 1.9)
                 elif age_choice == 'adult':
-                    wingspan_multiplier = random.uniform(2.0, 2.5)
+                    wingspan_multiplier = random.uniform(2.0, 2.6)
                 else:  # elder
-                    wingspan_multiplier = random.uniform(2.0, 2.2)
+                    wingspan_multiplier = random.uniform(2.1, 2.65)
             elif gender_choice == 'female' or gender_choice == 'xis':
                 if age_choice == 'juvenile':
-                    wingspan_multiplier = random.uniform(2.0, 3.0)
+                    wingspan_multiplier = random.uniform(1.7, 2.45)
                 else:  # adult, elder
-                    wingspan_multiplier = random.uniform(2.0, 2.5)
+                    wingspan_multiplier = random.uniform(1.9, 2.6)
             else:  # unknown
-                wingspan_multiplier = random.uniform(2.0, 2.5)
+                wingspan_multiplier = random.uniform(2.1, 2.5)
 
         dragon['wingspan'] = base_length * wingspan_multiplier
     else:
@@ -146,7 +146,7 @@ for i in range(num_of_specimens):
         if has_wing_injury:
             flight_multiplier = 0  # Significantly reduced speed
         else:
-            flight_multiplier = random.uniform(0.9, 1.1)  # Normal variation
+            flight_multiplier = random.uniform(0.75, 1.25)  # Normal variation
 
         dragon['flight_speed'] = base_speed * flight_multiplier
     else:
@@ -163,18 +163,14 @@ for i in range(num_of_specimens):
 
     dragon['color_of_scales'] = random.choice(colors)
 
-    dragon['color_of_eyes'] = random.choices(
-        eye_colors,
-        weights=[40, 35, 20, 5],  # Red most common, multicolored rare (5%)
-        k=1
-    )[0]
+    dragon['color_of_eyes'] = random.choice(eye_colors)
 
-    if random.random() < 0.6:  # 60% chance of red wings
+    if random.random() < 0.30:  # 3% chance of red wings
         dragon['color_of_wings'] = 'red'
     else:
-        dragon['color_of_wings'] = dragon['color_of_scales']
+        dragon['color_of_wings'] = random.choice(colors)
 
-    dragon['shape_of_snout'] = 'snub'
+    dragon['shape_of_snout'] = random.choice(['square', 'snub'])
     dragon['shape_of_teeth'] = 'pointed'
     dragon['scales_present'] = 'yes'
     dragon['scale_texture'] = 'rough'
@@ -183,20 +179,20 @@ for i in range(num_of_specimens):
     dragon['facial_spikes'] = 'no'
     dragon['frilled'] = 'yes'
     dragon['feathers_present'] = 'no'
-    dragon['length_of_horns'] = 'long'
-    dragon['shape_of_horns'] = random.choice(['spiny', 'twisted'])
+    dragon['length_of_horns'] = random.choice(['medium', 'long'])
+    dragon['shape_of_horns'] = random.choice(['spiny', 'twisted', 'pointed'])
     dragon['shape_of_tail'] = 'pointed'
 
     dragon['loc_of_sighting'] = random.choices(
         locale,
-        weights=[30, 15, 15, 10, 10, 5, 15],  # Egypt primary, Open Ocean significant
+        weights=[20, 10, 10, 10, 10, 10, 10, 10, 10],  # Egypt primary, Open Ocean significant
         k=1
     )[0]
 
     dragon['is_venomous'] = 'yes'
 
     # Fire breathing - higher chance due to aggression
-    fire_chance = 0.7  # 70% base chance
+    fire_chance = 0.5  # 50% base chance
     dragon['breathing_fire_observed'] = 'yes' if random.random() < fire_chance else 'no'
     dragon['breathing_ice_observed'] = 'no'
     dragon['observed_by'] = random.choice(initials)
@@ -207,7 +203,11 @@ for i in range(num_of_specimens):
     specimens.append(dragon)
 
 specimens_df = pd.DataFrame(specimens)
-specimens_df.to_csv('../dragon_spreadsheets/egyptian_copperbelly.csv', columns=columns, index=False, mode='w')
+
+base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+output_dir = os.path.join(base_dir, "dragon_spreadsheets")
+
+specimens_df.to_csv(output_dir + '/egyptian_copperbelly.csv', columns=columns, index=False, mode='w')
 
 print(f"Generated {len(specimens)} Egyptian Copperbelly dragon specimens")
 print(f"Sample specimen: {specimens[0]}")

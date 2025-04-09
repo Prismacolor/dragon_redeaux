@@ -40,18 +40,18 @@ class NeuralNetworkClassifier:
         logger.info('Building neural network model...')
         model = Sequential([
             # Input layer
-            Dense(128, activation='relu', input_shape=(input_shape,)),
+            Dense(32, activation='relu', input_shape=(input_shape,)),
             BatchNormalization(),
-            Dropout(0.3),
+            Dropout(0.4),
 
             # Hidden layers
-            Dense(256, activation='relu'),
+            Dense(64, activation='relu'),
             BatchNormalization(),
-            Dropout(0.3),
+            Dropout(0.4),
 
-            Dense(128, activation='relu'),
+            Dense(32, activation='relu'),
             BatchNormalization(),
-            Dropout(0.3),
+            Dropout(0.4),
 
             # Output layer
             Dense(self.num_classes, activation='softmax')
@@ -69,7 +69,7 @@ class NeuralNetworkClassifier:
         self.model = model
         return model
 
-    def fit(self, X_train, y_train, X_val=None, y_val=None, epochs=50, batch_size=32):
+    def fit(self, X_train, y_train, X_val=None, y_val=None, epochs=25, batch_size=32):
         """Train the neural network"""
         # Prepare validation data if provided
         validation_data = None

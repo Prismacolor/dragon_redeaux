@@ -11,12 +11,11 @@ A complete machine learning pipeline for generating synthetic data, training mul
 
 This project demonstrates a full machine learning workflow:
 1. **Data Generation**: Create synthetic datasets for training and testing
+2. **Data Preprocessing**: Functions for cleaning and preprocessing training data and prediction inputs
 2. **Model Training**: Build and train either polynomial regression or neural network models
 3. **API Deployment**: Serve model predictions through a Flask REST API
 
 ## Project Structure
-
-Based on the actual project files:
 
 ```
 dragon_redeaux/
@@ -32,9 +31,9 @@ dragon_redeaux/
 │   └── dragon_app.py          # Main Flask application
 │
 ├── data/                      # Data storage
-│   ├── dragon_data_scripts/   # Scripts for data manipulation
+│   ├── dragon_data_scripts/   # Scripts for data creation
 │   ├── dragon_plots/          # Generated plots and visualizations
-│   ├── dragon_spreadsheets/   # Spreadsheet data files
+│   ├── dragon_spreadsheets/   # CSVs with training data
 │   ├── __init__.py
 │   └── full_data.csv          # Main dataset
 │
@@ -43,7 +42,7 @@ dragon_redeaux/
 │   ├── neuralnet_model.joblib # Saved neural network model
 │   └── onehot_encoder.joblib  # Encoder for categorical variables
 │
-├── scripts/                   # Utility scripts
+├── scripts/                   # Main scripts
 │   ├── __init__.py
 │   ├── create_data_sheets.py  # Data generation script
 │   ├── neuralnet_script.py    # Script to train neural network
@@ -59,8 +58,8 @@ dragon_redeaux/
 │
 ├── .gitignore                 # Git ignore file
 ├── Dockerfile                 # Docker configuration
-├── logger.py                  # Logging utility (at root level)
-├── README.md                  # This file
+├── logger.py                  # Logging utility 
+├── README.md                  
 └── requirements.txt           # Project dependencies
 ```
 
@@ -75,8 +74,7 @@ dragon_redeaux/
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/model-training-api.git
-   cd model-training-api
+   https://github.com/Prismacolor/dragon_redeaux.git
    ```
 
 2. Create a virtual environment and activate it:
@@ -95,8 +93,7 @@ dragon_redeaux/
 Generate synthetic datasets with the data creation script:
 
 ```bash
-# Generate data sheets
-python scripts/create_data_sheets.py --samples 1000 --output data/dragon_spreadsheets/
+python scripts/create_data_sheets.py 
 ```
 
 ## Model Training
@@ -106,13 +103,13 @@ Train either a polynomial regression or neural network model:
 ### Polynomial Regression
 
 ```bash
-python scripts/polynomial_script.py --data data/full_data.csv --degree 3 --output dragon_models/
+python scripts/polynomial_script.py 
 ```
 
 ### Neural Network
 
 ```bash
-python scripts/neuralnet_script.py --data data/full_data.csv --layers 3 --neurons 64 --epochs 100 --output dragon_models/
+python scripts/neuralnet_script.py 
 ```
 
 ## Running the API
@@ -124,35 +121,58 @@ cd app
 python dragon_app.py
 ```
 
-The API will be available at `http://localhost:5000`.
+The API will be available at `http://localhost:8080`.
 
 You can also run the application using Docker:
 
 ```bash
-docker build -t dragon-api .
-docker run -p 5000:5000 dragon-api
+docker build -t app .
+docker run -p 8080:8080 dragon_app
 ```
 
 ## API Usage
 
 ### Making Predictions
 
-To get predictions from a trained model, send a POST request to the `/predict` endpoint:
+To get predictions from a trained model, send a POST request via Postman to the `/predict` endpoint:
 
-```bash
-curl -X POST -H "Content-Type: application/json" -d '{"model_type": "polynomial", "features": [1.2, 3.4, 2.1]}' http://localhost:5000/predict
-```
-
-Or use Postman with the following configuration:
+Sample Configuration:
 - Method: POST
-- URL: http://localhost:5000/predict
+- URL: http://localhost:8080/predict
 - Headers: Content-Type: application/json
 - Body (raw JSON):
   ```json
   {
-    "model_type": "neural_network",  // or "polynomial"
-    "features": [1.2, 3.4, 2.1]
-  }
+    "gender": "male",
+    "estimated_age": "juvenile",
+    "color_of_scales": "grey",
+    "color_of_eyes": "blue",
+    "color_of_wings": "grey",
+    "est_body_length": 4,
+    "shape_of_snout": "snub",
+    "shape_of_teeth": "pointed",
+    "scales_present": "yes",
+    "feathers_present": "no",
+    "scale_texture": "smooth",
+    "body_texture": "scaled",
+    "snout_length": 0.75,
+    "shape_of_body": "lithe",
+    "wingspan": 6,
+    "number_of_limbs": 2,
+    "facial_spikes": "no",
+    "frilled": "no",
+    "length_of_horns": "short",
+    "shape_of_horns": "twisted",
+    "shape_of_tail": "pointed",
+    "loc_of_sighting": "Peru",
+    "aggressiveness": 7,
+    "flight_speed": 65,
+    "is_venomous": "yes",
+    "breathing_fire_observed": "no",
+    "breathing_ice_observed": "no",
+    "observed_by": "TNR",
+    "year_observed": 2022
+}
   ```
 
 ### API Response
@@ -161,15 +181,40 @@ The API will respond with a JSON object containing the prediction:
 
 ```json
 {
-  "prediction": 42.56,
-  "model_type": "neural_network",
-  "timestamp": "2023-06-15T12:34:56.789Z"
+  "prediction": "SomeDragon",
+  "input_data": {
+    "gender": "male",
+    "estimated_age": "juvenile",
+    "color_of_scales": "grey",
+    "color_of_eyes": "blue",
+    "color_of_wings": "grey",
+    "est_body_length": 4,
+    "shape_of_snout": "snub",
+    "shape_of_teeth": "pointed",
+    "scales_present": "yes",
+    "feathers_present": "no",
+    "scale_texture": "smooth",
+    "body_texture": "scaled",
+    "snout_length": 0.75,
+    "shape_of_body": "lithe",
+    "wingspan": 6,
+    "number_of_limbs": 2,
+    "facial_spikes": "no",
+    "frilled": "no",
+    "length_of_horns": "short",
+    "shape_of_horns": "twisted",
+    "shape_of_tail": "pointed",
+    "loc_of_sighting": "Peru",
+    "aggressiveness": 7,
+    "flight_speed": 65,
+    "is_venomous": "yes",
+    "breathing_fire_observed": "no",
+    "breathing_ice_observed": "no",
+    "observed_by": "TNR",
+    "year_observed": 2022
+    }
 }
 ```
-
-## Configuration
-
-The project uses a YAML configuration file (`config.yaml`) to set parameters for data generation and model training. You can edit this file to customize the behavior of the scripts.
 
 ## License
 
