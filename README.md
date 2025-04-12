@@ -135,7 +135,7 @@ python dragon_app.py
 
 The API will be available at `http://localhost:8080`.
 
-You can also run the application using Docker:
+You can also run the application using Docker: (full caveat, this has not been tested yet)
 
 ```bash
 docker docker build -t dragon-classifier .
