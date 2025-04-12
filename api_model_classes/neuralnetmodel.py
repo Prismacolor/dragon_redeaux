@@ -47,11 +47,11 @@ class NeuralNetworkClassifier:
             # Hidden layers
             Dense(64, activation='relu'),
             BatchNormalization(),
-            Dropout(0.4),
+            Dropout(0.45),
 
             Dense(32, activation='relu'),
             BatchNormalization(),
-            Dropout(0.4),
+            Dropout(0.5),
 
             # Output layer
             Dense(self.num_classes, activation='softmax')

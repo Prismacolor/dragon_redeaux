@@ -5,6 +5,8 @@ from flask import Flask, request, jsonify
 import pandas as pd
 import sys
 from werkzeug.exceptions import InternalServerError
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from logger import logger
 
 # Setup project paths
@@ -145,7 +147,7 @@ def predict(model_type):
         })
 
     except Exception as e:
-        logger.exception(f"Error during prediction: {str(e)}")
+        logger.error(f"Error during prediction: {str(e)}")
         return jsonify({"error": str(e)}), 500
 
 

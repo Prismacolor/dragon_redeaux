@@ -4,6 +4,7 @@ WORKDIR /dragon_redeaux
 
 COPY . /dragon_redeaux
 
+# run no cache so pip installs fresh every time, makes docker container smaller
 RUN pip install --no-cache-dir -r requirements.txt
 
 EXPOSE 8080

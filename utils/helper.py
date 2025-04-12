@@ -49,7 +49,7 @@ def preprocess_data(df, encoded_labels):
     df = df.copy()
 
     # drop columns that aren't needed and shuffle data
-    df = df.drop(['observed_by', 'year_observed', 'loc_of_sighting'], axis=1)
+    df = df.drop(['observed_by', 'year_observed'], axis=1)
     df = df.dropna()
     df = df.sample(frac=1, random_state=42).reset_index(drop=True)
     df['species'] = df['species'].map(encoded_labels)
@@ -66,16 +66,10 @@ def preprocess_data(df, encoded_labels):
     scaler = StandardScaler()
     df[numerical_columns] = scaler.fit_transform(df[numerical_columns])
 
-    # categorical_features = ['gender', 'estimated_age', 'color_of_scales', 'color_of_eyes', 'color_of_wings',
-    #  'shape_of_snout', 'shape_of_teeth', 'scales_present', 'feathers_present', 'scale_texture', 'body_texture',
-    #  'shape_of_body', 'facial_spikes', 'frilled', 'length_of_horns',
-    #  'shape_of_horns', 'shape_of_tail', 'loc_of_sighting', 'is_venomous',
-    #  'breathing_fire_observed', 'breathing_ice_observed']
-
     categorical_features = ['gender', 'estimated_age', 'color_of_scales', 'color_of_eyes', 'color_of_wings',
                             'shape_of_snout', 'shape_of_teeth', 'scales_present', 'feathers_present', 'scale_texture',
                             'body_texture','shape_of_body', 'facial_spikes', 'frilled', 'length_of_horns',
-                            'shape_of_horns', 'shape_of_tail', 'is_venomous',
+                            'shape_of_horns', 'shape_of_tail','loc_of_sighting', 'is_venomous',
                             'breathing_fire_observed', 'breathing_ice_observed']
 
     encoder = OneHotEncoder()
@@ -112,7 +106,7 @@ def preprocess_prediction_data(df):
     df[numerical_columns] = scaler.fit_transform(df[numerical_columns])
 
     categorical_features = ['gender', 'estimated_age', 'color_of_scales', 'color_of_eyes', 'color_of_wings',
-                            'shape_of_snout', 'shape_of_teeth', 'scales_present', 'scale_texture', 'feathers_present',
+                            'shape_of_snout', 'shape_of_teeth', 'scales_present',  'feathers_present', 'scale_texture',
                             'body_texture', 'shape_of_body', 'facial_spikes', 'frilled', 'length_of_horns',
                             'shape_of_horns', 'shape_of_tail', 'loc_of_sighting', 'is_venomous',
                             'breathing_fire_observed', 'breathing_ice_observed']

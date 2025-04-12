@@ -1,8 +1,3 @@
-TO do
-6. refine readme
-7. take one last stab at data issue: start with common welsh
-8. final test of docker file
-
 # Model Training and Prediction API
 
 A complete machine learning pipeline for generating synthetic data, training multiple model types, and serving predictions via a Flask API.
@@ -14,6 +9,20 @@ This project demonstrates a full machine learning workflow:
 2. **Data Preprocessing**: Functions for cleaning and preprocessing training data and prediction inputs
 2. **Model Training**: Build and train either polynomial regression or neural network models
 3. **API Deployment**: Serve model predictions through a Flask REST API
+
+Note on data generation ::: this was a challenge. Initial efforts to generate dragon data resulted in perfectly collinear data which 
+led to the model always getting 1.0 (100%) accuracy even on validation and test sets. I initially tried to correct ths by sending my 
+test scripts through Anthropic's Claude Sonnet to add some variance to my data scripts. However, I soon discovered that the variability
+was being added in the same formulaic way for every species, meaning that the data remained perfectly collinear. To muddy things up, I
+created more overlapping locations, removed locations that would clearly give away a species, and messed with the distributions so that 
+no two species had the same distribution of numerical data. I also varied the number of specimens for each species to create some class 
+imbalance. It is not perfect, (given that dragons are not real, how can it be?) but it at least somewhat simulates casual observations. 
+There are also code outs for "missing data", maybe something did not get recorded properly or could not be determined during the initial 
+observation. There are also code outs for things like missing limbs and wings (because sometimes dragons choose violence.) So a fun thought
+exercise for any ML/DS practitioner may be to see how they can muddy up the data further. I toyed with removing some of the features but that
+means you will have to do some further changes up stream (like when you preprocess the prediction data. I did finally get some variance and 
+the model actually began a legitimate training arc and the final results for the test set were 98-99% accuracy with 0.04 loss. Still a little 
+too high but I am very happy with the fact that I got an actual training arc to go. 
 
 ## Project Structure
 
@@ -87,6 +96,9 @@ dragon_redeaux/
    ```
    pip install -r requirements.txt
    ```
+   
+4. Add .env:
+    you will need to add a .env file to the app folder with the MODEL_TYPE parameter (plus any other parameters you want to add)
 
 ## Data Generation
 
@@ -126,8 +138,8 @@ The API will be available at `http://localhost:8080`.
 You can also run the application using Docker:
 
 ```bash
-docker build -t app .
-docker run -p 8080:8080 dragon_app
+docker docker build -t dragon-classifier .
+docker run -p 8080:8080 dragon-classifier
 ```
 
 ## API Usage
